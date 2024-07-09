@@ -1,0 +1,73 @@
+ /* style de la page d'accueil */
+
+body{
+	background:green;
+	font-family:Arial,Verdanasans-serif;
+	}
+
+.header{
+height: 60vh;
+}
+
+h1{
+	color : black;
+	font-size : 200%;
+	background : silver;
+	text-align : center;
+	}
+
+h2{
+    color : black;
+	font-size : 150%;
+	background : white;
+	text-align : center;
+	}
+
+ul{
+	color:gray;
+	list-style-type : disc;
+	}
+
+a{
+	color:black;
+	}
+
+
+	}
+table
+	{width:25%;}
+table, td, th
+	{border: solid 2px grey;
+	border-collapse: collapse;
+	border-spacing: 2px;
+	}
+
+.diff
+	{font-weight : bold;
+	text-align : right;
+	}
+
+ol.niveau1
+	{color : black;
+	list-style-type : decimal;
+	}
+
+ol.niveau2
+	{color : gray;
+	list-style-type : lower-latin;
+	}
+
+a:hover
+	{color:white;
+	background:gray;
+	}
+
+img {
+margin-right : 20px;
+}
+
+.log {
+margin-left : 1240px;
+}
+
+	

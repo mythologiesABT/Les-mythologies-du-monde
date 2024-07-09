@@ -1,0 +1,76 @@
+ /* style appliqué a la page nordique */
+
+body
+	{background:#764d04;
+	font-family:Arial,Verdanasans-serif;
+	}
+
+h1
+	{color : black;
+	font-size : 200%;
+	background : silver;
+	text-align : center;
+	}
+
+h2
+	{color : black;
+	font-size : 150%;
+	background : white;
+	text-align : center;
+	}
+
+/*h3
+	{color : black;
+	font-size : 100%;
+	background : #764d04;
+	text-align : left;
+	}*/
+
+ul
+	{color:grey;
+	list-style-type : disc;
+	}
+
+a
+	{color: black;
+	}
+
+
+	}
+table
+	{width:25%;}
+
+table, td, th
+	{border: solid 2px grey;
+	border-collapse: collapse;
+	border-spacing: 2px;
+        text-align : center;
+	}
+
+.diff
+	{font-weight : bold;
+	text-align : right;
+	}
+
+ol.niveau1
+	{color : black;
+	list-style-type : decimal;
+	}
+	
+ol.niveau2
+	{color : black;
+	list-style-type : lower-latin;
+	}
+
+a:hover
+	{color:white;
+	background:gray;
+	}
+
+.log {
+margin-left : 1200px;
+}
+
+img.haut_de_page{
+border-radius : 10px;
+}

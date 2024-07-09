@@ -1,0 +1,89 @@
+ /* thème noir appliqué lors du changement de thème grâce au bouton */
+
+body {
+transition : all 0.5s ease-in-out;
+}
+
+body.dark{
+background-color : #18191a !important;
+color : #cfcfcf;
+}
+
+body.dark a, body.dark div{
+color : #cfcfcf;
+}
+
+body.dark .spinner{
+background-color : #cfcfcf;
+}
+
+.toggle {
+position : relative;
+height : 50px;
+width : 200px;
+border-radius : 100px;
+background-color : #fff;
+box-shadow : 0 5px 10px rgba(0,0,0,0.1);
+cursor : pointer;
+}
+
+#soleil1{
+position : relative;
+top : 53px;
+left : -94px;
+z-index : 1;
+}
+
+#lune1{
+position : relative;
+top : 53px;
+left : 42px;
+z-index : 1;
+}
+
+#soleil2{
+position : relative;
+top : 53px;
+left : -118px;
+z-index : 1;
+}
+
+#lune2{
+position : relative;
+top : 53px;
+left : 18px;
+z-index : 1;
+}
+
+#theme1 {
+position : relative;
+top : 15px;
+text-align : center;
+color : grey;
+}
+
+#theme2 {
+position : relative;
+top : 15px;
+text-align : center;
+color : grey;
+}
+
+.toggle::before {
+content : "";
+position : absolute;
+height : 40px;
+width : 40px;
+background-color : #4070f4;
+border-radius : 50%;
+top : 50%;
+left : 5px;
+transform : translateY(-50%);
+transition : all 0.5s ease-in-out;
+}
+
+.toggle.active::before {
+background-color : #18191a;
+left : calc(100% - 40px - 5px);
+}
+

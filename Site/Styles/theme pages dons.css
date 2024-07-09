@@ -1,0 +1,47 @@
+ /* thème sombre appliqué a la page de donations lors du changement de thème grâce au bouton */
+
+
+body {
+transition : all 0.5s ease-in-out;
+}
+
+body.sombre{
+background-color : #29048a;
+color : #cfcfcf;
+}
+
+body.sombre .spinner{
+background-color : #cfcfcf;
+}
+
+body.sombre a, body.sombre div, body.sombre ol{
+color : #cfcfcf;
+}
+
+.toggle2 {
+position : relative;
+height : 50px;
+width : 200px;
+border-radius : 100px;
+background-color : #fff;
+box-shadow : 0 5px 10px rgba(0,0,0,0.1);
+cursor : pointer;
+}
+
+.toggle2::before {
+content : "";
+position : absolute;
+height : 40px;
+width : 40px;
+background-color : #4070f4;
+border-radius : 50%;
+top : 50%;
+left : 5px;
+transform : translateY(-50%);
+transition : all 0.5s ease-in-out;
+}
+
+.toggle2.active::before {
+background-color : #18191a;
+left : calc(100% - 40px - 5px);
+}

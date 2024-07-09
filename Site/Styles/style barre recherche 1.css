@@ -1,0 +1,23 @@
+ /* style de la barre de recherche de la page 1 */
+
+#searchbar{
+border-radius:30px;
+border: 2px solid grey;
+text-align: left;
+background-color: #f1f1f1;
+}
+
+#button{
+background-color: #aba8a8;
+border: 1px solid black;
+height: 20px;
+}
+
+h5{
+margin : 0px;
+text-align: right;
+position: absolute;
+top: 10px;
+left : 190px;
+}
+

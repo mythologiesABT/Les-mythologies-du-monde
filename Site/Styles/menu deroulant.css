@@ -1,0 +1,64 @@
+ /* barre de selection de la page, de sommaire et de retour a l'accueil */
+
+* {
+box-sizing : border-box;
+}
+
+body {
+color : #333;
+font-family : arial;
+font-size : 16px;
+line-height : 22px;
+}
+
+a {
+text-decoration : none;
+color : #333;
+}
+
+.wrapper {
+margin : 0px;
+width : 730px;
+}
+
+header li {
+display : inline-block;
+vertical-align : top;
+position : relative;
+}
+
+header li a {
+display : block;
+padding : 10px;
+}
+
+header li:hover a{
+background-color : #1abc9c;
+color : black;
+}
+
+header li:hover .sub-menu {
+display : block;
+}
+
+.sub-menu {
+display : none;
+position : absolute;
+background-color : #1abc9c;
+width : 400px
+}
+
+.sub-menu li {
+display : block;
+}
+
+.sub-menu li a {
+color : #fff;
+}
+
+.sub-menu li:hover a {
+color : #fff;
+}
+
+
+

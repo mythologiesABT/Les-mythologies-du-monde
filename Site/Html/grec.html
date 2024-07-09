@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>	Mythologie grecque</title>   <!--Nom de la page (apparait sur l'onglet)-->
+
+    <!-- Pages CSS -->
+		<link rel="stylesheet"  href="../Styles/style grec.css">   <!-- Style global de la page -->
+        <link rel="stylesheet"  href="../Styles/style barre recherche.css">   <!-- Style de la barre de recherche -->
+    	<link rel="stylesheet"  href="../Styles/bouton barre de recherche.css">  <!--Style bouton de la barre de recherche-->
+  		<link rel="stylesheet" href="../Styles/menu deroulant.css" />   <!-- Style du menu déroulant -->
+        <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+        <link rel="stylesheet" href="../Styles/cherche mot.css" />   <!-- Style appliqué par searchWord -->
+        <link rel="stylesheet"  href="../Styles/theme dark.css"> <!--Style dark-->
+		<link rel="stylesheet"  href="../Styles/theme page grec.css">  <!--Style sombre-->
+        <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    			crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+
+    <!-- Pages JavaScript -->
+        <script src="../Script/page grecque.js"></script>   <!-- Fonction cherche_dieu : amène à la ligne du tableau correspondant au dieu écrit dans la barre de recherche -->
+        <script src="../Script/cherche mot.js"></script>   <!-- Fonction searchWord : surligne le mot écrit dans la barre de recherche -->
+		<script src="../Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+        <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+		<script src="../Script/bouton barre de recherche.js"></script> <!-- Bouton de la barre de recherche-->
+
+    <!-- Logo de la page (apparait sur l'onglet)-->
+        <link rel="icon" href="../Image/grec/temple grec.jpg">
+	
+</head>
+<body>
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class=""></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="https://www.instagram.com/mythologies.abt?igsh=MWdpb2N2YXhyZGhvdw=="> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+	    <li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+		</label></li>      <!--Menu déroulant-->
+        <li> <a href="../../page 1.html"> <i class="fa-solid fa-house"></i> Accueil</a> </li>   <!-- Lien vers la page d'accueil -->
+        <li> <a href="" ><i class="fa-solid fa-list"></i> Sommaire</a>   <!-- Lien interne vers les histoires -->
+            <ul class="sub-menu">
+                               <!--Lien interne vers les histoires-->
+            <li> <a href="grec.html#la_creation_du_monde"> La création du monde </a> </li>
+            <li> <a href="grec.html#l_origine_des_dieux"> L'origine des dieux</a> </li>
+            <li> <a href="grec.html#la_titanomachie"> La Titanomachie </a> </li>
+            <li> <a href="grec.html#la_naissance_d_hermes"> La naissance d'Hermès </a></li>
+            <li> <a href="grec.html#le_mariage_zeus_hera"> Le mariage de Zeus et Héra </a></li>
+            <li> <a href="grec.html#ixion"> Ixion l'homme qui voulait la femme de Zeus </a></li>
+            <li> <a href="grec.html#la_naissance_d_athena"> La naissance d'Athéna </a></li>
+            <li> <a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a></li>
+            <li> <a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a></li>
+            <li> <a href="grec.html#zeus_vs_lycaon"> L'origine du loup-garou </a></li>
+            <li> <a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a></li>
+            <li> <a href="grec.html#heracles_vs_thanatos"> Héraclès contre Thanatos </a></li>
+            <li> <a href="grec.html#jason_et_la_toison_d_or"> Jason et la toison d'or </a></li>
+            <li> <a href="grec.html#thesee_vs_minotaure"> Thésée et le minotaure </a></li>
+            <li> <a href="grec.html#dedale_et_icare"> Dédale et Icare </a></li>
+            <li> <a href="grec.html#le_chatiment_de_promethe"> Le châtiment de Prométhée </a></li>
+            <li> <a href="grec.html#boite_de_pandore"> La boite de Pandore </a></li>
+            <li> <a href="grec.html#le_supplice_de_tantale"> Le supplice de Tantale </a></li>
+            <li> <a href="grec.html#la_punition_d_erisochthon"> La punition d'Erisochthon </a></li>
+            <li> <a href="grec.html#sisyphe"> Sisyphe l'homme qui a trompé les dieux </a></li>
+            <li> <a href="grec.html#pygmalion_et_galatee"> Pygmalion et Galatée </a></li>
+            <li> <a href="grec.html#la_naissance_de_dionysos"> La naissance de Dionysos </a></li>
+            <li> <a href="grec.html#le_roi_midas"> Le roi Midas </a></li>
+            <li> <a href="grec.html#apollon_vs_pan"> Le duel musical d'Apollon et Pan </a></li>
+            <li> <a href="grec.html#athena_vs_poseidon"> Athéna contre Poséïdon pour la ville de Cécropia </a></li>
+            <li> <a href="grec.html#dieux_vs_typhon"> Les dieux contre Typhon </a></li>
+            <li> <a href="grec.html#ares_et_aphrodite"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a></li>
+            <li> <a href="grec.html#artemis_et_acteon"> Artémis et Actéon le chasseur </a></li>
+            <li> <a href="grec.html#meleagre_et_la_chasse_au_sanglier"> Méleagre et la chasse au sanglier </a></li>
+            <li> <a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a></li>
+            <li> <a href="grec.html#apollon_et_asclepios"> Apollon et son fils Asclépios le dieu de la guérison </a></li>
+            <li> <a href="grec.html#daphne_et_apollon"> Daphné et Apollon, l'amour non-réciproque </a></li>
+            <li> <a href="grec.html#eros_et_psyche"> Psyché et Eros, le dieu de l'amour amoureux </a></li>
+            <li> <a href="grec.html#bellerophon_et_pegase"> Bellérophon et Pégase </a></li>
+            <li> <a href="grec.html#poseidon_et_amphitrite"> Poséïdon et Amphitrite, les souverains des mers </a></li>
+            <li> <a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a></li>
+            <li> <a href="grec.html#meduse"> La malédiction de Méduse la plus belle des prêtresses d'Athéna </a></li>
+            <li> <a href="grec.html#persee_vs_meduse"> Persée contre Méduse </a></li>
+            </ul>
+        </li>
+        <li> <a href="" ><i class="fa-solid fa-scroll"></i> Pages</a>   <!-- Lien vers les autres pages -->
+            <ul class="sub-menu">
+            <li> <a href="egyptienne.html"> Egyptienne </a> </li>
+            <li> <a href="nordique.html"> Nordique </a> </li>
+            <li> <a href="romaine.html"> Romaine </a> </li>
+            </ul>
+        </li>
+            <li> <a href="../donations/dons grecque.html" ><i class="fa-solid fa-dollar-sign"></i> Donations</a> </li>    <!-- Lien vers la page de dons -->
+            <li> <a href="../formulaires/formulaire satisfaction grec.html" ><i class="fa-regular fa-face-smile-beam"></i> Formulaire de satisfaction</a> </li> <!-- Lien vers la page de formulaire de satisfaction -->
+            <li >
+<h5 class="wrapper">    <!--  Barre de recherche-->
+    <input type="search" id="searchbar" value="" placeholder=" Recherche un dieu ou une créature ..." onchange="cherche_dieu()" size="40" maxlength="35">
+    <input type="button" id="button" onclick="cherche_dieu()" value="Chercher">
+</h5>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+	<header>
+<ul>
+		<h1>GRECQUE</h1>   <!-- 1e titre  -->
+      <CENTER>  <img src="../Image/grec/monde grec.png" width="300" height="300">   <!-- Image carte -->
+                <img src="../Image/grec/temple grec.jpg" width="300" height="300">   <!-- Image temple -->
+                <img src="../Image/grec/phrise chronologique grec.jpg" width="500" height="300"/>   <!-- Image phrise chronologique -->
+
+
+</ul>		<hr />
+	</header>
+
+
+	<section>
+
+	
+		
+
+	 <br/>
+		<table >   <!-- Tableau -->
+			<tr>
+				                <th>Dieux</th>    <!-- Noms des colonnes -->
+                                <th>Ligné</th>
+                                <th>Rôle</th>
+                                <th>Symboles</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+			</tr>
+              <tr>  <!--Lignes -->
+                                <td id="aphrodite"><a href="https://www.youtube.com/watch?v=ed7sWLRGo7I">APHRODITE</a></td>    <!-- Lien vidéo youtube -->
+                                <td><li id="content">Fille de Zeus et Dioné .
+                                    <li id="content">Femme d' Héphaïstos
+                                    <li id="content">Mère de Phobos , Déimos , Harmonie , Eros , Antéros ,Phtonos , Rhodée , Eryx , Hermaphrodite , Priape , Charite et Enée .</td>
+				                <td>Déesse de l'amour et de la procréation</td>
+                                <td>Lance, bouclier et armure </td> 
+                                <td><img src="../Image/grec/aphrodite.jpg" width="100" height="100"/></td>    <!-- Image du dieu -->
+                                <td><div style="text-align: left;">  
+				                    <li><a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a>   <!--  Liens internes vers les histoires-->
+                                    <li><a href="grec.html#boite_de_pandore"> La boite de Pandore</a>
+                                    <li><a href="grec.html#pygmalion_et_galatee"> Pygmalion et Galatée </a>
+                                    <li><a href="grec.html#ares_et_aphrodite"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a>
+                                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a>
+                                    <li><a href="grec.html#eros_et_psyche"> Psyché et Eros, le dieu de l'amour amoureux </a> </div> </td>   
+                         </tr>
+			<tr>  
+                        	<td id="apollon"> <a href="https://www.youtube.com/watch?v=dYSj9GZlwVw">APOLLON</a></td> 
+                                <td><li id="content">Fils de Zeus et Léto .
+                                    <li id="content">Père de Linos , Horphée et Asclepsios .
+                                    <li id="content">Frère d' Artémis .</td>
+				                <td>Dieu de la poésie, du chant, de la guérison et du soleil</td>
+                                <td>Arc, lyre, flûte, laurier, corbeau, cigne, loup et serpent </td> 
+                                <td><img src="../Image/grec/apollon.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#heracles_vs_thanatos">Héraclès contre Thanatos </a>
+                                    <li><a href="grec.html#la_naissance_d_hermes"> La naissance d'Hermès </a>
+                                    <li><a href="grec.html#apollon_vs_pan"> Le duel musical d'Apollon et Pan </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#ares_et_aphrodite"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a>
+                                    <li><a href="grec.html#apollon_et_asclepios"> Apollon et son fils Asclépios le dieu de la guérison</a>
+                                    <li><a href="grec.html#daphne_et_apollon"> Daphné et Apollon, l'amour non-réciproque </a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a> </div> </td> 
+                         </tr>
+			<tr>
+                                <td id="ares"> <a href="https://www.youtube.com/watch?v=pu7aBs7-5Eo">ARES</a></td> 
+                                <td><li id="content">Fils de Zeus et Héra .
+                                    <li id="content">Père de Phobos , Déimos , Harmonie , Eros , Antéros , Himéros , Pothos , Hédilogos , Mélanippos , Phlégias , Cycnos , Diomède et Térée .</td>
+                                <td>Dieu de la guerre</td>
+                                <td>Lance, bouclier et armure </td> 
+                                <td><img src="../Image/grec/ares.png" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+                                    <li><a href="grec.html#sisyphe"> Sisyphe l'homme qui a trompé les dieux </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#ares_et_aphrodite"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a> </div> </td>                   
+			</tr>
+			<tr>     
+                                <td id="artemis"> <a href="https://www.youtube.com/watch?v=XzDbu3MWkSg">ARTEMIS</a></td> 
+				                <td><li id="content">Fille de Zeus et Léto .
+                                    <li id="content">Soeur d' Apollon .</td>
+                                <td>Déesse de la chasse et de la nature sauvage</td>  
+                                <td>Arc, flêches, cerf, ours, chiens et cyprès </td>
+                                <td><img src="../Image/grec/artemis.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#artemis_et_acteon">Artémis et Actéon le chasseur</a>
+                                    <li><a href="grec.html#meleagre_et_la_chasse_au_sanglier">Méleagre et la chasse au sanglier</a> </div> </td>                
+			  
+                         </tr>
+			<tr>     
+                                <td id="athena"> <a href="https://www.youtube.com/watch?v=2YlUHX4MkCw">ATHENA</a></td>
+                                <td><li id="content">Fille de Zeus et Métis .</td>
+				                <td>Déesse de la sagesse, de la stratégie militaire, des artisans et des artistes</td>
+                                <td>Lance, bouclier et chouette</td>
+                                <td><img src="../Image/grec/athena.jpg" width="100" height="100" /></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_naissance_d_athena"> La naissance d'Athéna </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#le_chatiment_de_promethe"> Le châtiment de Prométhée </a>
+                                    <li><a href="grec.html#athena_vs_poseidon"> Athéna contre Poséïdon pour la ville de Cécropia </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#bellerophon_et_pegase">Bellérophon et Pégase</a>
+                                    <li><a href="grec.html#meduse">La malédiction de Méduse la plus belle des prêtresses d'Athéna</a>
+                                    <li><a href="grec.html#persee_vs_meduse">Persée contre Méduse</a> </div> </td> 
+ 
+                        </tr>
+                     <tr> 
+                                <td id="demeter"> <a href="https://www.youtube.com/watch?v=-32OJQwe-eM">DEMETER</a></td> 
+                                <td><li id="content">Fille de Cronos et Rhéa .
+                                    <li id="content">Soeur de Poséïdon , Héra , Hadès , Héstia et Zeus .
+                                    <li id="content">Femme de Zeus .
+                                    <li id="content">Mère de Perséphone , Arion , Despoina et Ploutos </td>
+				                <td>Déesse de l'agriculture</td>
+                                <td>Epi de blé </td> 
+                                <td><img  src="../Image/grec/demeter.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#le_supplice_de_tantale"> Le supplice de Tantale </a>
+                                    <li><a href="grec.html#la_punition_d_erisochthon"> La punition d'Erisochthon </a>
+                                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="dionysos"> <a href="https://www.youtube.com/watch?v=4HWaEeblnqg">DIONYSOS</a></td> 
+                                <td><li id="content">Fils de Zeus et Sémélée .
+                                    <li id="content">Père de Hymen , Priape , Thoas , Staphylos et Oenopion .</td>
+				                <td>Dieu du vin et du théâtre</td>
+                                <td>Lance, bouclier et armure </td> 
+                                <td><img src="../Image/grec/dionysos.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#le_roi_midas"> Le roi Midas </a>
+                                    <li><a href="grec.html#la_naissance_de_dionysos"> La naissance de Dionysos </a> </div> </td>   
+                         </tr>
+			<tr>
+                                <td id="eros"> EROS</td> 
+                                <td><li id="content">Fils d'Aphrodite et Ares .
+                                    <li id="content">Frère de Phobos , Déimos , Harmonie , Antéros , Phtonos , Rhodée , Eryx , Hermaphrodite , Priape , Charite , Erèbe et Enée .
+                                    <li id="content">Mari de Psyché .
+                                    <li id="content">Père de Volupté et Hédoné</td>
+				                <td>Dieu de l'amour</td>
+                                <td>ailes, arc et carquois remplie de flèches d'or ou de plomb</td> 
+                                <td><img src="../Image/grec/eros.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a>
+                                    <li><a href="grec.html#daphne_et_apollon"> Daphné et Apollon, l'amour non-réciproque </a>
+                                    <li><a href="grec.html#eros_et_psyche"> Psyché et Eros, le dieu de l'amour amoureux </a> </div> </td>    
+                         </tr>
+			<tr>      
+                                <td id="hades"> <a href="https://www.youtube.com/watch?v=hGwmY6gLs4w">HADES</a></td>
+                                <td><li id="content">Frère de Poséïdon , Héra , Déméter , Héstia et Zeus .
+                                    <li id="content">Mari de Persephone .
+                                    <li id="content">Père de Macarie et Zagreus .</td>
+				                <td>Dieu des enfer</td>
+                                <td>Bident, serpent et cyprès</td>
+                                <td><img src="../Image/grec/hades.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a>
+                                    <li><a href="grec.html#sisyphe"> Sisyphe l'homme qui a trompé les dieux </a>
+                                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a>
+                                    <li><a href="grec.html#apollon_et_asclepios"> Apollon et son fils Asclépios le dieu de la guérison</a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a> </div> </td>
+			</tr>
+			<tr>  
+                                <td id="hephaistos"> <a href="https://www.youtube.com/watch?v=6fPOfPR1pL8">HEPHAISTOS</a></td> 
+                                <td><li id="content">Fils de Zeus et Héra .
+                                    <li id="content">Frère d' Ares , Llithyie et Ebée .
+                                    <li id="content">Père de Thalie , Cabiro , Palémon , Erichtonios , Phylophrosine , Euphémé , Eukléïa et Euthénia .</td>
+				                <td>Dieu du feu, des volcans et de la forge</td>
+                                <td>Marteau, enclume, pince et volcan </td> 
+                                <td><img src="../Image/grec/hephaistos.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#boite_de_pandore"> La boite de Pandore</a>
+                                    <li><a href="grec.html#le_supplice_de_tantale"> Le supplice de Tantale </a>
+                                    <li><a href="grec.html#ares_et_aphrodite"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a> </div> </td>   
+                         </tr>
+			<tr>     
+                                <td id="hera"> <a href="https://www.youtube.com/watch?v=24JllVLUhu0">HERA</a></td>
+                                <td><li id="content">Fille de Cronos et Rhéa .
+                                    <li id="content">Soeur de Poséïdon , d' Hadès , de Déméter , d' Héstia et de Zeus .
+                                    <li id="content">Femme de Zeus .
+                                    <li id="content">Mère d' Héphaïstos , Arès , Hébé , Llithyie et de Angélos .</td>
+				                <td>Déesse du mariage et de la fécondité</td>
+                                <td>Diadème, sceptre, paon, vache et lys</td>
+                                <td><img src="../Image/grec/hera.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#le_mariage_zeus_hera"> Le mariage de Zeus et Héra </a>
+                                    <li><a href="grec.html#ixion"> Ixion l'homme qui voulait la femme de Zeus </a>
+                                    <li><a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a>
+                                    <li><a href="grec.html#jason_et_la_toison_d_or"> Jason et la toison d'or </a>
+                                    <li><a href="grec.html#la_naissance_de_dionysos"> La naissance de Dionysos </a> </div> </td>
+			</tr>
+			<tr>       
+                                <td id="hermes"> <a href="https://www.youtube.com/watch?v=e5XZSVUKc9Q">HERMES</a></td> 
+                                <td><li id="content">Fils de Zeus et Maïa .
+                                    <li id="content">Père de Abdère , Autolycos , Eudore , Angélina , Myrtilos , Palaestra , Daphnis , Pan , Hermaphrodite , Céphale et Céryx .</td>
+				                <td>Dieu du commerce, du voyage et messager des dieux</td>
+                                <td>Sandales ailées, lyre et caducée </td>
+                                <td><img src="../Image/grec/hermes.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="grec.html#le_mariage_zeus_hera"> Le mariage de Zeus et Héra </a>
+                                    <li><a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a>
+                                    <li><a href="grec.html#boite_de_pandore"> La boite de Pandore</a>
+                                    <li><a href="grec.html#le_supplice_de_tantale"> Le supplice de Tantale </a>
+                                    <li><a href="grec.html#la_naissance_d_hermes"> La naissance d'Hermès </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#la_naissance_de_dionysos"> La naissance de Dionysos </a>
+                                    <li><a href="grec.html#poseidon_et_amphitrite">Poséïdon et Amphitrite, les souverains des mers</a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a>
+                                    <li><a href="grec.html#persee_vs_meduse">Persée contre Méduse</a> </div> </td>   
+                         </tr>
+			<tr>        
+                                <td id="hestia"> <a href="https://www.youtube.com/watch?v=FEz2A4IESHA">HESTIA</a></td> 
+                                <td><li id="content">Fille de Cronos et Rhéa .
+                                    <li id="content">Soeur de Zeus , Héra , Déméter , Poséïdon et Hadès .</td>
+				                <td>Déesse de la famille et du ménage</td>
+                                <td>Ane, oiseau et le feu sacré </td> 
+                                <td><img src="../Image/grec/hestia.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a> </div> </td>  
+                        
+                         </tr>
+			<tr> 
+                                <td id="nemesis"> <a href="https://www.youtube.com/watch?v=r7l7QbhZIek">NEMESIS</a></td> 
+                                <td><li id="content">Fille de Nyx .
+                                    <li id="content">Soeur de Hypnos , Géras , Thanatos , Moros , Momos et Charon .</td>
+				                <td>Déesse de la justice et de la vengeance</td>
+                                <td>Balance de la justice et épée </td> 
+                                <td><img src="../Image/grec/nemesis.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                         </tr>
+			<tr>
+                               
+                                
+                                <td id="persephone"> PERSEPHONE</td>
+                                <td><li id="content">Fille de Zeus et Déméter .
+                                    <li id="content">Femme d' Hadès .
+                                    <li id="content">Mère de Zagreus et Mélinoé .</td>
+				                <td>Déesse du printemps </td>
+                                <td></td>
+                                <td><img src="../Image/grec/persephone.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a> </div> </td>
+			</tr>
+			<tr>
+                               
+                                
+                                <td id="poseidon"> <a href="https://www.youtube.com/watch?v=fT2GNLpczqs">POSEIDON</a></td>
+                                <td><li id="content">Fils de Cronos et Rhéa .
+                                    <li id="content">Frère de Zeus , Héra , Déméter , Héstia et Hadès .
+                                    <li id="content">Père de Triton , Rhodé , Cymolopée , Benthésicymé , Arion , Desponia , Orion , Antée, , Charybde , Telchine , Rodos , Eryx , Thésée , Pégase ,
+                                        Chrysaor , Bellérophon , Cycnos , Eumolpos , Glaucos et Poliphème .</td>
+				                <td>Dieu de la mer/des océans et des tremblements de terre</td>
+                                <td>Trident et dauphin</td>
+                                <td><img src="../Image/grec/poseidon.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+	 			                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux</a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#la_punition_d_erisochthon"> La punition d'Erisochthon </a>
+                                    <li><a href="grec.html#athena_vs_poseidon"> Athéna contre Poséïdon pour la ville de Cécropia </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#poseidon_et_amphitrite">Poséïdon et Amphitrite, les souverains des mers</a>
+                                    <li><a href="grec.html#meduse">La malédiction de Méduse la plus belle des prêtresses d'Athéna</a> </div> </td>
+			</tr>
+                      <tr> 
+                                <td id="thanatos"> THANATOS</td> 
+                                <td><li id="content">Fils de Nyx .
+                                   <li id="content">Frère de Hypnos , Géras , Némésis , Moros , Momos et Charon .
+                                   <li id="content">Mari de Macaria .
+                                   <li id="content">Père de Lyncos .</td>
+				                <td>Dieu de la mort</td>
+                                <td>Epée et torche</td> 
+                                <td><img src="../Image/grec/thanatos.bmp" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#heracles_vs_thanatos">Héraclès contre Thanatos </a>
+                                    <li><a href="grec.html#sisyphe"> Sisyphe l'homme qui a trompé les dieux </a> </div> </td>
+                         </tr>
+			<tr>
+				        
+				 
+				                <td id="zeus"> <a href="https://www.youtube.com/watch?v=4o1Qk8ZKfg4">ZEUS</a></td>
+                                <td><li id="content">Fils de Cronos et Rhéa .
+                                    <li id="content">Frère de Poséïdon , Héra , Hestia , Déméter et Hadès .
+                                    <li id="content">Père d' Ares , Héphaïstos , Angélos , Hébé , Llithyie , Apollon , Hermès , Athéna , Héraclès , Dionysos , Pérsée , Perséphone , Britomrtis , Mélinoé , Pandia , Hersé , Arcas et Artémis .</td>
+				                <td>Dieu du tonnerre et chef des dieux</td>
+                                <td>Eclaire, Aigle et chêne</td>
+                                <td><img src="../Image/grec/zeus.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#le_mariage_zeus_hera"> Le mariage de Zeus et Héra </a>
+                                    <li><a href="grec.html#ixion"> Ixion l'homme qui voulait la femme de Zeus </a>
+                                    <li><a href="grec.html#la_naissance_d_athena"> La naissance d'Athéna </a>
+                                    <li><a href="grec.html#la_naissance_d_hephaistos"> La naissance d'Héphaïstos </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#zeus_vs_lycaon"> L'origine du loup-garou </a>
+                                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a>
+                                    <li><a href="grec.html#le_chatiment_de_promethe"> Le châtiment de Prométhée </a>
+                                    <li><a href="grec.html#boite_de_pandore"> La boite de Pandore</a>
+                                    <li><a href="grec.html#le_supplice_de_tantale"> Le supplice de Tantale </a>
+                                    <li><a href="grec.html#sisyphe"> Sisyphe l'homme qui a trompé les dieux </a>
+                                    <li><a href="grec.html#la_naissance_d_hermes"> La naissance d'Hermès </a>
+                                    <li><a href="grec.html#athena_vs_poseidon"> Athéna contre Poséïdon pour la ville de Cécropia </a>
+                                    <li><a href="grec.html#dieux_vs_typhon">Les dieux contre Typhon</a>
+                                    <li><a href="grec.html#la_naissance_de_dionysos"> La naissance de Dionysos </a> 
+                                    <li><a href="grec.html#hades_et_persephone"> Hadès et Perséphone </a>
+                                    <li><a href="grec.html#apollon_et_asclepios"> Apollon et son fils Asclépios le dieu de la guérison</a>
+                                    <li><a href="grec.html#bellerophon_et_pegase">Bellérophon et Pégase</a>
+                                    <li><a href="grec.html#poseidon_et_amphitrite">Poséïdon et Amphitrite, les souverains des mers</a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a>
+                                    <li><a href="grec.html#persee_vs_meduse">Persée contre Méduse</a> </div> </td>
+			 
+                        
+		</table>
+
+ <br/>
+		<table>                              <!--Tableau 2-->
+			<tr>             <!--Noms des colonnes-->
+				                <th>Créatures</th>
+                                <th>Exemple</th>
+                                <th>Description</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+
+                         </tr>
+			<tr>  <!--Lignes-->
+                                <td id="arachne"> <a href="https://www.youtube.com/watch?v=SHmilskask4">ARACHNE</a></td> 
+                                <td></td>
+				                <td>Créature à buste de femme et corps d'araignée </td>
+                                <td><img src="../Image/grec/arachne.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                         </tr>
+                       <tr>
+                                <td id="biche de cerynie"> BICHE DE CERYNIE</td> 
+                                <td></td>
+				                <td>Biche rare et spécial, à cornes d'or, sabots de bronze, agile et rapide et sacré pour Artémis</td>
+                                <td><img src="../Image/grec/biche.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="centaure"> <a href="https://www.youtube.com/watch?v=bNYnHsTZCLQ">CENTAURE</a></td> 
+                                <td><li>Centauros
+                                    <li>Chiron
+                                    <li>Hyléos
+                                    <li>Euryton
+                                    <li>Pholos
+                                    <li>Nessos </td>
+				                <td>Créature à buste d'homme et corps de cheval</td>
+                                <td><img src="../Image/grec/centaure.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#ixion"> Ixion l'homme qui voulait la femme de Zeus </a>
+                                    <li><a href="grec.html#jason_et_la_toison_d_or"> Jason et la toison d'or </a> </div> </td> 
+                          </tr>
+			<tr>
+                                <td id="cerbere"> <a href="https://www.youtube.com/watch?v=ze2cA4EHoms">CERBERE</a></td> 
+                                <td></td>
+				                <td>Chien à trois têtes et gardien des Enfers </td>
+                                <td><img src="../Image/grec/cerbere.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                          </tr>
+			<tr>
+                                <td id="chimere"> <a href="https://www.youtube.com/watch?v=7Tf0fgdjFqQ">CHIMERE</a></td> 
+                                <td></td>
+				                <td>Créature cracheuse de feu à tête et corps de lion, tête de chèvre et queue de serpent </td>
+                                <td><img src="../Image/grec/chymere.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#bellerophon_et_pegase">Bellérophon et Pégase</a>
+                                    <li><a href="grec.html#orphee_et_eurydice"> Orphée et Eurydice, un amour éternel </a> </div> </td> 
+                         </tr>
+			<tr>
+                                <td id="cyclope"> CYCLOPE</td> 
+                                <td><li>Argès
+                                    <li>Brontès
+                                    <li>Acamas
+                                    <li>Polyphème ...</td>
+				                <td>Géant possédant un oeil unique se situant au milieu de son front</td>
+                                <td><img src="../Image/grec/cyclope.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde"> La création du monde </a>
+                                    <li><a href="grec.html#apollon_et_asclepios"> Apollon et son fils Asclépios le dieu de la guérison</a> </div> </td>   
+                         </tr>
+			<tr>
+                                <td id="echidne"> <a href="https://www.youtube.com/watch?v=zYZLNGftwSo">ECHIDNE</a></td> 
+                                <td><li>Echidna</td>
+				                <td>Créature à buste de femme et corps de serpent</td>
+                                <td><img src="../Image/grec/echidna.bmp" width="100" height="100"/> </td>
+                                <td> </td>            
+                         </tr>
+			<tr>
+                                <td id="geant"> GEANT</td> 
+                                <td><li>Agrios
+                                    <li>Alpos
+                                    <li>Clytios
+                                    <li>Pallas ...</td>
+				                <td>être humanoïde de très grande taille</td>
+                                <td><img src="../Image/grec/geant.jpg" width="100" height="100"/> </td>
+                                <td></td> 
+                         </tr>
+			<tr>
+                                <td id="gorgogne"> <a href="https://www.youtube.com/watch?v=B9_E2hhzqAw">GORGOGNE</a></td> 
+                                <td><li>Méduse
+                                    <li>Euryale
+                                    <li>Sthéno</td>
+				                <td>Femme immortelle à cheveux de serpent pétrifiant quiconque la regarde </td>
+                                <td><img src="../Image/grec/gorgogne.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+	  			                    <li><a href="grec.html#meduse">La malédiction de Méduse la plus belle des prêtresses d'Athéna</a>
+                                    <li><a href="grec.html#persee_vs_meduse">Persée contre Méduse</a> </div> </td>  
+                         </tr>
+			<tr>
+                                <td id="griffon"> <a href="https://www.youtube.com/watch?v=YdKpA3aFQjE">GRIFFON</a></td> 
+                                <td></td>
+                                <td>Animale à corps de lion et à tête, pattes et ailes d'aigle </td>
+                                <td><img src="../Image/grec/griffon.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                           </tr>
+			<tr>
+                                <td id="harpie"> <a href="https://www.youtube.com/watch?v=hhP1t_5nLqU">HARPIE</a></td> 
+                                <td><li>Aello
+                                    <li>Ocypète
+                                    <li>Podarge...</td>
+				                <td>Créature à tête de femme et corps d'oiseau</td>
+                                <td><img src="../Image/grec/harpie.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+			<tr>
+                                <td id="hecatonchire"> <a href="https://www.youtube.com/watch?v=5rfKUy6i3bI">HECATONCHIRE</a></td> 
+                                <td><li>Cottos
+                                    <li>Briarée
+                                    <li>Gygès</td>
+				                <td>Géant gardien du Tartare possédant cent bras et cinquante têtes </td>
+                                <td><img src="../Image/grec/hecatonchire.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde"> La création du monde </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a> </div> </td>
+                         </tr>
+                        <tr>
+                                <td id="hydre"> <a href="https://www.youtube.com/watch?v=O7AP-7lng5g">HYDRE</a></td> 
+                                <td>Hydre de Lerne</td>
+				                <td>Serpent d'eau géant crachant du venin, dont le sang est corrosif, possédant neuf têtes, dont chaque tête coupée en fait repoussé deux
+                                    et dont une tête est immortel</td>  
+                                <td><img src="../Image/grec/hydre.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+                       <tr>
+                                <td id="juments de diomede">JUMENTS DE DIOMEDE</td> 
+                                <td></td>
+				                <td>Juments mangeuse de chair humaine</td>
+                                <td><img src="../Image/grec/cheval.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="lion de neme"> LION DE NEMEE</td> 
+                                <td></td>
+				                <td>Lion géant</td>
+                                <td><img src="../Image/grec/lion de nemee.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="minautore"> <a href="https://www.youtube.com/watch?v=09CZ4NJHPJk">MINOTAURE</a></td> 
+                                <td></td>
+				                <td>Créature à corps d'homme et tête de taureau</td>
+                                <td><img src="../Image/grec/minautore.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#thesee_vs_minotaure">Thésée et le minotaure </a>
+                                    <li><a href="grec.html#dedale_et_icare">Dédale et Icare </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="moire"> <a href="https://www.youtube.com/watch?v=bmYLbNpH7iU">MOIRE</a></td> 
+                                <td><li>Clotho
+                                    <li>Lachésis
+                                    <li>Atropos</td>
+				                <td>Divité du destin</td>
+                                <td><img src="../Image/grec/moire.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#heracles_vs_thanatos">Héraclès contre Thanatos </a> </div> </td>
+                          </tr>
+                        <tr>
+                                <td id="nymphe"> NYMPHE</a></td> 
+                                <td><li>Thétis
+                                    <li>Calypso
+                                    <li>Echo...</td>
+				                <td>Divinité subalterne féminine de la nature </td>
+                                <td><img src="../Image/grec/nymphe.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux </a>
+                                    <li><a href="grec.html#le_mariage_zeus_hera"> Le mariage de Zeus et Héra </a>
+                                    <li><a href="grec.html#la_rebellion_des_dieux"> La rébellion des dieux contre Zeus </a>
+                                    <li><a href="grec.html#la_punition_d_erisochthon"> La punition d'Erisochthon </a>
+                                    <li><a href="grec.html#la_naissance_d_hermes"> La naissance d'Hermès </a>
+                                    <li><a href="grec.html#apollon_vs_pan"> Le duel musical d'Apollon et Pan </a>
+                                    <li><a href="grec.html#daphne_et_apollon"> Daphné et Apollon, l'amour non-réciproque </a>
+                                    <li><a href="grec.html#persee_vs_meduse">Persée contre Méduse</a> </div> </td>
+                          </tr>
+                        <tr>
+                                <td id="oiseaux de stymphale"> OISEAUX DE STYMPHALE</td> 
+                                <td></td>
+				                <td>Oiseau à bec et serres de bronze et mangeant des hommes</td>
+                                <td><img src="../Image/grec/oiseau.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+	   			                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+                       <tr>
+                                <td id="ortos"> ORTOS</td> 
+                                <td></td>
+				                <td>Chien à deux têtes de Géryon</td>
+                                <td><img src="../Image/grec/ortos.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="pegase"> <a href="https://www.youtube.com/watch?v=LdiUmofsAyg">PEGASE</a></td> 
+                                <td></td>
+				                <td>Cheval ailé</td>
+                                <td><img src="../Image/grec/pegase.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#bellerophon_et_pegase">Bellérophon et Pégase</a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="phenix"> <a href="https://www.youtube.com/watch?v=5fdonTLTz8k">PHENIX</a></td> 
+                                <td></td>
+				                <td>Oiseau de feu</td>
+                                <td><img src="../Image/grec/phoenix.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+                        <tr>
+                                <td id="sanglier d'erymenthe"> SANGLIER D'ERYMENTHE</td> 
+                                <td></td>
+				                <td>Sanglier géant</td>
+                                <td><img src="../Image/grec/sanglier.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="grec.html#les_12_travaux_d_heracles"> Les douzes travaux d'Héraclès </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="satyre"> SATYRE</td> 
+                                <td><li>Marsyas
+                                    <li>Silène...</td>
+				                <td>Créature à buste, tête d'homme et à pattes de bouc</td>
+                                <td><img src="../Image/grec/satyre.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+			<tr>
+                                <td id="sirene"> <a href="https://www.youtube.com/watch?v=6Hr9nxZ-w_k">SIRENE</a></td> 
+                                <td><li>Ligée
+                                    <li>Leucosie
+                                    <li>Pisinoé...</td>
+				                <td>Créature à corps, tête de femme et queue de poisson</td>
+                                <td><img src="../Image/grec/sirene.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                        </tr>
+                       <tr>
+                                <td id="titan"> TITAN</td> 
+                                <td><li>Thèmis
+                                    <li>Rhéa
+                                    <li>Cronos
+                                    <li>Hypérion...</td>
+				                <td>Créature de grande taille et ancien dieux</td>
+                                <td><img src="../Image/grec/titan.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde"> La création du monde </a>
+                                    <li><a href="grec.html#l_origine_des_dieux"> L'origine des dieux</a>
+                                    <li><a href="grec.html#la_titanomachie"> La Titanomachie </a>
+                                    <li><a href="grec.html#la_naissance_d_athena"> La naissance d'Athéna </a>
+                                    <li><a href="grec.html#le_chatiment_de_promethe"> Le châtiment de Prométhée </a> </div> </td> 
+                          </tr>
+			<tr>
+                                <td id="triton"> TRITON</td> 
+                                <td></td>
+				                <td>Créature à corps, tête d'homme et queue de poisson</td>
+                                <td><img src="../Image/grec/triton.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+			<tr>
+                                <td id="typhon"> <a href="https://www.youtube.com/watch?v=b_yoDUvX7DIk">TYPHON</a></td> 
+                                <td></td>
+				                <td>Démon et père de nombreuses créatures</td>
+                                <td><img  src="../Image/grec/typhon.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                        </tr>
+                   
+   </table>  <footer>
+ <a> <ol class="niveau1">
+
+<br>
+<br>                                  <!--Intro-->
+
+    <h3>Introduction:</a></h3>
+&nbsp;&#160;La mythologie grecque est l'ensemble des croyances pratiquées par les Grecs d'environ 800 à 220 avant J.C. Elle met en scène les dieux et les créatures dans
+des mythes et légendes répertoriées sur ce site de manière non chronologique. Certains mythes tels que L'Iliade ou encore L'Odyssé ne figure pas sur ce site, car ils sont
+beaucoup trop longs. Les temples grecs ont une architecture originale car ils sont formés de colonnes en bois puis en pierres entaillées dans la longueur et surmonté
+d'un toit sur lequel on retrouve souvent des gravures représentant des mythes célèbre. Dans la Grèce antique, chaque cité était indépendante et priait un dieu en
+particulier, par exemple à Athènes l'on priait Athéna d'où le nom de la ville.
+
+<br>
+<br>                                      <!--Histoires-->
+<br>
+
+   <h2 id="la_creation_du_monde"><a href="https://www.youtube.com/watch?v=MI8TEawGGrc">La création du monde</a></h2>
+<div id ="content"> &#160;Au début, il n’y avait que le néant et le chaos qui créèrent Nyx la déesse de la nuit et Erèbe la déesse des ténèbres, qui ensemble engendrèrent Eros le dieu de
+l’amour, Héméra la déesse de la lumière et Hétère le dieu de l’air supérieur. Ensuite le Chaos créa Gaïa la déesse de la terre et Tartare le dieu du monde souterrain
+et la prison éternelle. Gaïa engendra Pontos, le dieu de la mer et Ouranos avec qui elle eut 3 cyclopes : Brontès, Agrès et Stéropès, 3 Hécatonchires :  Cottos, Briarée et
+Gygès ainsi que 12 Titans : 6 filles (titanides) : Téthys la déesse des océans, Théïa la déesse de la lumière, Phobie la déesse de la  lune, Rhéa la déesse de la fertilité,
+Thémis la déesse de la justice et de l’ordre et Mnémosyne la déesse de la mémoire et la mère des muses et 6 garçons (titans) : Hypérion représentant la lumière et la
+force, Coéos représentant l’intelligence et les constellations, Océan père dieux fleuves, Japet un des quatre piliers cosmiques retenant cieux et terre, Crios un autre
+pilier cosmique retenant cieux et terre et Cronos le plus fort des Titan. ThéÏa et Hypérion tous deux enfants d' Ouranos et Gaïa eurent ensemble Hélios le dieu soleil,
+Séléné la déesse lune puis Eos la déesse de l’aurore.
+</div>
+
+<br>
+<br>
+<br>
+				
+   <h2 id="l_origine_des_dieux"><a href="https://www.youtube.com/watch?v=CQaAH-Z-esM">L'origine des dieux</a></h2>
+<div id="content">&#160;Par la suite, Ouranos enferma tous les titans au centre de la terre dans le ventre de Gaïa , les cyclopes et les
+Hécatonchires fut enfermés au Tartare. Cela ne plut pas à Gaïa qui pour se venger créa l’acier et forgea une grande faux indestructible et demanda à ses enfants de
+tué leur père, seul Cronos accepta et à la nuit tombée alla rendre visite à son père et le castra avec la faux de sa mère. Le sang gicla sur Gaïa qui étant très fertile engendra
+les géants , les nymphes et les érinyes. Le sang tombé dans la mer créa Aphrodite. Ouranos déshonoré fuit aux cieux et maudits ces enfants en créant la prophétie qui
+tuera le Titan prenant le pouvoir. Par la suite, Cronos pris le pouvoir et en tant que tyran mangea tous ces enfants dès leur naissance afin de déjouer la prophétie,
+mais tout cela ne plaisait pas à sa femme Rhéa . Qui après la naissance de son dernier enfant ( Zeus ) le cacha chez les nymphes et l’échangea avec un caillou recouvert
+de draps. Zeus grandit avec les nymphes nourrit avec le lait de la chèvre Amalté et informé des nouveautés du monde par un aigle et un jour devint serveur de vin pour
+Cronos mais au lieu de lui servir du vin, il lui servit une mixture offerte par Métis qui rendit malade son père et pris de nausée, il vomit tous ses enfants :
+Poséidon , Héra , Hestia, Déméter et Hadès .
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_titanomachie"><a href="https://www.youtube.com/watch?v=HgLJtdc6vAs">La Titanomachie</a></h2>	  
+<div id ="content">&#160;Enfin libre, les frères et soeurs de Zeus se liguèrent à Zeus pour déclarer la guerre à leur père. Cette guerre de 10 ans est appelé la Titanomachie. Les dieux montent au
+mont olympe afin de combattre la tyrannie instauré par Cronos ce qui ne lui plut pas. Cronos rassembla son armée avec Atlas à sa tête afin de lancer l'offensive. Les
+Titan donnèrent rendez-vous au dieu sur une plaine de la région de Téssali. Les titans avec leur puissance surpassaient les dieux et Zeus fût obligé d'aller chercher
+des renforts, pour cela il alla au Tartare et libéra les cyclopes qui pour le remercier lui forgèrent la foudre pour Zeus, un casque d'invincibilité pour Hadès et pour 
+Poséidon un trident contrôlant la mer et causant des séismes. Grâce à ces nouvelles armes, les dieux prirent la tête du combat. Pour se battre, les titans utilisaient
+des montagnes qu'ils jetaient sur les dieux qui dépassés renvoyèrent Zeus au Tartare afin de libérer les Hécatonchires . Ce qui causa une grande panique dans les rangs
+des titans. Zeus mit toute sa force dans son éclaire afin que son attaque soit plus puissante et il frappa Cronos à la tête ce qui fit trembler tout l'univers. À la
+suite, les titans se soumirent et furent envoyés par Zeus au Tartare pour l'éternité et les Hécatonchires en devinrent les gardiens. Tandis qu' Atlas fut forcé de
+supporter le poids de la sphère celeste. Par la suite, Zeus , Hadès et Poséidon tirent à la courte paille où ils règneront, Zeus tira la plus grande donc les cieux,
+Poséidon la moyenne donc les océans et Hadès la plus courte donc l’enfer.  
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_naissance_d_hermes"><a href="https://www.youtube.com/watch?v=QcauyFEF6ME">La naissance d'Hermès</a></h2><p> 
+<div id="content">&#160; Hermès et le fils de Zeus et Maria une Pléiade. Sa mère la nymphe le cacha dans une caverne protégée par un gardien. Mais dès que le gardien s’endormit le
+petit dieu s’enfuit et alla explorer le monde et vagabondant en Téssalie il trouva Apollon avec son troupeau, le petit dieu attendit que Apollon parte pour ouvrir le 
+portail de l’enclos et pris cinquante vaches. Sachant que Apollon le retrouverait il attacha des branches aux queues des bêtes afin que les traces de pas soit effacées 
+et guida le troupeau pour que les boeufs avancent à reculons et faire ainsi croire que le troupeau allait dans l’autre direction. Un homme lui demanda se qu’il faisait
+avec autant de bétail alors qu’il n’était qu’un enfant et il décida de lui donner une bête à condition qu’il ne dise rien et l’homme accepta mais méfiant Hermès revint 
+sous la forme d’un homme plus vieux et demanda à l’homme s’il avait vu un enfant avec un troupeau lui donnant une récompense en cas d’aide alors l’homme répondit qu'en effet
+il l’avait vu et lui indiqua sa direction et Hermès parti chercher sa récompense il prit un gigantesque rocher et lui jeta dessus. Arriver au Péloponnèse le
+dieu sacrifia une partie du troupeau en l’honneur des dieux ensuite il trouva une carapace de tortue et avec des tendons et les cornes d’un boeuf, il créa la lyre. Après
+sa journée, il revint à la grotte et se remit dans son berceau. Apollon vit qu’on l’avait volé et parti chercher son troupeau et grâce à ses pouvoirs trouva Hermès .
+L’enfant fit semblant de dormir et Apollon demanda à Maria de le réveiller afin qu’il récupère son troupeau. La mère ne voulu réveiller son enfant car il dormait et 
+n’avait donc put voler le troupeau et car si c’était son enfant qui était coupable alors Apollon aurait été trompé par un enfant, Apollon honteux répondit qu’il était
+sûr que c’était Hermès le coupable. Hermès joua de la lyre et Apollon enchanté lui demanda de récupérer l’instrument et qu’en échange il le pardonnerait, Hermès lui
+offrit sa lyre et par la suite devinrent ami et Apollon offrit au jeune dieu un caducée. Zeus lui offrit une paire de sandales ailées le faisant ainsi dieu messager.
+Hermès fut vénéré par tous les escrocs et voleur grâce à cette histoire.
+ </div>
+<br>
+<br>
+<br>
+
+ 
+   <h2 id="le_mariage_zeus_hera"><a href="https://www.youtube.com/watch?v=pRO6rtONc48">Le mariage de Zeus et Héra</a></h2>
+<div id="content">&#160; Héra avant qu’elle ne connaisse Zeus vivait dans le jardin des Espéride. Zeus en la croisant tomba amoureux mais la déesse connaissant sa réputation de tombeur le
+rejeta. Zeus mit au point une stratégie consistant en se transformer en oiseau (coucou) et faire tomber des trombes d’eau sur le jardin d’ Héra qui prise de pitié afin
+de le réchauffé le sera contre son corps. Zeus en profita pour s’unir avec la déesse. Zeus et Héra pour célébrer leur union invitèrent tous les dieux à leur cérémonie de
+mariage, ils demandèrent à Hermès de transmettre l’information de la nouvelle. Tous les dieux sont venus sauf la nymphe Chélonne qui connue pour sa paresse s'était
+assoupie. Hermès par crainte d’être tenue responsable de cette absence se rendit chez la nymphe et la trouve endormie. Il la réveille et lui demande la raison de son
+absence, elle lui répondit qu’elle allait se mettre en chemin et qu’il ne fallait pas qu’il s’inquiète. Le dieu reparti à la fête et la nymphe décida de dormir 5
+minutes de plus. Elle se réveilla bien plus tard et se mit en route. À la moitié du chemin elle croisa des invités qui partaient de la fête et elle décida donc de
+rentré afin de ne pas se fatiguer pour rien. Hermès comme prédit fut accusé de l’absence de Chélonne car Zeus et Héra ne pouvaient pas croire qu’elle était capable
+d’un tel manque de respect. Hermès furieux se rendit chez la nymphe et la trouva endormie dans l’eau et en colère afin de la punir il arracha sa maison et lui jeta 
+dessus. La nymphe se transforma en tortue, sa lenteur et sa paresse ne changeant pas et obligé de transporté constamment sa maison partout où elle ira.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="ixion"><a href="https://www.youtube.com/watch?v=8G3nqsurMbU">Ixion l'homme qui voulait la femme de Zeus</a></h2>
+<div id="content">&#160; Ixion roi de Téssali règne sur son royaume d’une main de fer, on y élevait les meilleurs chevaux de toute la Grèce.  Un jour il tomba amoureux de la fille d’un noble de
+la région nommé Eyoné et Ixion lui proposa de lui offrir des chevaux en échange de la main de sa fille. Mais après le mariage Ixion ne lui donna pas les chevaux promit.
+Furieux Eyoné décida de voler les chevaux ce qui mit Ixion en colère et pour se venger prétexta une réunion afin de discuter de la paix. Ixion fit visiter son palais à
+son beau-père et au  moment de visiter les douves, Ixion poussa Eyoné au fond du trou dans lequel se trouvait des braises et juste avant de mourir il vit le corps brûlé 
+de sa fille. Par la suite le roi fut démis de ses fonctions et devint vagabond méprisé de tous. Des années après, Ixion pris de remords, demanda pardon aux dieux et Zeus
+eut pitié de lui et l’invite à visiter l’olympe où Ixion participa à des banquets divins et il tomba amoureux de Héra la femme de Zeus et le dit à Héra. Héra le dit à
+son mari et pour le tester Zeus créa façonna un nuage en forme de Héra . Le nuage charma Ixion et s’unit par la chair à la fausse divinité et de cette union naquit les
+centaures. Zeus exclu Ixion de son palais, Ixion se ventant de s’être couché auprès de la déesse ce qui mit Zeus en colère et il le foudroya envoyant son esprit dans le
+Tartare où il fut, accroché avec des serpents à une roue tournoyante sur des flammes.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_naissance_d_athena"><a href="https://www.youtube.com/watch?v=r-ofW8vvXnM">La naissance d'Athéna</a></h2>
+<div id="content">&#160;Après l’arrivée de Zeus au pouvoir et avant qu’il rencontre Héra, il était tombé amoureux de Méthis fille du titan Océan. Zeus voulait qu’elle devienne sa femme mais
+elle refusait. Il insista et pour lui échapper, elle se métamorphosa mais le dieu réussit à la piéger et lui sauta dessus, elle se débattit en vain. Zeus régna avec la
+déesse mais Gaïa lui révéla que sa femme aurait deux enfants, une fille puissante et sage comme son père et le deuxième un garçon plus fort que Zeus et qu’il prendrait 
+sa place. Zeus eut peur de subir le même destin que Cronos son père ou que son grand-père Uranus et pour y échapper, il demanda à Méthis de se transformer en goutte
+d’eau afin qu’il goûte au pouvoir de métamorphose, elle le fit et Zeus l’avala pour qu’elle ne puisse donner naissance à des enfants. Il hérita du pouvoir de
+métamorphose de sa femme mais aussi de sa sagesse, de sa justesse et grâce à elle il devint moins impulsif. Mais Méthis était déjà enceinte et le dieu eut un fort mal 
+de tête à tel point qu’il crut que sa tête était sur le point d’exploser et demanda qu’on la lui ouvre. Alors le titan Prométhée lui frappa le crane à l’aide de sa
+hache, une aveuglante lumière en surgi et une femme en sorti. La déesse Athéna sortie en armure arme à la main. Zeus était fier d’avoir donné naissance à une telle
+créature avec l’intelligence de sa mère, elle deviendrait la déesse de la sagesse. Mais considéré comme déesse de la stratégie martiale, la confrontation avec Hadès
+dieu de la guerre était inévitable. Méthis resta ds l’estomac de Zeus et la prophétie ne se réalisa pas.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_naissance_d_hephaistos"><a href="https://www.youtube.com/watch?v=fkDV4tvpfSg">La naissance d'Héphaïstos</a></h2>
+<div id="content">&#160; Héra enceinte imaginait la beauté de son fils le pensant beau car il était le fils de Zeus et le sien. Mais quand elle le vit, elle fut horrifiée car il
+était poilu et gros à la peau foncé couverte de suif. Alors elle affirma que se n’était pas son fils et le jeta dans l’océan depuis l’olympe, il survécut mais resta
+handicapé. Thétis le sauva et l’emmena sur l’île de Lémnos où il grandit autour des volcans. Et très vite, son talent pour la métallurgie se révéla et avec le feu des
+volcans forgea les armes les plus puissantes. Adulte, il décida de revenir sur l’olympe avec un trône sublime en or pour sa mère qui eut des frissons en le revoyant mais,
+subjugué par la beauté de ce cadeau l’accepta. Mais lorsqu’elle essaya de se lever, elle ne put car elle était attachée et seul Héphaïstos pouvait la libérer. En échange
+de la liberté de sa mère, il demanda à tous les dieux d’arrêter de le traiter avec mépris. La reine des dieux accepta mais il demanda aussi d’épouser Aphrodite et Zeus 
+accepta afin d’éviter tous conflits de jalousie causée par sa beauté. Héphaïstos forgea les sandales d’ Hermès , l’armure d’ Achille et l’arc d’ Eros .
+ </div>
+<br>
+<br>
+<br>
+  
+ 
+   <h2 id="la_rebellion_des_dieux"><a href="https://www.youtube.com/watch?v=5D2wxeMqrRQ">La rébellion des dieux contre Zeus</a></h2> 
+<div id="content">&#160;Après la Titanomachie, tous les dieux respectaient Zeus mais il était infidèle et cela créait des disputes avec sa femme. Pour se venger, Héra complota avec les autres
+dieux de l’olympe qui en avaient assez de son air supérieur. Sous le commandement de la reine des dieux, ils organisèrent une rébellion. Ils entrèrent dans la chambre 
+de Zeus et Poséïdon avec l’aide d’Apollon l’enchaînèrent à son lit avec de solides chaînes d’or forgé par Héphaïstos. Quand Zeus se réveilla, il profana des menaces 
+envers les dieux. Héra voulu prendre la place de son mari mais il y avait d’autre prétendant au trône, Athéna disait qu’elle était la plus savante et la plus digne 
+d’être rêne, Apollon était convaincu que seul le dieu du soleil était capable d’apporter la lumière sur cette nouvelle ère et Poséïdon affirmait être le plus puissant.
+Hestia fut la seule à ne pas se proposer pour le rôle. Thétis prédit une guerre civile olympienne à la suite de la révolte et il prédit que seul Zeus pouvait l’arrêté.
+Les dieux ne l’écoutèrent pas et il dut aller voir Briarée le plus grand des Hécatonchire car sa loyauté était incontestable et il se rendit au mont olympe. Les dieux 
+en le voyant furent paralysé et la créature libéra Zeus qui créa un éclaire majestueux faisant trembler l’entièreté de l’univers. Tous les dieux déposèrent les armes
+en signe de soumission. Héra fut punie pour l’organisation de cette révolte, pour cela elle fut enchaîné et pendue par les bras dans le ciel jusqu’à quelle jure
+solennellement de ne pas recommencer, Apollon et Poséidon durent se mettre au service du roi Laomédon de Troie en l’aidant à construire une muraille indestructible pour
+sa cité.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="zeus_vs_lycaon"><a href="https://www.youtube.com/watch?v=ulFOd-Cs-bQ">L'origine du loup-garou</a></h2> 
+&nbsp;<div id="content">&#160; Lycaon était un des premiers rois d’Arcadie une région ayant connu un âge d’or éblouissant où régnait bonheur, richesse et paix mais l’égoïsme et la cupidité des hommes
+mit fin à cette ère. Lycaon était un roi grossier et sans coeur mais il était aimé du peuple grâce à son envie de retrouver la prospérité passé. Mais il savait que cela 
+était impossible sans la bénédiction des dieux donc il construit un temple, ce qu’y plut beaucoup à Zeus qui l’appréciait. Le roi se dévouait corps et âme pour les 
+dieux et afin d’avoir plus de faveur divine se mit à sacrifier les étrangers venant dans son royaume, ce qui représente une grande offense à l’obligation de 
+l’hospitalité que Zeus apprécie particulièrement. Zeus eut vent de cette histoire et décida de se déguiser et il alla dans le royaume de Lycaon où il fut emmené au
+palais afin que l’on lui présente le roi et qu’on le sacrifie. Mais le fils du roi vit qu’il était extrêmement calme et averti son père pensant que Zeus testait leur 
+hospitalité comme il l’avait fait avec Philémon et Bossis. Pour savoir si son fils disait vrai, il décida d’organiser un buffet spécial dont le mets principal serait de 
+la chair humaine. Lycaon et son fils mangèrent et Zeus horrifié enlevant son déguisement leur criait dessus et transforma Lycaon et ses descendants en loup-garou. La 
+bête errante mangera le bétail horrifiant les gens et pendant les nuits de pleine lune, l’on entend encore les lamentations du roi hurlant dans les bois.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="les_12_travaux_d_heracles"><a href="https://www.youtube.com/watch?v=3VVulATxI7w">Les douzes travaux d'Héraclès</a></h2><p> 
+<div id="content">&#160; Zeus infidèle avait remarqué une humaine Alcmène est afin d'arriver à ces fins, il se transforma en son mari et neuf mois plus tard, naquit Héraclès. La naissance de cet
+enfant né hors mariage mis Héra en colère qui envoya deux serpents dans le but de tuer le demi dieu, mais Héraclès attrapa les deux serpents et les étrangla. Le demi dieu fut
+abandonné dans une forêt et Athéna le trouva, elle l'emmena à Héra lui demandant de le nourrir de son lait, Héra ne sachant pas que l'enfant était Héraclès le fit. L'enfant
+mordit le sein de la reine et en se reculant du lait coula, ce qui créa la voie lactée. Héra dit à Athéna de nourrir l'enfant de son lait et sans le savoir l'enfant
+grâce au lait de la reine des dieux devint plus fort et endurant. Le héros eut les meilleurs maîtres et apprit ainsi la lutte, le tir à l'arc, l'escrime, à jouer de la
+lyre et à chanter. Héraclès eut la visite du Vis et de la Vertue lui laissant le choix entre une vie agréable et facile ou une vie sévère et rude mais glorieuse, il
+choisit la seconde option. Et après avoir aidé les Thèbes contre les Minéins, le roi Crèan lui offrit sa fille Mégara, il eut avec elle trois enfants. Mais Héra toujours
+énervé afin de se venger le fit entrer dans une folie meurtrière et il tua sa femme et ses enfants ensuite quand Athéna lui rendit ses esprits, il se rendit compte de ce qu'il avait
+fait et triste, il consulta l'oracle de Delphe pour savoir comment se repentir. Il lui dit qu'il devait aller voir le roi Eurysté qui lui demandera de réaliser
+plusieurs défis.
+</div>
+
+
+<br>
+
+<div id="content">&#160;Le premier travail fut de tuer une bête terrorisant les habitants de la région de Némée, cette créature est appelé le Lion de Némée . Héraclès
+le lion jusqu’à sa caverne et lui décocha des flèches qui n’eurent aucun effet sur l’épaisse cuirasse de la bête alors sachant que les armes traditionnelles n’aurait 
+aucun effet, alors il s’arma de sa massue en bois et de sa force surhumaine. Il lutta et étrangla à mort le lion malgré les morsures et griffures que lui infligeait le
+monstre. Une fois le lion tuer, Héraclès utilisa une griffe du lion afin de transformer sa peau en un manteau.
+    <br />
+&nbsp;&#160;Le deuxième fut de tuer l'hydre de Lerne séjournant dans le lac de Lerne. Protéger par la peau du lion précédemment tuer, il attira l’hydre à l’aide de 
+flèches enflammées puis se jeta sur elle, mais ne parvenant pas à battre la bête, il demanda de l’aide à son cousin qui l’accompagnait. Pour cela, il brûlait les plaies
+causées par la décapitation de l’hydre afin d’empêcher les têtes de repoussées. Héraclès parvint à tuer l’hydre et enterra la tête immortelle coupée qui continuait de
+cracher du venin. Il plongea les pointes de ses flèches dans le sang de la créature afin de les empoisonnées. Malheureusement, ce défi ne compta pas, car il avait eut de
+l’aide.
+ </div>
+
+<br>
+
+<div id="content">&#160;La troisième tache fut de capturer la biche de Cérynie. Il repéra la bête grâce aux reflets du soleil sur ces cornes dorées, il la poursuivit durant un an
+à travers toute la Grèce. Et la captura finalement à l’aide d’un filet lorsque l’animal fatigué voulu se reposer.
+ </div>
+
+<br>
+
+<div id="content">&#160;Le quatrième défit fut de ramener vivant le sanglier d' Erymanthe au roi. Le monstre vivait sur le mont Erymenthe et descendait chaque jour pour dévorer
+tout ce qu’il trouvait. Héraclès n’eut pas de difficulté à localiser la bête car le bruit de ces pas résonnait dans toute la région. Le plan du héro pour capturer la
+créature est de hurler afin de l’effrayé et de l’épuisé, le sanglier fatiguer alla se cacher mais fut vite rattrapé par le demi dieu qui le captura dans son filet et le
+ramena sur ces épaules à la cour du roi  Eurysté qui ayant peur d’ Héraclès car il avait encore réussi alla se cacher dans un tonneau de bronze.
+ </div>
+
+<br>
+
+<div id="content">&#160;Le cinquième fut de nettoyer les écuries d'Augias réputé pour leur saleté à tel point que personne ne pouvait y entrer, cela est dû à la taille du troupeau
+du roi Augias possédant des vaches, taureaux, cochons, chèvres et chevaux, il en possède plus que quiconque en Grèce. Pour réaliser son défit, Héraclès alla voir le roi
+sans lui parler des 12 travaux et Il lui dit qu’il nettoierait en un jour son étable s'il lui donne un dixième de son troupeau. Héraclès détruit un mur et fit pareil
+de l’autre côté, puis il creusa un chemin dans la terre jusqu’à la rivière et la détourna grâce à un rocher. L’eau rentra par un côté de l’écurie et sorti de l’autre
+emmenant les excréments. Quand Augias entendit que les actions d’ Héraclès était dictées par le roi Eurysté il nia avoir promit au héro une partie de son bétail mais
+après être passé devant un juge, le fils du roi confia que son père l’avait promit et Héraclès reçu son dû. Mais Eurysté encore une fois ne valida pas l’exploit car
+Héraclès avait été payé pour le faire.
+ </div>
+<br>
+
+<div id="content">&#160;Le sixième était de tuer les oiseaux du lac Stymphales en Arcadie. Pour ce travail, Héraclès ressue l’aide d’Athéna qui lui donna une paire de crotales
+(instrument à percussion) forgé par Héphaïstos afin qu’il puisse effrayer les oiseaux. Quand il les cogna ensemble, les oiseaux s’envolèrent et Héraclès n’eut qu’à les 
+tuer avec son arc. 
+ </div>
+<br>
+
+<div id="content">&#160;Son septième travail consistait à capturer le taureau blanc de Crète appartenant au roi Minos. Il étrangla l'animale à l'aide de sa force surhumaine puis
+l'enchaîna at le ramena à Eurysté.
+ </div>
+<br>
+
+<div id="content">&#160;Héraclès dut pour son huitième travail, il devait capturer les juments de Diomède. Pour réussir, il réunit un groupe d'ami et son écuyer
+qui se fera dévorer. Héraclès captura Diomède et le jeta à ces juments pour qu’il se fasse dévorer et finalement Héraclès captura les chevaux et les ramena au roi afin
+de valider son défit.
+ </div>
+<br>
+
+<div id="content">&#160;Le neuvième fut de récupérer la ceinture d'Hippolyte la reine des Amazones. Elles sont connues pour le fait qu'elles ne gardent que leurs enfants filles.
+La ceinture Héraclès devait récupérer avait été donné à la reine des Amazones par Ares car pour lui, elle était la meilleure guerrière. Eurysté voulait cette ceinture
+car il souhaitait la donner à sa fille. Héraclès encore une fois réunit un groupe afin de se rendre sur les lieux. Hippolyte accueillit Héraclès et lui demanda la raison
+de sa venue, il lui raconta toute l’histoire des douzes travaux qu’il devait réussir afin de se repentir du meurtre de sa femme. Hippolyte accepte et lui donne la
+ceinture, mais Héra voulant empêcher le héros de réussir se transforma en amazone et dit que les étrangers était venues kidnapper la reine.  Les amazones s’armèrent et
+partirent à cheval défendre Hippolyte et Héraclès voyant les amazones lui foncer dessus crut à un piège et tua leur reine et pris la ceinture. Héraclès et ses amis se
+battirent contre les amazones avant de partir sur leur bateau et donner la ceinture à Eurysté .
+ </div>
+<br>
+
+<div id="content">&#160;Pour son dixième défit, Héraclès devait ramener le bétails garder par le monstre Géryon étant un géant formé de trois géants rattachés par la taille et qui avait
+toujours avec lui Ortos. Héraclès arriva sur l’île est fut vite intercepté par Ortos qui fut vite tué par le héros. Au moment où le demi dieu allait fuir avec le
+troupeau, Géryon l’en empêcha et le héro le tua avec ses flèches empoisonnées. Il ramena le troupeau et le roi le sacrifia.
+ </div>
+<br>
+
+<div id="content">&#160;Son onzième travail consistait à ramener les pommes d'or du jardin des Hespérides. Le jardin des Hespérides était le cadeau de mariage offert par Gaïa à
+Héra, il portait le nom des nymphes qui y vivaient. Le jardin possédait un arbre qui produisait des pommes en or gardé par Ladon un dragon à cent têtes. Héraclès ne 
+sachant pas où se trouve ce jardin enquêta ce qui le mena à Atlas. Le titan passa un marché avec le héro dans lequel Atlas irait chercher les pommes et le demi dieu
+porterait à sa place la voûte céleste. Héraclès accepta mais quand Atlas revint avec les pommes, il refusa de reprendre sa place et dit au héro qu’il apporterait lui-même les pommes à Eurysté .
+Héraclès accepta mais demanda au titan de reprendre le ciel afin qu’il puisse mettre la peau de lion pour l’aider à supporter le poids. Atlas
+reprit sa place Héraclès parti avec les pommes.
+ </div>
+<br>
+
+<div id="content">&#160;Et son dernier défi consistait à ramener Cerbère. Héraclès entendit que la porte vers les enfers se trouvait en Laconic au sud du Péloponnèse. Il se rendit
+dans le monde Hadès et arrivé face à lui, lui demanda s'il pouvait prendre Cerbère avec lui et le ramener chez les mortels afin de le présenter à Eurysté. Le dieu lui
+répondit qu’il pourrait prendre la créature s'il arrivait à maîtriser la bête à mains nues. Héraclès tenta de maîtrisé le monstre et malgré ses morsures il continuait
+et finalement l’étrangla et le ramena avec lui. Le demi dieu transporta Cerbère chez les vivants et le présenta au roi qui supplia le héro de ramené le monstre auprès 
+d' Hadès en lui offrant la fin des travaux.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="heracles_vs_thanatos"><a href="https://www.youtube.com/watch?v=aWNmyPhwFao">Héraclès contre Thanatos</a></h2><p> 
+<div id="content">&#160; Admète roi de Téssalie aimé de son peuple, il rentra chez lui après être parti cherché la toison d’or. Le roi ressenti le contacte de Thanatos et
+s’évanouit. Durant la nuit il reçut la visite des moires lui annonçant qu’il lui reste peu de temps à vivre, il négocia car il avait accueilli Apollon et qu’il avait
+donc une dette. Admète sa femme pria pour sa vie et les moires acceptèrent qu’il vive si quelqu’un donnait sa vie de son plein gré. Beaucoup furent d’accord mais le
+moment où le roi alla chercher un volontaire, mais personne ne voulu mais ses parents refusèrent. Alcèste voulut se sacrifier à conditions qu’il ne choisisse pas une
+autre femme. Le roi accepta et sa femme devint malade attendant la mort, Admède pleurait. Héraclès arriva dans la ville alors qu’il réalisait encore ses douze travaux 
+et demanda de rester au palais le roi le reçu. Il eut droit à un festin et au meilleur vin de la région et le héro ressenti l’atmosphère funèbre et perçu la tristesse. 
+Quand il demanda pourquoi, le roi lui expliqua tous et il se sentit honoré d’être si bien reçu malgré la situation et garantis que le dieu de la mort ne prendrait pas sa
+femme et resta au pied de son lit. Thanatos arriva et exigea que Héraclès s’écarte de son chemin et le héro dit que Thanatos ne prendrait Alcèste tant qu’il serait 
+vivant. Ils se battirent et Thanatos succomba aux menaces du fils de Zeus et fuit, la reine fut soignée.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="jason_et_la_toison_d_or"><a href="https://www.youtube.com/watch?v=l2zu5dBIet0">Jason et la toison d'or</a></h2><p> 
+<div id="content">&#160; Atamas roi de Thèbes eut avec la nymphe des nuages deux enfants Frixius et Hélée. Atamas ensuite épousa Ino qui voulait tuer les anciens enfants du roi, et
+durant la sécheresse un horacle dit au roi de sacrifier ses enfants afin de résoudre le problème et il accepta. Mais la mère des enfants Néphélée envoya un bélier à la  
+toison d’or pour les sauver, il les récupéra en volant. Malheureusement Hélée tomba et se noya dans la mer. Frixius arriva chez le roi Hétes qui prend soin de lui et
+le mari à sa fille. Le jeune homme pour le remercier lui offrit la toison d’or  du bélier qui la fit garder par un dragon.
+        <br/>
+&nbsp;&#160; Jason fils d’ Héson et Filira fut envoyé chez le centaure Chiron après que son père fut chassé du trône par son frère Pélias. Jason voulu rentrer chez lui
+mais une rivière lui bloqua le chemin et une vieille femme demanda de l’aider pour traverser. Jason perdit une sandale en aidant à traversé la déesse Héra transformée
+en vieille femme. Le roi Pélias qui avait été prévenu par l’Horacle qu’un jeune homme avec une seule sandale lui prendrait son trône et comme il ne pouvait le tuer sans
+enfreindre les règles de l’hospitalité il l’envoya cherché la toison d’or pensant qu’il mourrait en allant la chercher. Jason fit construire un navire et rassembla des
+hommes qui se nommèrent les Argonautes et après de multiple aventure ils arrivèrent sur côte. Le héro conquit la toison d’or grâce à Médée la princesse magicienne qui
+était tombée amoureuse de lui,  il revint chez lui. Les filles de Pélias le tuèrent grâce à Médée qui les avait ensorcelés. Jason et Médée partirent à Corinthe où ils
+furent les hôtes du roi Crion et eurent trois fils, mais Crion décida d’offrir à Jason la main de sa fille et en l’épousant il deviendrait roi alors il accepta. Et il
+répudia Médée qui en colère tua la promise de Jason. 
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="thesee_vs_minotaure"><a href="https://www.youtube.com/watch?v=DL43yP6ALgw">Thésée et le minotaure</a></h2><p> 
+<div id="content">&#160; Egée roi d’Athènes n’avait pas d’enfant alors il alla chez Médée la magicienne qui contre une protection lui promit de trouver une femme et Hétra fille de
+Pithée enchanté s’unit par la chair à Egée et naquit Thésée. Mais Egée dut repartir à Athènes et ne vit pas son fils naître mais afin de le reconnaître il laissa une 
+épée et des sandales d’or sous une pierre et Thésée pourrait partir lorsqu’il arrivera à soulever la pierre. Thésée grandit et un jour leva le rocher et récupéra les
+objets laissés par son père. Sur son chemin vers Athènes, il dut tuer un fils d’ Héphaïstos armé d’une massue puis arrivé à Corinthe il dut tuer un extraordinaire
+guerrier, ensuite à Cromion il tua une truie géante, sur la route il tua Cyron un brigand en le jetant à la mer où une tortue géante le dévora, par la suite, Cyrsion
+fut tué après une petite lutte par le héro et Thésée dut à Hérinée il dut tuer un aubergiste qui écartelait ses clients. Arrivé à Athènes il ne révéla pas son identité
+mais sa femme Médée voulue le tuer en lui demandant de tuer le Minotaure après avoir vu dans une vision que l’étranger lui prendrait sa place. Thésée offrit en sacrifice
+à Apollon le taureau de Crète autrefois capturé par Héraclès mais libéré par celui-ci et par la suite, il fut victime d’une tentative d’empoisonnement par la reine
+mais juste avant qu’il ne boive il fut reconnu par Egée grâce à ses sandales et il lui enleva le vin empoisonné.
+<br>
+&nbsp;&#160;Minos depuis sa victoire sur les Athéniens demandait tous les neuf ans sept jeunes hommes et sept jeunes filles à sacrifier au Minotaure . Alors Thésée se
+rendit en Crète avec les victimes afin de tuer le monstre. La fille de Minos Ariane était amoureuse du héro et lui donna une pelote de fil afin qu’il puisse retrouver 
+son chemin et lui donna les informations données par Dédale. Une fois dans le labyrinthe il tua le monstre avec le glaive fourni par Ariane et grâce au fil il put ressortir
+vivant du labyrinthe et au moment de repartir il abandonna Ariane sur une île déserte malgré qu’elle est trahi sa famille pour lui. En rentrant à Athènes, Egée
+l’attendait depuis la montagne regardant la couleur des voiles car si elles étaient blanches alors son fils avait réussi tandis que si elles étaient noires il avait
+échoué. Mais Thésée avait oublié de les changer et Egée voyant les voile sauta dans la mer qui désormais porte son nom, et Thésée devint roi d’Athènes.
+ </div>
+<br>
+<br>
+<br>
+
+   <h2 id="dedale_et_icare"><a href="https://www.youtube.com/watch?v=jkXDoAxzEWM">Dédale et Icare</a></h2><p> 
+<div id="content">&#160; Dédale était un architecte et ingénieur Athéniens qui fut obligé de fuir et de se réfugié en Crète après avoir commis un crime. L’architecte se mit au
+service du roi Minos pendant de longues années, durant lesquelles il construisait le palais de Cnosos. Amoureux d’une esclave égyptienne, il eut un enfant nommé Icare.
+Des années plus tard, il construisit le labyrinthe du minotaure. Dédale et Icare furent emprisonné dans la  tour du labyrinthe accusé de trahison pour avoir aidé Thésée 
+à tuer le minotaure. Dédale demanda à son fils de ramasser du bois pendant qu’il dessinait son plan, puis il construisit des armatures en bois sur lequel il colla des 
+plumes avec de la cire d’abeilles afin de créer des ailes d’oiseaux. Avant de partir, Icare reçu comme conseil de ne pas voler trop bas pour que l’humidité ne bloque 
+les engrenages ni trop près du soleil pour que la cire ne fonde pas. Dédale et Icare montèrent au sommet de la tour et se jetèrent, rapidement ils réussirent à voler. 
+Mais Dédale vit que son fils volait trop loin de lui et trop haut alors il cria à son fils de redescendre, mais il ne l’entendait pas. Icare ébloui ne vit que ses ailes
+fondaient et quand il s’en rendit compte il était trop tard et chuta dans la mer, son père impuissant le vit se noyer. Dédale vola afin de chercher son fils et il
+retrouva le corps de son fils et regretta son invention. 
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="le_chatiment_de_promethe"><a href="https://www.youtube.com/watch?v=ing5JGM2GhE">Le châtiment de Prométhée</a></h2><p> 
+<div id="content">&#160;Au début les titans dirigeaient le monde et Prométhée en était un pouvant prévoir l’avenir, durant la Titanomachie il avait prédit la victoire des dieux
+de l’olympe et donc ne s'était pas opposé à Zeus et avait ainsi évité l’emprisonnement au Tartare. Zeus ordonna à Prométhée et son frère Epiméthée de créer et peuplé
+la terre avec des animaux divers. Epiméthée le fit avec beaucoup de joie pendant que Prométhée coordonnait les opérations, pour leurs créations, ils avaient beaucoup de
+matière première et un sac de talent, et ainsi les oiseaux purent voler tandis que l’éléphant eut une force sur-développé. En dernier ils créèrent l'homme car ils les
+voulaient particuliers et après avoir façonné l’homme en argile ils se rendirent compte qu’ils n’avaient plus de talent à lui donné. Prométhée présenta son œuvre à
+Athéna qui bénit la créature de son souffle divin et l’humanité fut ainsi créée. Prométhée souhaitait que l’homme puisse se distinguer des autres animaux et Athéna 
+conseilla au titan de donner le feu à sa création. Lors du coucher du soleil le titan alla vers le char d’Hélios et alluma une torche afin de la donner à l’homme.
+L’homme grâce au feu se développa rapidement et domina la nature et Prométhée était enfin satisfait mais Zeus voyant cela décréta qu’ils devaient les honorer en leur 
+faisant des sacrifices. Prométhée ne voulu pas que sa création soit exploitée et tenta de trompé le dieu, pour cela il demanda qu’un taureau soit sacrifié et que le
+sacrifice soit séparé en deux tas, un petit avec les meilleures pièces recouvert par la peau de l’animal et un plus grand composé d’os enveloppé de graisse. Prométhée 
+savait que Zeus choisirait la plus grosse part ainsi l'homme aurait l'air obéissant et en effet il le fit. Mais lorsqu'il se rendit compte qu'il avait été trompé il se 
+mit en colère contre les hommes et leur retira le feu. Les hommes étaient à nouveau vulnérables face au froid et aux ténèbres et ne pouvaient faire cuir leur viande. Et
+Prométhée décida alors de voler le feu sacré et de le donner à  l'humanité, pendant la nuit après s'être rendu à l'olympe, il récupéra le feu de la forge d'Héphaïstos.
+Une nuit Zeus vit la lueur des flammes et furieux punit Prométhée. Il l'attacha à un rocher du Caucase et Zeus chargea un vautour de dévorer son foie faisant ainsi 
+souffrir le titan, mais le titan était immortel et son foie repoussait. Tout cela continua jusqu'à que Zeus descendit sur terre puis lui proposa de le libérer et en échange
+l'homme n'aurait plus le feu mais le titan refusa en se sacrifiant pour sa création. 
+ </div>
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="boite_de_pandore"><a href="https://www.youtube.com/watch?v=rXQ4FXC4DHM"> La boite de Pandore</a></h2><p>
+<div id="content">&#160;Après que Prométhée et Epiméthée eurent créé l’humanité, avant d’être enfermé au Tartare il dit à son frère de n’accepter aucun cadeau des dieux afin que
+leur création ne soit détruite. Zeus ordonna à Héphaïstos de créer la première femme, il le fit puis les dieux lui offrirent des cadeaux. Elle reçut d’Aphrodite la
+beauté, d’ Hermès la parole, des Charytes des vêtements et des bijoux. Par la suite,  Zeus ordonna à  Hermès de remettre Pandore à Epiméthée comme cadeaux, Zeus donna
+aussi une boite à Pandore qui avait pour ordre de l’offrir aux hommes avec pour ordre de ne surtout pas l’ouvrir. Epiméthée éblouit par la beauté de la femme oublia les 
+conseils de son frère Prométhée. Pandore ouvrit la boite que les dieux lui avait confiée car elle ne pouvait résister à la tentation. Un  brouillard sortit de la boite,
+ce brouillard contenait tous les maux dont les hommes avaient été épargnés par Prométhée. La jalousie, la cruauté, l’avarice , la maladie et la faim sortirent de cette
+boite. Pandore voulu fermer la boite mais ne pu jusqu’à que tous en soit sorti sauf l’espoir. Elle sortit l’espoir de la boite et sans le savoir, elle avait permis à
+Zeus de punir les hommes.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="le_supplice_de_tantale"><a href="https://www.youtube.com/watch?v=qmE1sOsH134">Le supplice de Tantale</a></h2><p> 
+<div id="content">&#160; Tantale était le fils de Zeus et de la princesse Plota, il régnait sur le royaume de Frigie. Ils partageaient la table des dieux sur l'olympe et avait donc
+accès aux complots et secrets des dieux mais il ne respectait pas l'hospitalité de ses hôtes car à son retour sur terre il révélait tous les secrets et  des fois il
+volait du nectar et de l'ambroisie ses mets rendaient immortel. Les dieux omniscients savaient ce que Tantale avait fait mais fermèrent les yeux car ils l'appréciaient. Un
+jour, Tantale voulait organiser une fête en l'honneur des dieux qui y étaient conviés dans son palais et seul Zeus, Déméter et Hermès acceptèrent.  Le roi désirait que
+l'évènement soit parfait et surveillait de ce fait les préparatifs alors il appela son fils Pélops et lui dit qu'il aura l'honneur de partager un repas avec les dieux ensuite
+il demanda à son cuisinier de préparer un repas, il fut horrifié par la demande du roi. Le banquet commença et Zeus demanda où était son petit fils ensuite, Tantale lui
+répondit qu'il sera bientôt à table et le ragoût fut apporté. Déméter dévora le ragoût tandis que Tantale servit Zeus et Hermès qui se regardèrent méfiant. Zeus vit
+que le ragoût était fait de chair humaine et Tantale lui répondit que c'était la meilleure offrande qu'il pouvait faire, c"était le petit fils de Zeus et fils de Tantale
+Pélops. Déméter commença à vomir et c'était trop pour Zeus qui avait déjà accepté beaucoup de la part de Tantale. Il punit Tantale en l'envoyant au Tartare où il fut
+placé dans un lac entouré d'arbre fruitier, il avait de l'eau jusqu'au menton et les fruits étaient à porter de main mais Tantale avait toujours soif et faim et quand 
+il voulait boire, l'eau descendait et lorsqu'il souhaitait manger le vent poussait les fruits et Tantale ne pouvait les attrapés. Les dieux ressuscitèrent Pélops avec les
+morceaux qu'ils avaient retrouvés, mais il lui manquait une épaule qui avait été dévoré par Déméter sous forme du ragoût. Alors Zeus demanda à Héphaïstos de fabriquer une
+épaule pour son petit fils et Pélops devint roi du Péloponnèse. 
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_punition_d_erisochthon"><a href="https://www.youtube.com/watch?v=vTWq2QMx9U4">La punition d'Erisochthon</a></h2><p> 
+<div id="content">&#160; Déméter parcourait le monde pour bénir les plantations et recevoir les cadeaux de ses fidèles dans les bois qu’il lui était consacrés, mais lors d’un des
+rituels alors que ses adorateurs lui faisait les offrandes, la cérémonie fut interrompue par les cries de bûcherons. Erisichthon un noble connu pour son manque de
+respect envers les dieux voulait construire sont palais en ces lieux et les bûcherons commencèrent à abattre les arbres et fut surpris de la beauté d’un chêne, le noble 
+voulait que les plus beaux meubles soit fabriquer de ce chêne mais les bûcherons hésitèrent car la croyance disait que les Driades y vivaient alors Erisichthon pris une
+hache et le coupa et du sang en coula. Une mystérieuse silhouette au visage caché qui avait assisté à cela voulu arrêter sa barbarie et lorsque l’arbre se transforma
+en nymphe morte, Déméter enleva son déguisement et énervé, voulut le punir. Erisichthon tenta de fuir mais il avait été maudit et arrivé  à son palais essouffler, il
+demanda un repas le noble mangea son poulet rôti et avait encore faim alors il mangea tout le reste et avait encore faim Erisichthon mangea un porc entier. Fatigué il
+alla se coucher mais quelque chose le poursuivait, en effet, dès lors qu’il s’endormit Limos le démon de la faim apparu car la malédiction était déjà présente. Il se 
+réveilla affamé et demanda que l’on lui prépare un festin et ses domestiques mirent sur le buffet toute la nourriture qu’ils avaient, le noble mangea tous et avait
+encore faim alors il mangea tout son bétail et pendant des jours il achetait toute la nourriture qu’il trouvait et sa fortune diminua à tel point qu’il fut obligé de
+mendier dans la rue de la nourriture. Sa fille voulue l’aider mais affamer la vendit comme esclave pour acheter plus de nourriture. Emprisonné, elle pria Poséïdon pour
+qu’il l’aide à fuir. Le dieu la transforma en âne et elle put alors s’enfuir, mais libre  elle rencontra à nouveau son père pensant pouvoir l’aider même sous forme 
+d’âne, Erisichthon reconnu en cet âne sa fille et pleura puis s’excusa avant de la dévorer. Poséïdon désolé la transforma en papillon et  libre elle fuit. Erisicthon 
+se rendit dans la forêt de Déméter la priant de le pardonner, mais elle l’ignora et Désespéré il s’assit sous un arbre et dévora son pied, toute la nuit il se dévorait
+et le matin il n’était plus.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="sisyphe"><a href="https://www.youtube.com/watch?v=BoZ2MI1iuZw">Sisyphe l'homme qui a trompé les dieux</a></h2><p>
+<div id="content">&#160;Sisyphe était le roi de Corinthe et il était le plus intelligent de son royaume, mais il n’était pas sage. Il descendait de Prométhée et comme son ancêtre,
+il voulait s’occuper des histoires des dieux. Témoin de l’enlèvement d’ Hégine par l’aigle de Zeus, il savait qu’il pourrait se servir de cette information.  Sa ville
+manquait d’eau potable et Hégine était la fille d’ Hésop un dieu de la rivière triste depuis la disparition de sa fille alors, il décida d’aller le voir et lui dit qu’il
+savait où était sa fille mais qu’il lui dirait seulement s'il détournait la rivière afin qu’elle traverse sa ville. Hésope accepta et Sisyphe lui révéla se qu’il savait.
+Zeus était furieux face à l’accusation de Sisyphe et envoya Thanatos afin de le tuer et Sisyphe fut retrouvé par le dieu et il flatta le dieu et il voulut lui offrir
+quelque cadeaux parmi lesquelles se trouvaient deux bracelets et un collier en argent, mais les bijoux était en faite des chaînes. Sisyphe arriva ainsi a trompé la
+mort elle a la faire prisonnière. Personne ne mourut et le royaume d’Hadès ne recevait aucune âme, Charon le batelier n’avait donc plus de passager. Les guerres qu’ Arès
+créait ne lui procuraient aucun plaisir car personne ne mourrait alors enragé, il se rendit à Corinthe et brisa les chaînes qui emprisonnaient Thanatos. Libre il voulut
+se venger et finir la mission que Zeus lui avait donné. Sisyphe informa sa femme qu’il mourrait bientôt et qu’elle ne devait pas lui faire de funéraille digne d’un roi. 
+Ensuite, il se rendit à Thanatos et Charon l’attendait. Le roi se rendit devant Hadès et fut puni mais s’excusa et lui demanda de retourner sur terre pendant un jour car
+sa femme ne lui avait offert des funérailles. Hadès accepta et Sisyphe lui promit qu’il reviendrait rapidement. Il trouva sa femme et s’enfuit trompant ainsi à nouveau 
+la mort et caché il vieillit paisiblement jusqu’à que sa fin arrive. Thanatos le tua et il ne put rien faire et arrivé au monde sous terrain, il fut envoyé au Tartare où
+Sisyphe du faire rouler une lourde pierre au sommet d’une montagne, mais chaque fois qu’elle s’approchait du soleil elle devenait plus lourde et redescendait et Sisyphe
+devait recommencer.
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="pygmalion_et_galatee"><a href="https://www.youtube.com/watch?v=JqtG30cD23k">Pygmalion et Galatée</a></h2><p> 
+<div id="content">&#160;Pygmalion était sculpteur ses œuvres était admiré dans toute la Grèce, il voyagea à Chypre afin d’avoir un marbre de qualité supérieur si beau que l’on
+dirait de l’ivoire. Pygmalion exigeant cherchait une femme à épouser mais il voyait uniquement leurs défauts, alors il choisit à ce moment-là de rester célibataire. Par la suite,
+on lui livra un bloc de marbre à son atelier il vit qu’il était parfait et voulu faire une statue représentant une femme parfaite pas comme celles qu’il voyait dans la
+rue mais n’avait aucune femme pour lui servir de modèle alors il dut l’imaginer sans défauts et jeune. Il avait produit la plus belle statue et l’appela Galatée.
+La statue si parfaite que l’artiste devait la toucher pour savoir qu’elle n’était pas humaine, il l’aimait et dormi avec. Quand le jour de la fête célébrant Aphrodite
+arriva, Pygmalion vit qu’il était obsédé par sa statue. L’artiste se rendit au temple pour honorer la déesse et après avoir fait une offrande et malgré qu’il est évité
+l’amour jusque-là, prosterné lui demanda de lui envoyer une femme à l’image de sa statue. Aphrodite fut émue et lorsque Pygmalion retrouva sa Galatée, il l’embrassa et
+sentit la douceur de la statue qui était devenue humaine. Pygmalion et Galatée se marièrent sous la bénédiction d’ Aphrodite et Paphos naquit de cette union.
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_naissance_de_dionysos"><a href="https://www.youtube.com/watch?v=U1H8H_tUXRQ">La naissance de Dionysos</a></h2><p> 
+<div id="content">&#160;Zeus trompa Héra avec Cémélé fille du roi de Thèbes, pour elle il c’était montré sous sa forme mortelle et sans nier son origine divine. Cémélé se réveilla et
+vit que Zeus était parti alors elle partit le chercher, pour cela elle appela sa servante afin de l’aider à s’habiller mais la vieille femme était en réalité Héra. Héra
+déguisé en femme de chambre essaya de faire douter la princesse sur l’identité de son amant et Cémélé commença à douter alors elle demanda à sa femme de chambre un plan 
+et elle lui répondit de demander à son amant de se montrer sous sa réelle forme. Lorsque Zeus fut de retour, Cémélé lui demanda de se montrer sous sa forme réelle, alors 
+Zeus eut le coeur brisé mais accomplit la requête de son amante. Tandis que la chaleur émanant du dieu puissant était de plus en plus forte la princesse fut carbonisée,
+Zeus remarqua que parmi les cendres, il y avait de la vie et fit une entaille dans sa cuisse afin d’y placer le fœtus afin de donner naissance à ce bébé comme il l’avait
+fait avec Athéna. Lorsque Dionysos naquit il était le seul dieu de l’olympe né d’une mortelle et afin de le protéger de la colère d’Héra, le confia à Hermès afin qu’il le
+donne à sa tante. En grandissant Dionysos fut connu pour être le dieu du vin et du théâtre. 
+ </div>
+<br>
+<br>
+<br>
+
+ <h2 id="le_roi_midas"><a href="https://www.youtube.com/watch?v=qPSP_tY6nKY">Le roi Midas</a></h2><p> 
+<div id="content">&#160; Dans le royaume de Frigie, Dionysos ne trouvait pas Sidénus son compagnon de boisson et son maître, soul il donnait de sages conseils et se dotait du
+pouvoir de prophétie. Des paysans le trouvèrent évanoui dans les bois car il avait fait  un coma éthylique et il fut emmené au roi Midas qui le reconnu et l’accueilli
+et plusieurs jours de fête furent organisés. Dionysos fut ravi que son ami soit si bien reçu et remercia le roi Midas et voulu réaliser n’importe quel vœux de Midas. Le
+roi ne réfléchi pas longtemps et demanda que tout ce qu’il touche se transforme en or. Dionysos réalisa son voeu et Midas parti essayer son pouvoir alors, il ramassa
+une pierre et elle se transforma en une pépite d’or. Enthousiaste il toucha plusieurs objets qui devinrent d’or et affamé il voulut manger une pomme mais elle se
+transforma en or. Alors Midas attrapa une fourchette qui se transforma en or et la planta dans un morceau de pain, mais il sentit sa dent craquer car au toucher de sa
+bouche le pain était devenu d’or. Le roi se rendit compte que son don était une malédiction. Sachant qu’il mourrait vite sans manger il s’effondra en pleurant et sa 
+fille voulant le consoler elle toucha sa main Midas la regarda avec un regard horrifié, car elle était devenue une statue dorée. Il alla voir Dionysos et s’agenouillant
+le supplia de lui enlever son don, le dieu accepta car il ne souhaitait pas nuire à Midas et  lui dit de plonger dans la rivière Pactolus et de demander que son pouvoir
+soit enlevé.  Le lit de la rivière devint doré et les écailles des poissons aussi. Le roi libéré récupéra sa fille et Midas répudia sa richesse et parti avec Pan dans
+la campagne. 
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="apollon_vs_pan"><a href="https://www.youtube.com/watch?v=kLNI76rpfTs"> Le duel musical d'Apollon et Pan </a></h2><p> 
+<div id="content">&#160; Pan était le dieu des bois et il était méprisé par les autres dieux, mais après avoir créé la flûte de Pan il fut respecté. Pan aimait se promener dans
+les bois avec le roi Midas et commença à croire qu’il était le meilleur musicien au monde, mais une nymphe lui dit que Apollon devait être meilleur. Pan disait que sa 
+flûte était bien mieux que la lyre d’Apollon et défia le dieu en duel musical. Apollon accepta et se rendit sur le lieu de rendez-vous où toutes les créatures de la
+forêt était présente. Pan commença à jouer et sa mélodie envoûta les spectateurs et fut acclamé mais, Apollon ne fut pas impressionné et accorda sa lyre avant de
+commencer à jouer un son si parfait que les nymphes en pleuraient d’émotion. Le dieu du soleil fut sacré vainqueur par les nymphes, les faunes et les hommes en firent 
+leur dieu de la musique. Midas devait voter et il regarda son ami triste et lui dit alors qu’il préférait sa flûte afin de le réconforté. Seulement Apollon voulait 
+humilier Pan par une victoire unanime et transforma les oreilles de du roi en oreilles d’âne. 
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="athena_vs_poseidon"><a href="https://www.youtube.com/watch?v=J3rl3-Q8XfQ"> Athéna contre Poséïdon pour la ville de Cécropia</a></h2><p> 
+<div id="content">&#160;Dans la région d’Athique un roi à queue de serpent et à buste d’homme régnait sous le nom de Cécrops. La cité florissante vivait grâce à la mer qui entourait
+la cité et c’est pour cela que la région priait Poséïdon qui voulait qu’une ville l’honore. Il se rendit à Cécropia et proposa de renommer la ville ‘‘Poséïdonia’’ et la 
+cité seraient la plus puissante sur les mers. Le dieu frappa son trident au sol et une fontaine d’eau salé apparu, il leurs dit qu’avant de partir en mer, ils devaient
+s’agenouiller devant cette fontaine. Un éclaire lumineux apparut et Athéna en sorti car elle voulait être la déesse de cette cité. Le peuple déjà surpris de la visite de
+Poséïdon fut encore plus surpris quand ils virent la déesse qui  leur dit qu’avec elle la sagesse régnerait et que la science et les arts si développeront et la déesse 
+frappa le sol de sa lance. Un olivier apparu leur donnant ainsi de la nourriture. Cécrops ne voulant énerver l’un des dieux fit un vote, tous les hommes vivant de la 
+pêche votèrent pour Poséïdon tandis que les femmes votèrent pour Athéna. La ville comptait plus de femmes que d’hommes et Athéna gagna ainsi mais Poséïdon refusant ce 
+résultat défia la déesse en duelPoséïdon refusant ce résultat défia la déesse en duel. Athéna accepta et le combat fut rude mais il fut interrompu par un éclaire de Zeus. 
+Zeus organisa un conseil et tous les dieux se réunirent sur le mont Olympe afin de décider l’issu de la ville. Tous les dieux votèrent pour Poséïdon tandis que les déesses votèrent pour Athéna ,
+Zeus s’abstint de voter et Athéna gagna d’une voie. La ville fut ainsi renommée Athènes mais, Poséïdon refusait les athéniens sur son
+territoire. Alors la population inquiète alla consulter l’oracle qui leur dit que le courroux de Poséïdon se calmerait si les femmes étaient punies. Toutes les femmes
+d’Athènes perdirent le droit de vote et le dieu des océans pardonna les Athéniens. 
+ </div>
+
+<br>
+<br>
+<br>
+
+   <h2 id="dieux_vs_typhon">Les dieux contre Typhon</a></h4><p>
+   <h4 id="poseidon_vs_typhon"><a href="https://www.youtube.com/watch?v=kpKPup7xo10">Poséïdon contre Typhon</a></h4><p> 
+<div id="content">&#160; Après la Titanomachie les  titans furent enfermés au Tartare, mais Gaïa enfantait un monstre dont le seul but était de mettre fin au règne des dieux olympiens
+afin de se venger de ceux-ci. La terre s’ouvrit et un puissant cri se fit entendre sous les eaux. La bête détruisait tous sur son passage et le chaos envahit le royaume
+de Poséïdon. Le dieu assistant à la destruction de son temple sous-marin eut un courroux incontrolable et attaqua le monstre mais se rendit vite compte que la bête
+était très puissante. Il lança son trident de toute sa force qui heurta la créature torce mais il manqua son coeur et Typhon se releva, arracha le trident de sa poitrine 
+et le lança vers le dieu qui l’évita. Poséïdon distrait fut saisi par Typhon, la bête étranglant le dieu le frappa violemment contre le sol. Poséïdon fut sauvé par son
+fidèle dauphin. Depuis l’olympe les dieux virent la scène et Apollon, Artémis et Ares prirent les armes afin de tuer la créature. Les dieux jumeaux décochèrent leurs 
+flèches divines sur Typhon tandis qu’ Ares sauta sur son dos et y planta sa lance, mais Typhon attrapa Ares et le jeta sur Artémis puis récupéra la lance d’ Ares et la
+lança vers le dieu du soleil transperçant ainsi son épaule. Le monstre vainqueur se dirigea vers le mont olympe afin d’achever sa tache.
+ </div>
+
+<br>
+<br>
+<br>
+
+   <h4 id="zeus_vs_typhon"><a href="https://www.youtube.com/watch?v=aN0d0w9aVFQ">Zeus contre Typhon</a></h4><p> 
+<div id="content">&#160;Tandis qu’ Ares , Artémis , Apollon et Poséïdon avaient été vaincu par Typhon, les dieux paniquèrent et fuirent l’olympe pour l’Egypte transformés en animaux
+où ils furent reconnus par leur caractère divin et furent vénérés. Zeus et Athéna étaient restés pour combattre Typhon, il arriva et cracha du feu sur Athéna qui se
+protégea de son bouclier. La déesse chargea la créature qui l’attrapa et la frappa contre une colonne de marbre, Zeus jeta un de ses éclairs afin de défendre sa fille
+mais le monstre para son attaque et frappa le roi des dieux. Et en se relevant, il vit la faux de Cronos seule arme pouvant tuer un dieu, saisi l’arme de son père et
+coupa les tentacules l’empêchant d’atteindre la tête de Typhon. La créature contra son attaque et récupéra la faux que Zeus blessé avait laissée tomber, Typhon ramassa
+le dieu et avec la faux lui coupa les tendons. La bête vainqueur changea sa forme monstrueuse pour une plus convenable à son nouveau poste de roi des cieux. Typhon 
+demanda à Echidna sa femme de garder la boite contenant les tendons du dieu qui fut enchaîné. Pan et Hermès voulait récupérer les tendons de Zeus et attendirent que 
+Typhon s’en éloigne pour que Pan de son puissant cri étourdisse Echidna et qu’ Hermès subtilise la boite et libère Zeus enchaîné non loin. Zeus fut libre mais, Typhon
+avait été informé de la libération du dieu qui voulait se venger et fut pris d’une immense colère. Il se rendit voir les moires qui lui révélèrent que Zeus arrivait et 
+que s’il n’agissait pas il perdrait, elles lui donnèrent un fruit et lui disant que ce fruit décuplerait ses pouvoirs. Typhon le mangea sans savoir que les moires le
+détestait car il était le chaos et nuisait à l’ordre dans le monde et avaient donc empoisonné le fruit. Il se sentit malade et Zeus apparu pour leur combat final. Grâce
+au fruit des moires les dieux combattirent à force égale, Zeus gagnait et Typhon repris sa forme bestiale. Zeus paraît toute les attaques du monstre et jeta l’éclaire le 
+plus puissant sur la tête du monstre. Typhon fut vaincu mais sachant la créature immortelle, Zeus souleva une montagne et la jeta sur Typhon enfermé. Les dieux purent revenir
+d’Egypte et s’agenouillèrent devant le trône du roi des dieux. Lorsque Typhon bloqué sous la montagne était courroucé il faisait jaillir du feu de celle-ci. Cette montagne 
+et actuellement connu sous le nom du volcan de L’Etna. 
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="ares_et_aphrodite"><a href="https://www.youtube.com/watch?v=H2QaB1j89vA"> Aphrodite et la tromperie d'Héphaïstos pour Ares </a></h2><p>
+<div id="content">&#160;Après le mariage d’ Héphaïstos et d’ Aphrodite, Héphaïstos la couvrait de cadeaux mais était souvent absent pour aller forger et Aphrodite se sentait seul.
+Aphrodite aimait Ares bien plus beau que son mari et après une des nombreuses guerres d’ Ares , Aphrodite l’attendait et quand il revint, elle voulut nettoyer le sang sur
+son corps. Ares ne put résister au charme de la déesse de la beauté et passèrent une nuit d’amour et, depuis ce jour Ares rejoignait Aphrodite à chaque fois qu’Héphaïstos
+partait. Afin qu’Apollon ne voit leur relation, Ares demanda à Aleptrion de surveiller la porte de sa chambre mais Hypnos le dieu du sommeil avait remarqué qu’il se 
+passait quelque chose entre ces deux dieux mais ne voulait propager des rumeurs alors il plongea Aleptrion dans un profond sommeil lorsque Apollon arrivait. À son
+réveil Ares vit qu’il faisait jour et voulu punir le gardien pour sa négligence et le transforma en coq ainsi il chanterait à chaque lever de soleil. Apollon raconta à 
+Héphaïstos tout ce qu’il avait vu mais il refusa de croire le dieu soleil alors, il dit à sa femme qu’il devait partit une semaine et lorsque Ares arriva, le dieu
+forgeron laissa tomber un filet si fin qu’il était invisible placé au-dessus du lit. Le dieu appela les autres dieux afin qu’ils assistent à cette scène mais cela n’eut
+pas l’effet escompté car tous les dieux rirent. Héphaïstos répudia sa femme et Phobos , Déimos , Harmonie naquirent de cette nouvelle union entre Ares et Aphrodite .
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="artemis_et_acteon"><a href="https://www.youtube.com/watch?v=nNrTdI3oSN0"> Artémis et Actéon le chasseur</a></h2><p>
+<div id="content">&#160;Actéon était un très bon chasseur et archer car il était le petit-fils d’Apollon et car le célèbre Chyron était son maître. Lors des parties de chasse avec
+ses amis, il s’éloignait souvent car il les jugeait trop bruyant. Un jour, il entendit une source d’eau et comme il avait chaud puisque c’était l’été, il se dirigea
+vers celle-ci afin de pouvoir y boire. Mais il ne savait pas que Artémis et ses nymphes s’y baignaient. La déesse était connue pour sa virginité et sa pureté, se ventant
+de n’avoir jamais était vu nue par un homme. Artémis se baignait dans la rivière tandis qu’Actéon essayait de s’en rapprocher. Il se cacha et profita en regardant les 
+nymphes se baigner nue. Mais l’une des nymphes le vit et alerta les autres qui se précipitèrent sur Artémis afin de la cacher. Mais Actéon avait déjà posé ses yeux sur 
+le corps parfait de la déesse nue. Artémis voulu le punir et l’éclaboussa avec de l’eau. Actéon était en train de se transformer en cerf criant, le meilleur chasseur 
+devenait une énorme proie. Ses cris attirèrent ses compagnons de chasse qui le traquèrent, il courut aussi vite qu’il put mais épuisé il fut tué par ses propres chiens.
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="meleagre_et_la_chasse_au_sanglier"><a href="https://www.youtube.com/watch?v=_C-U_-VKgxc"> Méleagre et la chasse au sanglier</a></h2><p>
+<div id="content">&#160; Meleagre était le fils du roi de Calidon et lorsqu’il était enfant, sa mère Alté avait reçu la visite des moires qui lui annoncèrent que son fils mourrait
+lorsque la bûche se trouvant dans la cheminée serait totalement consumé et désespéré elle l’attrapa à main nue, éteignit la flamme et la plaça dans un coffre. Meleagre 
+grandit et devint fort mais un sanglier envoyé par Artémis afin de punir le roi qui n’avait pas fait de sacrifice. Meleagre parti chasser le sanglier avec ses oncles,
+Thésée , Polux , Castor , Jason et Atalante . Meleagre en voyant Atalante tomba amoureux d’elle. Les chasseurs trouvèrent une piste et mirent des pièges, l’un d’eux pénétra
+dans la caverne du sanglier et fut tué par celui-ci. L’énorme sanglier sortit de sa caverne et les filets installés ne purent le piéger. Les chasseurs poursuivaient le 
+sanglier à cheval lui décochant des flèches. L’animal commençait à fatiguer et Atalante lui décocha une flèche dans l’œil. La bête fatiguée s’arrêta et Meleagre descendit
+de son cheval avec sa lance et la planta dans le coeur de la créature puis Meleagre avec son épée coupa sa tête voulant la donner à Atalante mais un des oncles de 
+Meleagre lui arracha des mains disant que les femmes ne devaient avoir de trophée. Meleagre planta son épée dans son oncle et dut en tuer un autre qui voulait venger 
+son frère. La rêne entendit que son fils avait tué deux de ses frères et jeta la bûche dans le feu tuant ainsi son fils puis se tua.
+ </div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="hades_et_persephone"><a href="https://www.youtube.com/watch?v=qlQs6HFkLVA"> Hadès et Perséphone</a></h2><p>
+<div id="content">&#160;Au mont olympe Perséphone la déesse du printemps se promenait, Déméter sa mère la protégeait et éloignait tous les dieux d’elle afin qu’elle reste vierge.
+Hadès se rendit à la surface afin de savoir d’où venait la secousse qui fit trembler les enfers, et se rendit compte que c’était le volcan Ethna où Typhon était
+enfermé. Hadès entendit une douce voix et trouva Perséphone, il l’écouta chanter caché Eros et Aphrodite virent l’intérêt d’ Hadès pour Perséphone et voulurent les
+faire tomber amoureux. Hadès touché par une des flèches de l’amour s’approcha de la déesse, Perséphone résista, alors Hadès la kidnappa et l’emmena en enfer avec lui 
+grâce à un portail dans la terre. Déméter s’inquiéta car elle ne trouvait pas sa fille, une nymphe lui dit qu’Hadès l’avait capturé. Déméter ne pardonna pas à Gaïa qui 
+était complice en ouvrant le portail dans lequel Hadès était parti et Déméter rendit la terre stérile afin de punir Gaïa . Zeus s’inquiétait car Déméter ne travaillait
+plus, alors Zeus lui dit que Perséphone serait libérée à moins qu’elle ait consommé un fruit des enfers. Hermès guida Déméter au royaume d’Hadès où la déesse retrouva sa
+fille au moment où elle mangeait une grenade. Perséphone se métamorphosa en la reine des enfers et Déméter pleurait, alors Hadès lui fit une proposition : Perséphone 
+passerait une partie de l’année sur terre et le reste avec lui en enfer. Lorsque Déméter et Perséphone étaient ensemble des fleurs sortaient du sol. Ainsi naquirent les
+saisons. 
+
+ </div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="apollon_et_asclepios"><a href="https://www.youtube.com/watch?v=eedTNZdYg6k"> Apollon et son fils Asclépios le dieu de la guérison</a></h2><p>
+<div id="content">&#160; Apollon était tombé amoureux de Coronis et devinrent amant mais la jeune femme aimait encore plus Iscis un mortel de son âge et le retrouvait souvent
+jusqu’à ce qu’un oiseau blanc qui vit la scène partie vers l’olympe afin d’annoncer à Apollon l’infidélité de Coronis. Apollon courroucé changea l’oiseau blanc en un
+oiseau noir, ses descendants seraient des corbeaux. Ensuite, Apollon décocha une flèche dans la jeune femme et lors de la crémation de celle-ci, il apprit qu’elle était
+enceinte de lui et récupéra l’enfant des flammes. Il nomma cet enfant Asclépios et le remit aux mains de Chyron qui lui enseigna l’art de la guérison. Le fils d’ Apollon
+ne cessa d’apprendre de nouvelles techniques de guérison et les utilisaient afin de soigner les hommes qui demandaient son aide. Un jour, il découvrit le moyen d’empêcher
+la mort mais cela était un problème pour Hadès qui alla voir Zeus. Alors Zeus frappa le guérisseur d’un éclaire, rétablissant ainsi l’ordre. Apollon furieux contre Zeus 
+d’avoir tué son fils, voulait se venger mais ne pouvait attaquer le dieu suprême alors il tua les cyclopes qui forgeaient ses éclaires. Apollon fut banni du mont
+Olympe durant de longues années, le dieu durant son exil se rendit à la cour du roi Admète.
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="daphne_et_apollon"><a href="https://www.youtube.com/watch?v=AudarwFEGg4"> Daphné et Apollon, l'amour non-réciproque</a></h2><p>
+<div id="content">&#160;Après avoir tué Python, Apollon était devenu important au mont olympe et il paradait avec son arc et ses flèches. Un jour, il trouva Eros en train de
+s’entraîner à mieux viser à l’arc et Apollon jaloux de l’enfant qui était doué pour son jeune âge, se moqua de lui. Eros ne céda pas aux provocations d’Apollon et parti
+mais le dieu soleil le poursuivait en continuant de dénigrer le jeune dieu, ce qui mit en colère le dieu de l’amour. Il attendit qu’Apollon se retourne et décocha une
+flèche d’or le toucha en plein coeur et Apollon rencontra Daphné une nymphe fille de Pénée dieu du fleuve, Apollon tomba amoureux d’elle, puis Eros décocha dans le
+coeur de Daphné une flèche de plomb, ainsi l’amour du dieu ne serait réciproque. Apollon s’approcha de la nymphe qui s’éloignait le fuyant, alors la nymphe se jeta dans 
+l’eau du fleuve de son père lui demandant de l’aide en lui confisquant sa beauté, son père accepta et lorsque Apollon l’avait rattrapé, elle était devenu un arbre.
+Apollon fit de cet arbre un de ses symboles, fabricant une couronne de laurier qu’il porterait sur lui. Apollon regretta son conflit avec Eros car il ne tomba jamais
+amoureux. 
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="eros_et_psyche"><a href="https://www.youtube.com/watch?v=fEpphWJ26Bk"> Psyché et Eros, le dieu de l'amour amoureux</a></h2><p>
+<div id="content">&#160;Psyché était la plus belle des trois filles d’un roi grec. Si bien, qu’une rumeur vit le jour disant que Psyché était encore plus belle qu’Aphrodite.
+Aphrodite énervée qu’on l’oublie demanda à Eros que la jeune fille tombe amoureuse de la créature la plus laide vivant sur terre. Alors Eros se rendit sur terre mais
+avant de décocher sa flèche d’or sur Psyché, il se blessa avec l’une d’elle. Il tomba donc amoureux de Psyché mais ne dit à Aphrodite qu’il n’avait accompli sa
+mission. Eros organisa une rencontre avec Psyché qui fut ravie qu’enfin une personne entre dans sa court. Psyché était tout de même triste, car les rencontres avec Eros
+ne se faisaient seulement la nuit et dans le noir complet. Eros lui fit promettre de ne jamais essayer de découvrir son visage. Un jour, les soeurs de Psyché lui
+rendirent visite et la questionna sur son amant et elle ne put répondre. Après ce jour, la curiosité s’empara de la jeune femme si bien qu’un soir, lorsque Eros
+dormait elle alluma une bougie et l’approcha du dieu et vit le plus bel être au monde. Malheureusement une goutte de cire brûlante tomba sur Eros le réveillant. Eros 
+vit que Psyché n’avait pas respecté sa promesse et n’avait pas eut confiance en lui, s’envola retournant au mont olympe. Psyché partie le chercher au temple d’ Aphrodite ,
+la priant de revoir celui qu’elle aimait. Aphrodite haineuse envers la femme lui donna trois tâches dont la troisième était d’aller voir Perséphone au royaume d’ Hadès
+et de ramener dans une boite une partie de sa beauté. Après un long voyage, Psyché réussit mais ne put se retenir et ouvrit la boite croyant récupérer une partie de la 
+beauté contenue dans la boite. Mais de la boite sortit une brume sombre qui la plongea dans un long sommeil. Les dieux virent ce qu’Aphrodite avait fait vivre à Psyché 
+et envoyèrent Hermès afin qu’Eros soit au courant de tout ce que Psyché avait fait pour lui. Alors il s’envola afin de la rejoindre et mit la malédiction dans la boite,
+ainsi Psyché se réveilla. Eros offrit à Psyché l’immortalité devenant ainsi la déesse des âmes et ensemble, eurent Edonnée la déesse de la sensualité et du plaisir. 
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="bellerophon_et_pegase"><a href="https://www.youtube.com/watch?v=GctVI96LQMI"> Bellérophon et Pégase</a></h2><p>
+<div id="content">&#160;A Corinthe vivaient les descendants de Sisyphe et un homme rêvant de tromper les dieux en était le roi. Glocus le roi avait deux fils Déliadès, son préféré
+et Bellérophon si beau que l’on disait qu’il était fils de Poséïdon. Les deux frères étaient très rivaux et Bellérophon perdait à tous leurs entraînements martiaux. 
+Mais en grandissant, Bellérophon devint fort et puissant et leur combat devinrent encore plus violents. Bellérophon s’améliorait de jour en jour mais perdait toujours, 
+jusqu’au jour où lors d’un combat, Bellérophon gagna mais vit le corps inanimé de son frère tombé sur le sol. Bellérophon pleurait sur le corps de Déliadès et le roi 
+arriva et voyant son fils préféré mort, expulsa Bellérophon de son royaume. Le prince errant arriva à la ville de Tyrinthe où il fut accueilli par le roi Proétos qui
+lui offrit l’hospitalité. Proétos organisa un rituel de purification et fit un sacrifice afin que Bellérophon soit pardonné de ses erreurs. La reine Ateïa eut 
+immédiatement du désir pour le beau prince et un jour elle alla le séduire mais il rejeta les avances de la reine car il ne voulait pas énerver le roi qui l’avait aidé. 
+La reine voulue se venger et se rendit voir le roi, accusant le prince d’avoir essayé de la violer. Proétos rusé ordonna au scribe d’écrire une lettre à son beau-père
+et de la donner à Bellérophon afin qu’il la livre au roi de Licie. Le roi de Licie ordonna qu’on accueille les visiteurs car il vit les couleurs de l’étendard de son
+beau-fils. Le roi ne voulu lire la lettre immédiatement et présenta sa fille à Bellérophon mais le roi de Licie après avoir lu le message l’informant que Bellérophon 
+avait voulu violer sa fille, voulu se débarrasser de son inviter. Le roi demanda de l’aide à Bellérophon afin de tuer un monstre, s'il réussissait il pourrait épouser
+sa fille. Bellérophon accepta et parti combattre une chimère mais avant d’arriver à elle, les dieux lui envoyèrent Pégase , sachant qu’avec elle il réussirait, il sauta
+sur l’animal qui l’éjecta et la tête du prince frappa une pierre Dans son rêve il vit Athéna qui lui offrit une bride doré et lui expliqua comment capturer l’animal et 
+à son réveil, il avait la bride et le cheval était à côté de lui alors il appliqua les conseils de la déesse. Bellérophon avec Pégase put s’envoler vers la chimère et 
+le combat pu commencer. La bête cracha du feu sur le prince mais l’agile cheval pu éviter cette attaque. Le héro attaqua la chimère puis Pégase donna des coups de sabots 
+à la créature, voyant cela Bellérophon descendit de sa monture et transperça la chimère de sa lance. Bellérophon commença à croire la rumeur disant qu’il était fils de
+Poséïdon et pris la tête du monstre en trophée. Il retourna à Licie et donna le trophée au roi qui devait lui offrir sa fille en mariage lui dit qu’il l’aurait s'il
+tuait les Amazones et les descendants d’ Ares : les Ceulimies. Le prince amoureux accepta et battit les Ceulimies et les Amazones grâce à Pégase . Le roi maria sa fille
+avec le héro et fondèrent une famille. Mais un jour, Bellérophon pensant avoir mérité sa place auprès des dieux guida son cheval jusqu’à l’olympe. Zeus envoya une 
+guêpe piquer Pégase qui laissa tomber Bellérophon mais fut sauvé par Athéna .
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="poseidon_et_amphitrite"><a href="https://www.youtube.com/watch?v=xTq5NrUE4nA"> Poséïdon et Amphitrite, les souverains des mers </a></h2><p>
+<div id="content">&#160; Poséïdon lorsqu’il s’énervait causait des tsunamis et des tremblements de terre ce qui inquiétait Zeus. Alors il demanda à Nérré ancien dieu de la mer de
+donner une de ses filles à Poséïdon . Il fut ravi de savoir qu’une de ses filles régnerait sur les océans. Et lorsque Poséïdon fut averti par Hermès qu’une des filles
+de Nérré deviendrait sa femme, il partit à sa rencontre. Toutes les filles de Nérré furent présenté à lui afin qu’il en choisisse une et malgré le fait qu’elles soient
+toutes magnifiques, il fut attiré par Amphitrite. Poséïdon alla la voir mais la nymphe s’enfuit en le voyant et Poséïdon parcouru tous les océans. Zeus obligea Dorris,
+la mère d’ Amphitrite de lui dire où se cachait sa fille. Et Poséïdon envoya son dauphin voir la nymphe, qui céda et alla le voir. Poséïdon eut avec Amphitrite un enfant
+nommé Triton  .
+ </div>
+
+<br>
+<br>
+<br>
+
+   <h2 id="orphee_et_eurydice"><a href="https://www.youtube.com/watch?v=Sd7PSW3Mqxs"> Orphée et Eurydice, un amour éternel </a></h2><p>
+<div id="content">&#160;Tandis que le monde était peuplé de poètes et chanteurs qui vantaient les exploits des dieux, Orphée le meilleur d’entre eux se démarquait car il était fils
+d’ Apollon et de Galiop. Il avait hérité de la magnifique voix de sa mère et du talent pour la musique de son père. Lorsqu’il jouait, il apaisait les animaux et faisait 
+aussi danser les plantes grâce à sa lyre que son père lui avait offert en cadeau. Orphée était courageux et avait combattu au côté de Jason lors de sa célèbre quête. 
+Orphée était amoureux d’Eurydice sa plus grande admiratrice mais lorsqu’ils se marièrent, des signes annonçant un mauvais présage firent irruption. Mais un jour alors
+qu’Eurydice se promenait, elle fut poursuivie par Artisée un apiculteur qui voulait la violer. La jeune femme courait mais elle fut mordue par un serpent venimeux.
+Orphée la trouva et elle mourut dans ses bras, il poussa un puissant cri de rage et de douleur qui se fit entendre dans toute la Grèce. Depuis ce jour, Orphée ne jouait
+désormais que des musiques tristes. Il partit prier Zeus afin qu’il ressuscite sa bien-aimée mais Zeus ne pouvait car son frère Hadès ne le laisserait pas faire. Mais
+Zeus ordonna à Hermès de conduire Orphée au royaume des morts afin qu’il convainque Hadès de la laisser partir. Orphée envoûta de son merveilleux chant Charon afin qu’il le
+fasse traverser. Puis lorsqu’il croisa Cerbère il l’endormit alors de sa musique. Par la suite il se retrouva face à Hadès et Perséphone surpris Hadès lui demanda
+qu’est-ce qu’il faisait là et le menaça de l’envoyer au Tartare si la raison de sa venue n’était pas suffisante. Orphée chanta un triste chanson de sa lyre afin de
+montrer sa tristesse à Hadès qui émut laissa couler sur sa joue une larme de fer et Perséphone convaincu son mari d’aider Orphée. Sisyphe arrêta même de pousser sa
+pierre afin d’écouter Orphée chanter. Hadès laissa Orphée et Eurydice partir et pour cela, Hadès ouvrit une faille à travers la terre à la seule condition qu’il ne
+tourne jamais le dos à sa bien-aimée. Mais Orphée avançait mais ne savait si Eurydice le suivait alors lorsqu’il vit la lumière du soleil, il tourna la tête et alors
+Eurydice fut renvoyé chez Hadès. Orphée voulu retourner dans le monde sous-terrain, mais Hermès l’en empêcha. Des semaines plus tard, les prêtresses de Dionysos qui
+désirait s’allonger au côté d’ Orphée le caillassèrent lorsqu’il refusa. Sa musique le protégea pendant un instant mais lorsque la protection fut lever par la musique des
+prêtresses alors elles le tuèrent et son corps fut jeté avec sa lyre dans un fleuve . Les muses récupérèrent l’instrument mais Orphée put enfin retrouver Eurydice dans 
+le royaume d’ Hadès .
+ </div>
+
+<br>
+<br>
+<br>
+
+   <h2 id="meduse"><a href="https://www.youtube.com/watch?v=xkv8hL8aZFc"> La malédiction de Méduse la plus belle des prêtresses d'Athéna</a></h2><p>
+<div id="content">&#160;L’union de Forquis et Céto deux divinités marine de basses importances fit naître trois filles. Sthéno et Euryale étaient des gorgognes tandis que la
+troisième nommé Méduse était une magnifique jeune fille. Dès sa jeunesse Méduse était dévoué envers Athéna à tel point que lorsqu’elle jouait avec ses sœurs elle 
+faisait comme si elle était Athéna tandis que ses sœurs jouaient les méchantes. Hyphiclès était le meilleur ami de Méduse et aimait jouer avec elle et ses sœurs. Méduse 
+grandissait et devenait de plus en plus belle, Hyphiclès amoureux déclara ses sentiments à son amie qui refusa ses avances, car elle rêvait de devenir prêtresse d’ Athéna .
+Et il fallait donc que la jeune femme restée vierge. Méduse lorsqu’elle eut l’âge commença la formation afin de réaliser son rêve et réussit à devenir prêtresse.
+Les rituels réalisés par Méduse attiraient de plus en plus de monde mais les gens venaient principalement pour admirer la beauté de la jeune Méduse. Un jour un homme
+assistant à un rituel dit que la jeune prêtresse était plus belle qu’Athéna. Dès lors, Poséïdon vit la jeune femme comme une occasion de se venger d’Athéna après leur 
+conflit pour Athènes. Alors le dieu voulu ternir la réputation d’Athéna, pour cela il alla voir Méduse et la charma. Méduse resta fidèle à ses vœux et refusa les 
+avances de Poséïdon mais devant ce refus, le dieu courroucé décida de la violer dans le temple d’Athéna où Méduse c’était réfugié après avoir brisé un pot sur son crâne.
+Hyphiclès voulu empêcher le puissant dieu de faire du mal à son ami, mais il ne constitua pas un grand obstacle pour Poséïdon qui d’un coup le dégagea de son chemin.
+Après avoir assisté à la scène, Athéna se rendit dans son temple où se trouvait encore Méduse qui pleurait et la déesse la maudit. Ainsi les cheveux de Méduse se 
+transformèrent en serpent et quiconque regarderait la jeune femme dans les yeux serait transformé en statut de pierre. Hyphiclès fut la première victime de Méduse 
+lorsqu’il voulut la réconforter lorsqu’elle pleurait. Méduse décida ensuite de s’enfuir et elle se réfugia dans un temple en ruine. Plus tard en chassant elle se rendit
+compte que ce temple abandonné était un ancien temple d’Athéna. Méduse malgré sa malédiction continua de prier Athéna et de lui faire des offrandes. Elle s’occupa même
+de ce temple abandonné. Athéna voyant les agissements de Méduse regretta d’avoir puni sa prêtresse. Alors elle décida d’aider Persée à tuer Méduse afin qu’il puisse la
+libérer de sa malédiction. 
+ </div>
+
+<br>
+<br>
+<br>
+ 
+
+   <h2 id="persee_vs_meduse"><a href="https://www.youtube.com/watch?v=XgjGDRY2fN4"> Persée contre Méduse </a></h2><p>
+<div id="content">&#160; Persée était un demi-dieu fils de Zeus et Danaé. Il fut envoyé tuer Méduse par Polidéctès qui voulait se débarrasser de lui afin de conquérir Danaé. Persée
+fut aidé par Athéna qui lui offrit un bouclier de bronze tellement poli qu’il faisait office de miroir en lui indiquant comment s’en servir. Par la suite, le héro parti 
+voir les vieilles qui ne possédaient qu’un seul oeil pour elles trois. Persée déroba l’oeil et les força à lui dire où était leur sœur Méduse, mais dès lors qu’il eut
+l’information il jeta l’œil dans un lac. Les trois sœurs sans leur œil ne purent avertir Méduse de l’arrivée de Persée. Il reçut aussi l’aide de nymphes qui lui offrit
+un casque d’invisibilité, une paire de sandales ailées et un sac afin d’y mettre la tête du monstre et Hermès lui donna une épée magique. Persée se rendit dans la
+cachette de Méduse et à l’aide du bouclier d’ Athéna pu s’approcher de la créature et pu lui trancher la tête grâce à l’épée magique d’ Hermès . Le sang de Méduse se
+répandit sur le sol et en naquit Pégase ainsi que le monstre Crisaor. Lors de son retour Persée croisa Atlas et se présenta à lui en tant que fils de Zeus. Atlas savait 
+qu’un fils de Zeus volerait les pommes du jardin des Espérides et lorsqu’il se montra agressif, Persée le transforma en montagne de pierre grâce à la tête tranchée de
+Méduse. Par la suite, il vit Andromède attaché à un rocher en tant que sacrifice à un monstre marin. Alors il proposa à ses parents de la sauver à condition de 
+l’épouser. Céphé et Cassiopé acceptèrent alors il tua le monstre. Persée ramena la tête à Polidéctès qui ne le cru alors le héro le transforma en statut. Persée confia 
+la tête de Méduse à Athéna qui l’accrocha sur son bouclier. Persée eut avec Andromède six fils et une fille.
+ </div>
+
+
+    </p></ol></a>
+
+                       <!--Image hyperlien : renvoie en haut de la page-->
+     <CENTER><a href="grec.html" title="Haut de la page">  <img alt="haut de la page" class="haut_de_page" src="../Image/fleche haut.jpg" width="100" height="100" /></a>   <!-- Image qui renvoie en haut de la page -->
+
+           <!--Signature-->
+         <p class="log"> <img src="../Image/logo ABT.jpg" width="40" height="40"></p>
+		<p class="diff">A website by Aubert</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>	Mythologie nordique</title>   <!--Nom de la page (apparait sur l'onglet)-->
+
+    <!-- Pages CSS -->
+		<link rel="stylesheet"  href="../Styles/style nordic.css">   <!--Style principal-->
+    	<link rel="stylesheet"  href="../Styles/style barre recherche.css"> <!--Style de la barre de recherche-->
+    	<link rel="stylesheet"  href="../Styles/bouton barre de recherche.css">  <!--Style bouton de la barre de recherche-->
+  		<link rel="stylesheet" href="../Styles/menu deroulant.css" /> <!--Style du menu déroulant-->
+        <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+        <link rel="stylesheet" href="../Styles/cherche mot.css" />  <!--Surligne mot quand écrit dans la barre recherche -->
+        <link rel="stylesheet"  href="../Styles/theme dark.css"> <!--Style dark-->
+		<link rel="stylesheet"  href="../Styles/theme page nordic.css">  <!--Style sombre-->
+        <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+              integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+
+    <!-- Pages JavaScript -->
+        <script src="../Script/page nordique.js"></script> <!--Lien interne : grâce à barre recherche-->
+        <script src="../Script/cherche mot.js"></script>  <!--Parcours page pour trouver mot écrit dans la barre recherche-->
+		<script src="../Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+        <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+    	<script src="../Script/bouton barre de recherche.js"></script> <!-- Bouton de la barre de recherche-->
+
+
+    <!-- Logo du site web (apparait sur l'onglet)-->
+        <link rel="icon" href="../Image/nordique/temple nordic.jpg">
+
+</head>
+<body>
+
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class=""></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="https://www.instagram.com/mythologies.abt?igsh=MWdpb2N2YXhyZGhvdw=="> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+       <li><label for="openSidebarMenu" class="sidebarIconToggle">
+           <div class="spinner diagonal part-1"></div>
+           <div class="spinner horizontal"></div>
+           <div class="spinner diagonal part-2"></div>
+       </label></li>      <!--Menu déroulant-->
+      <li> <a href="../../page 1.html" > <i class="fa-solid fa-house"></i> Accueil</a> </li> <!--Onglet 1 : lien vers accueil-->
+      <li> <a href="" ><i class="fa-solid fa-list"></i> Sommaire</a> <!--Onglet 2 : lien interne vers les histoires-->
+        <ul class="sub-menu">
+                               <!--Lien interne vers les histoires-->
+          <li> <a href="nordique.html#la_creation_du_monde"> La création du monde </a> </li>
+          <li> <a href="nordique.html#odin_et_le_puits_de_la_connaissance"> Odin et le puits de la connaissance </a> </li>
+          <li> <a href="nordique.html#les_dons_des_nains_envers_les_dieux"> Les dons des nains envers les dieux </a> </li>
+          <li> <a href="nordique.html#aesir_vs_vanir"> La bataille des dieux Aesir contre les dieux Vanir </a> </li>
+          <li> <a href="nordique.html#la_reconstruction_du_mur_d_asgard"> La reconstruction du mur d'Asgard </a> </li>
+          <li> <a href="nordique.html#l_emprisonnement_de_fenrir"> L'emprisonnement de Fenrir </a> </li>
+          <li> <a href="nordique.html#le_vol_de_mjolnir"> Le vol de Mjölnir </a> </li>
+          <li> <a href="nordique.html#loki_et_la_mort_de_baldr"> Loki et la mort de Baldr </a> </li>
+          <li> <a href="nordique.html#la_punition_de_loki"> La punition de Loki </a> </li>
+          <li> <a href="nordique.html#thor_et_la_peche_de_jormungandr">Thor et la pêche de Jormungandr </a> </li>
+          <li> <a href="nordique.html#ragnarok">Ragnarok </a> </li>
+        </ul>
+      </li>
+      <li> <a href=""><i class="fa-solid fa-scroll"></i> Pages</a> <!--Onglet 3 : lien vers les autres pages-->
+        <ul class="sub-menu">
+                             <!--Lien vers les autres pages-->
+          <li> <a href="egyptienne.html"> Egyptienne </a> </li>
+          <li> <a href="grec.html"> Grecque </a> </li>
+          <li> <a href="romaine.html"> Romaine </a> </li>
+        </ul>
+      </li>
+                <li> <a href="../donations/dons nordique.html" ><i class="fa-solid fa-dollar-sign"></i> Donations</a></li> <!--Onglet 4 : lien vers don-->
+        <li> <a href="../formulaires/formulaire satisfaction nordique.html" ><i class="fa-regular fa-face-smile-beam"></i> Formulaire de satisfaction</a></li> <!--Onglet 5 : lien vers formulaire-->
+        <li >
+<h5 class="wrapper">                   <!--Barre de recherche-->
+    <input type="search" id="searchbar" value="" placeholder=" Recherche un dieu ou une créature ..." onchange="cherche_dieu()" size="40" maxlength="35">
+    <input type="button" id="button" onclick="cherche_dieu()" value="Chercher">
+</h5>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+	<header>
+<ul>
+		<h1>NORDIQUE</h1>  <!--Titre de la page-->
+
+                            <!--Images-->
+      <CENTER>  <img src="../Image/nordique/carte nordique.jpg" width="300" height="300">
+                <img  src="../Image/nordique/temple nordic.jpg" width="300" height="300">
+                <!--<img src="../Image/nordique/phrise chronologique grec.jpg" width="500" height="300"/>-->
+      </CENTER>
+
+</ul>		<hr/>
+	</header>
+	
+
+	 <br>
+		<table>                                <!--Tableau 1-->
+			<tr>          <!--Noms des colonnes-->
+				                <th>Dieux</th>
+				                <th>Type</th>
+                                <th>Ligné</th>
+                                <th>Rôle</th>
+                                <th>Symboles</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+			</tr>
+			<tr>  <!--Lignes -->
+                                <td id="andhrimnir"> ANDHRIMNIR</td> 
+                                <td>Aesir</td>
+				                <td></td>
+                                <td>Dieu des cuisiniers et cuisinier des dieux Aesir</td>
+                                <td>Chaudron</td> 
+                                <td><img src="../Image/nordique/andhrimnir.jpg" width="100" height="100"/> </td>
+                                <td></td>  
+                         </tr>
+			<tr>  
+                        	<td id="baldr"> BALDR</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d' Odin et Frigg .
+                                    <li id="content">Frère de Höd , Hermöd et demi-frère de Thor , Vali , Vidar , Bragi et Tyr .
+                                    <li id="content">Mari de Nanna .
+                                    <li id="content">Père de Forseti .</td>
+                                <td>Dieu de la lumière, la beauté, la jeunesse et l'amour</td>
+                                <td>Navire Hringhorni</td> 
+                                <td><img src="../Image/nordique/baldr.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#loki_et_la_mort_de_baldr">Loki et la mort de Baldr</a>
+                                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+			<tr>
+                                <td id="bragi">BRAGI</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d' Odin .
+                                    <li id="content">demi-frère de Thor , Vali , Vidar , Baldr et Tyr .
+                                    <li id="content">Mari de Idunn .</td>
+				                <td>Dieu de la poésie</td>
+                                <td>Harpe</td> 
+                                <td><img src="../Image/nordique/bragi.jpg" width="100" height="100"/> </td>
+                                <td> </td>                   
+			</tr>
+			<tr>     
+                                <td id="dag">DAG</td>
+                                <td>Aesir</td>
+				                <td><li id="content">Fils de Not et Delling .</td>
+                                <td>Dieu du jour</td>  
+                                <td></td> 
+                                <td></td> 
+                                <td> </td>                
+			  
+                         </tr>
+			<tr>     
+                                <td id="delling">DELLING</td>
+                                <td>Aesir</td>  
+                                <td><li id="content">Mari de Not .
+                                    <li id="content">Mère de Dag  .</td>
+				                <td>Dieu du crépuscule</td>
+                                <td></td>
+                                <td></td>
+                                <td> </td>
+ 
+                        </tr>
+			<tr>  
+                                <td id="forseti">FORSETI</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Nanna et Baldr .</td>
+                                <td>Dieu de la justice</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/forseti.jpg" width="100" height="100"/> </td>
+                                <td> </td>   
+                         </tr>
+                      <tr> 
+                                <td id="freyja">FREYJA</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Fils de Njord et Nethus .
+                                    <li id="content">Soeur de Freyr .
+                                    <li id="content">Femme de Odr .
+                                    <li id="content">Mère de Gersimi et Hnoss .</td>
+                                <td>Déesse de la beauté, de l'amour et de l'érotisme</td> 
+                                <td>Chat et sanglier</td>
+                                <td><img src="../Image/nordique/freya.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#aesir_vs_vanir">La bataille des dieux Aesir contre les dieux Vanir</a>
+                                    <li><a href="nordique.html#la_reconstruction_du_mur_d_asgard">La reconstruction du mur d'Asgard</a>
+                                    <li><a href="nordique.html#le_vol_de_mjolnir">Le vol de Mjölnir</a> </div> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="freyr">FREYR</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Fils de Njord et Nethus .
+                                    <li id="content">Frère de Freyja .
+                                    <li id="content">Mari de Gerd .
+                                    <li id="content">Père de Yngvi .</td>
+                                <td>Dieu de la vie, de la fécondité et chef des Vanes</td> 
+                                <td>Bateau: Skidbladnir et épée magique : Sumarbrandr et sanglier</td>
+                                <td><img src="../Image/nordique/freyr.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a>
+                                    <li><a href="nordique.html#aesir_vs_vanir">La bataille des dieux Aesir contre les dieux Vanir</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+			<tr>
+                                <td id="frigg">FRIGG</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Femme d' Odin .
+                                    <li id="content">Mère de Baldr et Höd .</td>
+				                <td>Déesse de l'amour et du mariage</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/frigg.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="nordique.html#loki_et_la_mort_de_baldr">Loki et la mort de Baldr</a> </div> </td>
+                         </tr>
+			<tr>      
+                                <td id="gefjon">GEFJON</td>
+                                <td>Aesir</td>
+                                <td></td>
+				                <td>Déesse de fertilité et des champs</td>
+                                <td></td>
+                                <td><img src="../Image/nordique/gefjon.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+			</tr>
+                      <tr> 
+                                <td id="gersimi">GERSIMI</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Fille de Freyja et Od .
+                                    <li id="content">Soeur de Hnoss .</td>
+                                <td></td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+			<tr>  
+                                <td id="heimdall">HEIMDALL</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils des neuf mères: Angeyja , Atla , Eistla , Eyrgjafa , Gjalp , Greip , Imd , Jarnsaxa et Ulfrun .</td>
+				                <td>Dieu protecteur d'Asgard et des hommes, gardien du Bifrös et chargé d'alerter les dieux du début du Ragnarök</td>
+                                <td>Corne Gjallarhorn</td> 
+                                <td><img src="../Image/nordique/heimdall.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+			<tr>     
+                                <td id="hel"><a href="https://www.youtube.com/watch?v=43btnfW_BIY">HEL</a></td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fille de Loki et Angrboda .</td>
+                                <td>Déesse des morts non-glorieux</td>
+                                <td></td>
+                                <td><img src="../Image/nordique/hel.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#l_emprisonnement_de_fenrir">L'emprisonnement de Fenrir </a>
+                                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+			</tr>
+			<tr>       
+                                <td id="hermod">HERMÖD</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d'Odin et Frigg .
+                                    <li id="content">Frère de Baldr , Höd et demi-frère de Thor , Vali , Vidar , Bragi et Tyr .</td>
+				                <td>Messager des dieux</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/hermod.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="hnoss">HNOSS</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Fille de Freyja et Od .
+                                    <li id="content">Soeur de Gersimi .</td>
+                                <td></td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+			<tr>        
+                                <td id="hod">HÖD</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d'Odin et Frigg .
+                                    <li id="content">Frère de Baldr , Hermöd et demi-frère de Thor , Vali , Vida r, Bragi et Tyr .</td>
+				                <td>Dieu aveugle</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/hod.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#loki_et_la_mort_de_baldr">Loki et la mort de Baldr</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>  
+                         </tr>
+                      <tr> 
+                                <td id="hrund">HRUND</td>
+                                <td>Vanir</td>
+                                <td></td>  
+                                <td>Dieu de la résurrection</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+			<tr> 
+                                <td id="idunn">IDUNN</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fille de Ivaldi .
+                                    <li id="content">Soeur de Orvandil .
+                                    <li id="content">Femme de Bragi .</td>
+				                <td>Déesse de la longévité</td>
+                                <td>Pommes de jouvence </td> 
+                                <td><img src="../Image/nordique/idunn.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                         </tr>
+			<tr>
+                                <td id="irmin">Irmin</td>
+                                <td>Aesir</td>
+                                <td></td>
+                                <td>Dieu de la guerre</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+			</tr>
+                      <tr> 
+                                <td id="jord"> JÖRD</td>
+                                <td>Aesir</td>
+                                <td></td>
+				                <td>Déesse de la terre</td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                         </tr>
+		        <tr> 
+				                <td id="loki"><a href="https://www.youtube.com/watch?v=QCaG8lO0-P4">LOKI</a></td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Farbauti et Laufey .</td>
+				                <td>Dieu du feu, de la discorde et de la sournoiserie</td>
+                                <td>Feu et loup</td>
+                                <td><img src="../Image/nordique/loki.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a>
+                                    <li><a href="nordique.html#la_reconstruction_du_mur_d_asgard">La reconstruction du mur d'Asgard</a>
+                                    <li><a href="nordique.html#le_vol_de_mjolnir">Le vol de Mjölnir</a>
+                                    <li><a href="nordique.html#loki_et_la_mort_de_baldr">Loki et la mort de Baldr</a>
+                                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="mani">MANI</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Frère de Sol .</td>
+				                <td>Dieu de la lune</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/mani.jpg" width="100" height="100"/></td>
+                                <td></td> 
+                         </tr>
+                      <tr> 
+                                <td id="mimir">MIMIR</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Frère de Sol .</td>
+				                <td>Dieu de la sagesse et du savoir</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/mimir.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#odin_et_le_puits_de_la_connaissance">Odin et le puits de la connaissance</a>
+                                    <li><a href="nordique.html#aesir_vs_vanir">La bataille des dieux Aesir contre les dieux Vanir</a> </div> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="modi">MODI</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Thor .
+                                    <li id="content">Demi-frère de Magni .</td>
+				                <td>Dieu de la sagesse et du savoir</td>
+                                <td></td> 
+                                <td></td> 
+                                <td><div style="text-align: left;">
+				                     <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="nanna">NANNA</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fille de Nep et Saeming .
+                                    <li id="content">Femme de Baldr .</td>
+				                <td>Déesse de la joie et de la paix</td>
+                                <td></td> 
+                                <td><img src="../Image/nordique/nanna.jpg" width="100" height="100"/></td>
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="nerthus">NERTHUS</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Mère de Freyja et Freyr .</td>
+                                <td>Déesse de la terre fertile</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="njord">NJORD</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Père de Freyja et Freyr .
+                                    <li id="content">Epoux de Skadi .</td>
+                                <td>Dieu de l'abondance, du vent et de la mer</td> 
+                                <td></td>
+                                <td></td> 
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#aesir_vs_vanir">La bataille des dieux Aesir contre les dieux Vanir</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="odin">ODIN</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Bor et Betla .
+                                    <li id="content">Frère de Vili et Vé .
+                                    <li id="content">Père de Thor .</td>
+                                <td>Dieu de la victoire et chef des Ases</td> 
+                                <td>Lance</td>
+                                <td><img src="../Image/nordique/odin.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#la_creation_du_monde">La création du monde</a>
+                                    <li><a href="nordique.html#odin_et_le_puits_de_la_connaissance">Odin et le puits de la connaissance</a>
+                                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a>
+                                    <li><a href="nordique.html#aesir_vs_vanir">La bataille des dieux Aesir contre les dieux Vanir</a>
+                                    <li><a href="nordique.html#la_reconstruction_du_mur_d_asgard">La reconstruction du mur d'Asgard</a>
+                                    <li><a href="nordique.html#loki_et_la_mort_de_baldr">Loki et la mort de Baldr</a>
+                                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="odr">ODR</td>
+                                <td>Vanir</td>
+                                <td><li id="content">Epoux de Freyja .
+                                    <li id="content">Père de Gersimi et Hnoss .</td>
+                                <td>Dieu des blés</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="ran">RAN</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Femme de Aegir .
+                                    <li id="content">Mère des neuf vagues .
+                                    <li id="content">Grand-mère de Heimdall .</td>
+                                <td>Déesse de la tempête</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="saga">SAGA</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fille d'Odin .</td>
+                                <td>Déesse de la poésie</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="sif">SIF</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Femme de Thor .
+                                    <li id="content">Mère de Modi , Magni et Thrud .</td>
+                                <td>Déesse du grain</td> 
+                                <td></td>
+                                <td><img src="../Image/nordique/sif.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="sigyn">SIGYN</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Femme de Loki .
+                                    <li id="content">Mère de Nari .</td>
+                                <td>Déesse de la fidelité</td> 
+                                <td></td>
+                                <td><img src="../Image/nordique/sigyn.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="sol">SOL</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Soeur de Mani .</td>
+                                <td>Déesse du soleil</td> 
+                                <td></td>
+                                <td><img src="../Image/nordique/sol.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="thor">THOR</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d' Odin et Jörd .
+                                    <li id="content">Epoux de Sif .
+                                    <li id="content">Père de Modi , Magni et Thrud .</td>
+                                <td>Dieu de la foudre, des forgerons, des artisans et défenseur d'Asgard</td> 
+                                <td>Marteau: Mjölnir, ceinture: Megingjord et gants: Járngreipr</td>
+                                <td><img src="../Image/nordique/thor.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a>
+                                    <li><a href="nordique.html#la_reconstruction_du_mur_d_asgard">La reconstruction du mur d'Asgard</a>
+                                    <li><a href="nordique.html#le_vol_de_mjolnir">Le vol de Mjölnir</a>
+                                    <li><a href="nordique.html#la_punition_de_loki">La punition de Loki</a>
+                                    <li><a href="nordique.html#thor_et_la_peche_de_jormungandr">Thor et la pêche de Jormungandrr</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="thrud">THRUD</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fille de Thor .
+                                    <li id="content">Femme de Hod .</td>
+                                <td>Déesse de la vigueur</td> 
+                                <td></td>
+                                <td><img src="../Image/nordique/sol.jpg" width="100" height="100"/></td>
+                                <td></td> 
+                         </tr>
+                      <tr> 
+                                <td id="tyr"><a href="https://www.youtube.com/watch?v=k1si35N2DiE">TYR</a></td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Hymir .</td>
+                                <td>Dieu de la guerre, du ciel et de la justice</td> 
+                                <td></td>
+                                <td><img src="../Image/nordique/tyr.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#thor_et_la_peche_de_jormungandr">Thor et la pêche de Jormungandrr</a>
+                                    <li><a href="nordique.html#l_emprisonnement_de_fenrir">L'emprisonnement de Fenrir </a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="var">VAR</td>
+                                <td>Aesir</td>
+                                <td></td>  
+                                <td>Déesse du mariage et des pactes</td> 
+                                <td></td>
+                                <td></td> 
+                                <td> </td> 
+                         </tr>
+                      <tr> 
+                                <td id="vidar">VIDAR</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils d' Odin et Grid .</td>
+                                <td>Dieu de la vengeance et du silence</td> 
+                                <td>Chaussures de cuir et épée</td>
+                                <td><img src="../Image/nordique/vidar.jpg" width="100" height="100"/></td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="vili">VILI</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Bor et Betla .
+                                    <li id="content">Frère d' Odin et Vé .</td>
+                                <td>Cocréateur des hommes</td> 
+                                <td></td>
+                                <td></td> 
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde">La création du monde</a> </div> </td>
+                         </tr>
+                      <tr> 
+                                <td id="ve">VE</td>
+                                <td>Aesir</td>
+                                <td><li id="content">Fils de Bor et Betla .
+                                    <li id="content">Frère d' Odin et Vili .</td>
+                                <td></td> 
+                                <td></td>
+                                <td></td> 
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde">La création du monde</a> </div> </td>
+                         </tr>
+			 
+                        
+		</table>
+
+ <br/>
+		<table>                              <!--Tableau 2-->
+			<tr>             <!--Noms des colonnes-->
+				                <th>Créatures</th>
+                                <th>Signification en vieux norrois</th>
+                                <th>Description</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+
+                         </tr>
+			<tr><!--Lignes-->
+                                <td id="alfe">ALFE LUMINEUX </td>
+                                <td>Elfe</td>
+                                <td>Créature vivant à Álfheim</td>
+                                <td><img src="../Image/nordique/alfe.jpg" width="100" height="100"/> </td>
+                                <td></td>   
+                         </tr>
+			<tr>
+                                <td id="bersekr">BERSERKR</td>
+                                <td>Guerrier fauve</td>
+				                <td>Guerrier sanguinaire, redoutable qui rentrent en fureur lors des combats, ils sont représentés vêtus de peau d'ours ou de loup</td>
+                                <td><img src="../Image/nordique/berserkr.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                         </tr>
+			<tr>
+                                <td id="draugr"><a href="https://www.youtube.com/watch?v=Rjnx0iKeAtM">DRAUGR</a></td>
+                                <td>Celui qui marche après la mort</td>
+				                <td>Corps vivant d'un défunt gardant souvent un trésor</td>
+                                <td><img src="../Image/nordique/draugr.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                         </tr>
+			<tr>
+                                <td id="dvergr">DVERGR OU ALFE SOMBRE</td>
+                                <td>Nain</td>
+				                <td>Créature humanoïde de petite taille douée en forge </td>
+                                <td><img src="../Image/nordique/nain.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#les_dons_des_nains_envers_les_dieux">Les dons des nains envers les dieux</a>
+                                    <li><a href="nordique.html#l_emprisonnement_de_fenrir">L'emprisonnement de Fenrir </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="fenrir"><a href="https://www.youtube.com/watch?v=E2CwU6viLek">FENRIR</a></td>
+                                <td>Habitant des marais</td>
+				                <td>Loup géant fils de Loki et de Angrboda et frère de Jormungandr et de Hel </td>
+                                <td><img src="../Image/nordique/fenrir.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                     <li><a href="nordique.html#l_emprisonnement_de_fenrir">L'emprisonnement de Fenrir </a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>            
+                         </tr>
+			<tr>
+                                <td id="garmr">GARMR</td>
+				                <td>Hurleur</td>
+				                <td>Chien gardant les portes de helheim</td>
+                                <td><img src="../Image/nordique/garmr.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                          </tr>
+			<tr>
+                                <td id="gerifreki">GERI ET FREKI</td>
+                                <td>Vorace et violenta</td>
+				                <td>Loup d'Odin présent au banquet du Valhalla</td>
+                                <td><img src="../Image/nordique/loups odin.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+                       <tr>
+                                <td id="gullinbursti">GULLINBURSTI</td>
+                                <td>Soie d'or</td>
+				                <td>Sanglier de Freyr forgé par les nains</td>
+                                <td><img src="../Image/nordique/gullinbursti.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="hati"><a href="https://www.youtube.com/watch?v=-39-XG4TfT4">HATI</a></td>
+                                <td>Haine</td>
+				                <td>Loup fils de Fenrir poursuivant Mani </td>
+                                <td><img src="../Image/nordique/hati.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="hildisvini">HILDISVINI</td>
+                                <td>Cochon de bataille</td>
+				                <td>Sanglier de Freya</td>
+                                <td><img src="../Image/nordique/hildisvini.jpg" width="100" height="100"/> </td>
+                                <td> </td>
+                         </tr>
+			<tr>
+                                <td id="huginmunin">HUGIN ET MUNIN</td>
+                                <td>Esprit et Mémoire</td>
+				                <td>Corbeaux d'Odin </td>
+                                <td><img src="../Image/nordique/corbeaux odin.jpg" width="100" height="100"/> </td>
+                                <td> </td> 
+                          </tr>
+			<tr>
+                                <td id="jormungandr"><a href="https://www.youtube.com/watch?v=G9-KZFpJYus">JORMUNGANDR</a></td>
+                                <td>Serpent de Midgard</td>
+				                <td>Serpent géant entourant Midgard, fils de Loki et de Angrboda et frère de Hel et Fenrir</td>
+                                <td><img src="../Image/nordique/jormungandr.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#thor_et_la_peche_de_jormungandr">Thor et la pêche de Jormungandrr</a>
+                                    <li><a href="nordique.html#l_emprisonnement_de_fenrir">L'emprisonnement de Fenrir </a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>    
+                           </tr>
+			<tr>
+                                <td id="jotunn">JOTÜNN</td>
+                                <td>Géant</td>
+				                <td>Etre humanoïde de très grande taille, vivant à Jötunheim et enfants de Ymir </td>
+                                <td><img src="../Image/nordique/jotunn.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="grec.html#la_creation_du_monde">La création du monde</a>
+                                    <li><a href="nordique.html#la_reconstruction_du_mur_d_asgard">La reconstruction du mur d'Asgard</a>
+                                    <li><a href="nordique.html#le_vol_de_mjolnir">Le vol de Mjölnir</a>
+                                    <li><a href="nordique.html#thor_et_la_peche_de_jormungandr">Thor et la pêche de Jormungandr</a>
+                                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td> 
+                         </tr>
+                       <tr> 
+                                <td id="tanngrisnirtanngnejostr">TANNGRISNIR ET TANNGNEJOSTR</td>
+                                <td> qui montre ses dents et qui fait grincer ses dents</td>
+				                <td>Boucs tirant le char de Thor, qu'il mange lorsqu'il a faim puisqu'il réanime en les bénissant de son marteau</td>
+                                <td><img src="../Image/nordique/boucs de thor.jpg" width="100" height="100"/> </td>
+                                <td></td> 
+                         </tr>
+                       <tr>
+                                <td id="norne">NORNE</td>
+                                <td></td>
+				                <td>Créature qui tissent le destin des hommes et des dieux</td>
+                                <td><img src="../Image/nordique/norne.jpg" width="100" height="100"/> </td>
+                                <td></td>
+                         </tr>
+			<tr>
+                                <td id="skol"><a href="https://www.youtube.com/watch?v=-39-XG4TfT4">SKOL</a></td>
+                                <td>Répulsion</td>
+				                <td>Loup fils de Fenrir poursuivant la Sol</td>
+                                <td><img src="../Image/nordique/skol.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="sleipnir">SLEIPNIR</td>
+                                <td></td>
+				                <td>Cheval à huit pattes d'Odin, fils de Loki et d'une jument</td>
+                                <td><img src="../Image/nordique/sleipnir.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="valkyrie"><a href="https://www.youtube.com/watch?v=n1Yhc36GOdY">VALKYRIE</a></td>
+                                <td>Qui choisit les morts</td>
+				                <td>Guerrière au service d'Odin qui decide des morts sur le champ de bataille et emmène les valeureux au Valhalla</td>
+                                <td><img src="../Image/nordique/valkyrie.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                          </tr>
+                        <tr>
+                                <td id="yggdrasil"><a href="https://www.youtube.com/watch?v=2mkjFL2cYpk">YGGDRASIL</a></td>
+                                <td>Destrier du Redoutable</td>
+				                <td>Arbre monde reliant et supportant les neuf mondes</td>
+                                <td><img src="../Image/nordique/yggdrasil.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+	    			                <li><a href="nordique.html#ragnarok">Ragnarok</a> </div> </td>
+                          </tr>
+ 
+                 </table> 
+  <br/>
+                 <table>                  <!--Tableau 3-->
+                          
+                           <tr>            <!--Noms des colonnes-->
+				                <th>Nom</th>
+                                <th>Signification</th>
+                                <th>Position sur Yggdrasil</th>
+                                <th>Habitant</th>
+                                <th>Représentation</th>
+                         </tr>
+			<tr> <!--Lignes-->
+                                <td>ALFHEIM</td>
+                                <td>Royaume des Alfes</td> 
+                                <td>Racines</td>
+                                <td>Elfes lumineux</td>
+                                <td><img src="../Image/nordique/alfheim.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>ASGARD</td> 
+                                <td>Enceinte des Ases</td>
+                                <td>Sommet</td>
+                                <td>Dieux Aesir</td>
+                                <td><img src="../Image/nordique/asgard.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>HELHEIM</td>
+                                <td>Royaume de Hel</td> 
+                                <td>Racines</td>
+                                <td>Hel et les morts de maladie ou de vieillesse</td>
+                                <td><img src="../Image/nordique/helheim.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>JÖTUNHEIM</td>
+                                <td>Royaume de Jötunn</td> 
+                                <td>Racines</td>
+                                <td>Géants de glace</td>
+                                <td><img src="../Image/nordique/jotunheim.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>MIDGARD</td>
+                                <td>Pays du milieu</td> 
+                                <td>Tronc</td>
+                                <td>Hommes</td>
+                                <td><img src="../Image/nordique/midgard.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>MUSPELHEIM</td>
+                                <td>Royaume de Surt</td> 
+                                <td>Racines</td>
+                                <td>Géants de feu</td>
+                                <td><img src="../Image/nordique/muspelheim.jpg" width="100" height="100"/> </td>
+                         </tr>:
+			<tr>
+                                <td>NIDAVELLIR</td>
+                                <td>Monde des nains</td> 
+                                <td>Racines</td>
+                                <td>Nains</td>
+                                <td><img src="../Image/nordique/nivdavellir.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>SVARTALFHEIM (souvent et fusionné avec Nidavellir)</td>
+                                <td>Royaume des elfes sombres</td> 
+                                <td>Racines</td>
+                                <td>Elfes sombres</td>
+                                <td><img src="../Image/nordique/svartalfheim.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td>VANAHEIM</td>
+                                <td>Royaume des Vanir</td> 
+                                <td>Racines</td>
+                                <td>Dieux Vanir</td>
+                                <td><img src="../Image/nordique/vanaheim.jpg" width="100" height="100"/> </td>
+                         </tr>			
+
+  <br/>
+                 </table> 
+
+ <footer>
+ <a> <ol class="niveau1">
+
+<br>
+<br>                                 <!--Intro-->
+
+    <h3>Introduction:</a> </h3>
+&nbsp;&#160;La mythologie nordique rassembla les croyances pratiquées par les Scandinaves d'environ 600 à 1400
+après J.C. Elle mettait en scène les dieux et les créatures dans des mythes et légendes, répertoriés sur ce site
+de manière non chronologique.
+
+<br>
+<br>                                      <!--Histoires-->
+<br>
+
+
+   <h2 id="la_creation_du_monde"><a href="https://www.youtube.com/watch?v=e_vCVYzarrc">La création du monde</a></h2>
+&nbsp;<div id ="content">&#160;Au début, il n’y avait que le vide Ginnungagap situé entre Muspelheim et Nifleheim . La chaleur des
+flammes de Muspelheim commençait à faire fondre la pierre glacée et le géant Ymir sortit de la glace tout en continuant à dormir.
+La chaleur le faisait transpirer, et de cette sueur naquirent les premières créatures vivantes. La vache Audhumla sortit aussi de
+la glace, et de ses pis sortirent quatre rivières où Ymir buvait. Pour se nourrir, la vache léchait un bloc de glace salée, et de
+ce bloc sortit Buri .
+Ymir , dans son sommeil, donnait naissance aux Jötun , les géants de glace. Buri , avec une des géantes, donna vie à Burr qui, lui,
+eut avec Bestla Odin , Vili et Vé . Odin et ses frères s’ennuyaient et décidèrent de tuer Ymir afin de créer toute chose. Lorsque
+le géant fut tué, les trois frères créèrent de son sang les océans, de sa chair une lande aride, du tas de ses os une chaîne de
+montagnes, et de la chair d’ Ymir naquirent les nains et les elfes.
+Par la suite, les trois dieux virent deux rondins de bois et créèrent les premiers hommes, Ask et Embla . Odin leur donna vie,
+Vili leur donna l'intelligence, et Vé leur sculpta des yeux, des oreilles et des bouches. Puis les frères créèrent Asgard.
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="odin_et_le_puits_de_la_connaissance"><a href="https://www.youtube.com/watch?v=FDRysoTlo7Q">Odin et le puits de la connaissance</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Après avoir tué Ymir, Odin régnait sur le trône d’Asgard, Il était sage, mais n’avait pas toute la
+connaissance du monde. Alors, il se déguisa en vagabond et traversa Jötunheim , rejoignit Mimir l’oncle d’ Odin qui vivait proche
+du puits de la connaissance. Ce puits alimentait Yggdrasil et Mimir buvait l’eau sacrée à l’aide de
+Gjallarhorn . Odin voulu boire l’eau du puits et demanda à Mimir qui lui autoriserait l’accès à son puits seulement si Odin
+s’arrachait un œil. Odin s’arracha l’œil et
+le déposa dans le puits alors Mimir lui donna une corne remplit de l’eau du puits et Odin but la corne en entière. Il fut empli de la connaissance et voyait mieux avec
+son unique œil que lorsqu’il avait les deux.
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="les_dons_des_nains_envers_les_dieux"><a href="https://www.youtube.com/watch?v=nYB7lnZEJmM">Les dons des nains envers les dieux</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160; Sif avait de beaux et longs cheveux dorés, ce qui plaisait à Thor , mais un jour il se réveilla et
+     trouva une femme chauve dans son lit. Il hurla puis reconnut sa femme. Il savait que Loki était responsable. Thor lui dit
+     de trouver un moyen de rendre sa chevelure à Sif ou il lui briserait chaque os de son corps. Loki partit alors pour
+     Svartalfheim et chercha les frères Ivaldi. Il leur dit que les dieux organisaient un concours pour déterminer les meilleurs
+     artisans et, pour les convaincre, il leur dit que les frères Brokkr et Eitri avaient affirmé que les fils d’Ivaldi n’en
+     étaient pas capables. À ces mots, les frères Ivaldi acceptèrent de participer. Loki leur dit qu’ils devaient fabriquer trois
+     cadeaux pour les dieux et que l’un devait être une longue chevelure d’or qui ne s’arrête pas de pousser.
+     Il trouva ensuite les frères Brokkr et Eitri et leur dit que les frères Ivaldi participaient à un concours organisé par les
+     dieux afin de déterminer les meilleurs artisans et qu’ils assuraient que Brokkr et Eitri ne pouvaient pas gagner. Eitri et
+     Brokkr refusèrent car tout le monde savait qu’ils étaient meilleurs. Loki paria sa tête que les frères Ivaldi gagneraient,
+     alors Brokkr et Eitri acceptèrent. Les frères Ivaldi avançaient bien, mais Brokkr et Eitri avaient fabriqué deux cadeaux et
+     le troisième serait encore plus grandiose car c’était un puissant marteau. Les nains devaient, pour forger leur marteau,
+     tenir la forge à température constante, et pour cela, Brokkr appuyait régulièrement sur son soufflet. Loki , qui ne voulait
+     pas perdre sa tête, se transforma en moustique et piqua Brokkr à la main, mais il continua son travail. Alors Loki le piqua
+     au cou, ce qui fit crier le nain de douleur. Loki piqua les yeux du nain et la souffrance fit stopper le travail du nain.
+     Le long manche du marteau se rompit.
+     Les nains devaient présenter leurs cadeaux aux dieux. Les frères Ivaldi offrirent à Sif une chevelure d’or, à Odin une lance
+     qui ne rate jamais sa cible et pouvant tout traverser, et à Freyr ils offrirent un énorme bateau pouvant être plié à tel point
+     qu’il rentrerait dans sa poche. Les frères Brokkr et Eitri offrirent à Odin des bracelets d’or de Draupnir qui multipliaient
+     ses bracelets toutes les huit nuits, à Freyr ils offrirent un sanglier d’or capable de voler et qui ne s’épuisait jamais, et
+     Thor reçut son marteau nommé Mjölnir revenant toujours dans les mains de celui qui le lance. Malgré la taille du manche de
+     Mjölnir , Thor , Odin et Freyr préféraient ce cadeau. Les frères Brokkr et Eitri avaient gagné et ils réclamèrent la tête de
+     Loki , qui accepta seulement s’ils pouvaient lui couper la tête sans prendre aucune partie de son cou car Loki avait parié sa
+     tête et non son cou. Odin intervint et Brokkr cousit la bouche de Loki pour qu’il ne trompe plus personne.
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="aesir_vs_vanir"><a href="https://www.youtube.com/watch?v=lMhqh8wcutM">La bataille des dieux Aesir contre les dieux Vanir</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Les dieux Aesir et les dieux Vanir étaient en conflit pour être vénérés par les hommes. Les dieux
+     Aesir étaient les dieux de la guerre tandis que les dieux Vanir étaient ceux de la fertilité. Gullveig était une sorcière
+     cupide, les dieux d’ Asgard l’avaient brûlée trois fois, mais elle revenait si bien qu’alliée des dieux de Vanaheim , la
+     guerre fut déclarée. Odin lança sa puissante lance vers les dieux Vanir qui firent tomber le mur d’ Asgard. La guerre dura
+     mille ans et les deux camps déclarèrent la paix et échangèrent des otages. Mimir et Hoenir furent envoyés à Vanaheim tandis
+     que Freyr , Freyja et Njord furent envoyés à Asgard. Mimir et Hoenir se prétendaient sages, mais Hoenir se contentait de
+     répéter ce que lui disait Mimir et lorsque les dieux Vanir s’en rendirent compte, ils leur coupèrent la tête et les
+     envoyèrent à Odin . Odin ne voulait pas perdre la sagesse de Mimir et usa de ses pouvoirs afin de donner vie à la tête du
+     sage. Un nouveau traité de paix fut signé et les dieux purent cohabiter.
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_reconstruction_du_mur_d_asgard"><a href="https://www.youtube.com/watch?v=lMhqh8wcutM">La reconstruction du mur d'Asgard</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160; Thor protégeait Asgard à l’aide de Mjölnir mais il voyageait beaucoup en quête d’aventure et Asgard restait sans défense, alors Les dieux se réunirent et
+décidèrent qu’il fallait construire un mur mais certains dieux dirent que cela prendrait des années et à ce moment-là, un voyageur arriva et dit qu’il pouvait
+construire le mur en une année mais comme récompense, il voulait Freyja . Les dieux refusèrent mais Loki convainquit les dieux car c’était impossible. Le constructeur
+parti chercher ses outils et il commença son travail grâce à son puissant étalon qui lui apportait des pierres et à sa force, le mur avançait vite. Les dieux se 
+rendirent compte que le bâtisseur aurait fini dans le délai et Odin était furieux contre Loki alors le dieu de la malice se transforma en jument attirant ainsi le
+cheval du constructeur qui s’enfuit poursuivant Loki sous la forme d’une jument. Le bâtisseur ne put finir son travail à temps sans son cheval, il arracha sa cape et 
+se révéla en géant. Le géant attaqua les dieux mais Thor écrasa sa tête avec Mjölnir . Les dieux terminèrent le mur et Asgard était désormais en sécurité. Loki revint
+après de longues années et ramenait avec lui un poulain à huit pattes, Loki l’offrit à Odin à condition que personne lui demande l’origine de ce poulain connu sous le
+nom de Sleipnir .
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="l_emprisonnement_de_fenrir"><a href="https://www.youtube.com/watch?v=TcSWGPpkh6Y">L'emprisonnement de Fenrir</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Pris des bras de leur mère, les enfants de Loki et d’ Angrboda eurent des destins séparés mais pas
+     très différents. Jormungandr fut jeté dans la mer de Midgard, Hel fut envoyée au royaume des morts et Fenrir vécut à Asgard .
+     Fenrir , tout comme Jormungandr , ne cessait de grandir, ce qui inquiétait les dieux, sauf Tyr qui était ami avec le loup et
+     s’occupait de le nourrir. Les dieux forgèrent de puissantes chaînes afin d’emprisonner Fenrir et, pour qu’il ne se doute de
+     rien, ils firent passer cela pour un défi. Les dieux l’enchaînèrent et Fenrir put s’en libérer facilement, puis de nouvelles
+     chaînes furent forgées, encore plus résistantes, qui semblaient retenir le loup. Les dieux étaient satisfaits, mais Fenrir
+     rassembla ses forces et brisa la chaîne le retenant. Fenrir vit la peur des Asgardiens et savait qu’ils préparaient quelque
+     chose. Odin envoya un elfe à Nidavellir afin que les nains remédient au problème des dieux. Les nains donnèrent la liste des
+     ingrédients aux dieux dans laquelle se trouvaient : des racines de montagnes, un tendon d’ours, de la barbe de femme, de
+     l’haleine de poisson, de la salive d’oiseau et le son des pas de chat. Les dieux réunirent les ingrédients et les nains
+     forgèrent la corde qui fut donnée aux Asgardiens. Les dieux mirent au défi Fenrir de se libérer de cette corde, mais méfiant,
+     il accepta à condition qu’un dieu mette sa main dans sa gueule. Tyr , ami de Fenrir , accepta et le loup fut attaché et ne
+     put se libérer. Alors, il dévora la main de Tyr . Les cordes retenant Fenrir furent accrochées à un énorme rocher et Fenrir
+     jura de se venger d’ Odin lors du Ragnarok .
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="le_vol_de_mjolnir"><a href="https://www.youtube.com/watch?v=9YGoON-NdnA">Le vol de Mjölnir</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Un jour Thor se réveilla et ne trouva pas Mjölnir , il le chercha mais ne trouva qu’un message lui donnant rendez-vous et lui disant qu’il récupérerait
+contre une rançon. Le message était signé Trim . Thor demanda à Loki de négocier pour lui. Loki se rendit à Jötunheim et entra chez le géant qui ne voyait pas bien et le
+géant demanda Freyja contre Mjölnir . Loki déguisa Thor en femme afin que le géant croit que c’était Freyja et Loki se déguisa en une servante de Freyja et ensemble ils
+se rendirent chez Trim et le géant avait prévu un buffet. Le marteau fut amené et Thor s’en saisit puis frappa la tête de Trim . Ainsi Asgard était à nouveau en
+sécurité mais les dieux s’en souvinrent et en rigolait régulièrement. 
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="loki_et_la_mort_de_baldr"><a href="https://www.youtube.com/watch?v=kCxBuE_MF0E">Loki et la mort de Baldr</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160; Baldr était le plus beau dieu et était apprécié de tous car le jour, il apportait la joie. Mais ses
+     nuits étaient tourmentées et Nanna le réconfortait. Odin alla à Helheim voir un oracle capable de déchiffrer les cauchemars
+     de son fils. L’oracle lui dit que Helheim accueillerait Baldr car lorsque la tristesse envahirait Asgard , la joie envahirait
+     Helheim . Odin revint à Asgard et annonça à Frigg le destin de leur fils. La déesse demanda à toute chose de jurer de ne
+     jamais faire de mal à son fils et tous le firent, même Loki qui, jaloux, fut forcé de prêter serment. Les dieux s’amusaient
+     avec le nouveau pouvoir de leur dieu préféré et ils lançaient toutes sortes d’objets, et Thor jetait même Mjölnir , mais
+     Baldr ne sentait rien. Tous les dieux étaient contents de savoir que Baldr était invulnérable sauf Loki qui cherchait un
+     point faible. Un jour, Il écouta une discussion entre Frigg et une de ses amies, lui expliquant comment elle avait rendu son
+     fils invulnérable, mais il entendit que le gui, plante inoffensive, n’avait pas juré. Alors Loki ramassa du gui, fabriqua
+     une fléchette et la donna à Höd qui ne participait pas car il était aveugle. Il se rendit invisible et guida Höd devant
+     Baldr qui était heureux de le voir enfin participer. Höd , aidé de Loki , lança la fléchette de toute sa force sur Baldr .
+     Il s’attendait à des rires mais aucun rire ne fut entendu car Baldr avait été mortellement blessé.
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="la_punition_de_loki"><a href="https://www.youtube.com/watch?v=zGmI94zbB1k">La punition de Loki</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Les dieux pleurèrent la mort de Baldr et envoyèrent Hermöd dans le royaume d’ Hel . Hel lui dit que
+     Baldr pourrait retourner dans le monde des vivants si toute chose pleurait sa mort. Tous les êtres pleurèrent sauf une
+     géante des montagnes, mais les dieux se rendirent rapidement compte que c’était Loki déguisé. Loki , pour échapper à la
+     colère des dieux, se cacha dans les montagnes près d’une rivière où il y avait un saumon et se transforma en saumon afin de
+     ne pas être retrouvé, mais Odin le retrouva facilement. Sachant que les dieux le trouveraient, il réfléchit à comment ils
+     s’y prendraient pour l’attraper. Loki fabriqua le premier filet de pêche et s’entraîna, trouvant des solutions pour s’en
+     échapper. Plus tard, il entendit les dieux arriver et jeta le filet dans le feu puis plongea dans l’eau, mais les dieux le
+     virent plonger dans la rivière sans savoir comment le capturer. Kvasir trouva les restes du filet et les dieux en
+     fabriquèrent davantage. Loki arrivait à éviter les filets que lançaient les dieux en sautant hors de l’eau, mais Thor se
+     dit qu’il pourrait attraper Loki au vol tel un ours. Lorsque Loki, sous la forme d’un saumon, jaillit, Thor sauta et
+     l’attrapa. Les dieux l’emmenèrent dans une grotte où il fut attaché à un rocher à l’aide des tendons de son fils, un serpent
+     dont la salive brûle la peau fut capturé et placé au-dessus de Loki . La salive du serpent tombait donc sur le dieu,
+     le brûlant, mais Sigyn , afin de le soulager, tenait un bol au-dessus de sa tête, recueillant la salive du serpent. Mais
+     chaque fois qu’elle allait le vider, la salive tombait sur Loki , le faisant ainsi souffrir. Loki jura de se venger lors de
+     Ragnarok.
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="thor_et_la_peche_de_jormungandr"><a href="https://www.youtube.com/watch?v=e-voIuhjRCI">Thor et la pêche de Jormungandr</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;Les dieux d’ Asgard étaient partis visiter le palais d’ Aegir et se réjouissaient car son hydromel
+     était réputé comme le meilleur. Mais Aegir ne voulait pas produire son fameux hydromel, arguant qu’il n’avait pas de
+     chaudron assez grand. Tyr savait qu’il pouvait trouver un chaudron de la bonne taille chez son père. Tyr et Thor partirent
+     chez Ymir et demandèrent le chaudron. Le géant leur servit à manger, Thor mangea un bœuf entier, alors Ymir partit chasser
+     une baleine et Thor décida de l’accompagner. Ymir attrapa une grande baleine et mit Thor au défi d’attraper plus gros,
+     alors Thor se rendit en eau profonde sur le territoire du serpent géant. Thor lança son hameçon avec une tête de taureau
+     comme appât et attrapa Jormungandr et le bateau fut emporté. Ymir dit à Thor de couper la ligne, mais il refusa, craignant
+     d’être emporté au fond de l’océan et coupa la corde avant que Thor n’écrase la tête de Jormungandr avec Mjölnir . Thor
+     jura de le tuer lors du Ragnarok . Les dieux purent prendre le chaudron et Aegir put fabriquer l’hydromel.
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="ragnarok"><a href="https://www.youtube.com/watch?v=_u4pSH66UzM">Ragnarok</a></h2>
+&nbsp;&nbsp;<div id ="content">&#160;A Midgard les hommes étaient protégés par les dieux, mais lorsque l’été arrivait à sa fin les hommes
+     étaient prêts à faire une grande récolte, mais un vent
+froid s’installait et un gel détruisit une partie de la récolte. Les feuilles tombaient des arbres bien plus tôt que normalement
+     et les hommes se préparaient à un rude
+hiver car, le Fimbulvet était là et l’hiver durerait trois années consécutives. Les hommes et le bétail se protégèrent dans un
+     abri mais les nuits étaient de plus en
+plus longues et les hommes furent forcés de manger leur bétail. Les hommes qui essayaient de chasser étaient des proies faciles
+     pour les loups alors ils se battaient
+entre eux pour avoir le peu de ressource restante et le cannibalisme s’installa. Le chaos était arrivé sur Midgard . Hati et Skol
+     dévorèrent Sol et Mani et le monde fut
+plongé dans l’obscurité ce qui fit trembler Yggdrasil trembla. La roche retenant Fenrir s’effondra et il fut libre et Jormungandr
+     provoqua de puissants tsunamis et
+déversa son poison dans les eaux tuant ainsi toutes créatures aquatiques. Loki comme Fenrir fut libéré se son châtiment et se
+     rendit à Helheim afin de récupérer l’armée
+des morts de sa fille, le dragon rongeant les racines d’ Yggdrasil leur créa un passage vers Midgard , les géants de Muspelheim
+     se joignirent aux morts menés par Surtr et
+les géants de Jötunnheim partirent vers le champ de bataille choisit par les dieux.
+</div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Heimdall souffla dans Gjallahorn annonçant le début de Ragnarok. Les portes du Valhalla s’ouvrirent et des milliers de guerriers en sortirent formant
+l’armée des dieux menée par les Valkyries et tous les dieux sachant manier l’épée rejoignirent cette armée. Les géants de Muspelheim partirent pour Asgard et le pont 
+Bifrost s’effondra sous leur poids. Les dieux savaient que leur destin n’était pas de se cacher derrière leur mur et partir sur le champ de bataille et Odin sur 
+Sleipnir dirigeait son armée avançant vers l’armée dirigée par Loki. Lorsque les deux armées se rencontrèrent Yggdrasil trembla par la force de l’impact. Thor écrasait
+la tête des géants avec Mjölnir .
+</div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Freyr chevauchant Gullinbursti attaqua Surtr mais fut terrassée par l’épée enflammée du géant et avant de mourir Freyr regretta d’avoir donné son épée
+magique. </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Tyr trépassa face à Garmr mais avant de mourir parvint à le tuer.
+ </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Jormungandr arriva et cracha son venin sur le champ de bataille tuant ainsi les guerriers des dieux. Thor et Jormungandr se battirent, le serpent essayait
+d’avaler Thor qui déviait toutes ses attaques. Thor réussit à terrassée Jormungandr et écrasa sa tête libérant ainsi son puissant poison et tuant Thor .
+ </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Fenrir dévorait tous ceux qui étaient sur son chemin cherchant à se venger d’ Odin . Odin chevauchant Sleipnir fonça sur Fenrir qui dévora le dieu.</div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Vidar voulu venger son père et attaqua Fenrir qui essayait de le dévorer mais Vidar arracha la mâchoire de Fenrir le tuant ainsi. </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Loki regardait les dieux tombés les un après les autres. Heimdall tua tous les soldats de Hel qui l’empêchait d’arriver à Loki . Loki et Heimdall firent un
+duel dans lequel les deux moururent. </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160; Surtr mis le feu au monde et brûla Asgard puis l’eau inonda les terres tuant ainsi Surtr .
+    </div>
+
+<br>
+
+&nbsp;&nbsp;<div id ="content">&#160;Après le combat l’eau se retira et les plantes poussèrent, un nouveau soleil apparu et Yggdrasil tomba, laissant apparaître au milieu des cendres un couple
+de mortel caché par les dieux fit irruption. Lif et Lifbrasir était les seuls survivants humains et purent repeupler le monde. Asgard avait disparu mais fut remplacé par
+Hioavoldr où régnait les fils d’Odin Vidar et Valli, les fils de Thor : Magni et Modi qui prirent la responsabilité de Mjölnir , Baldr apparu avec Höd et ensemble ils
+débutèrent un nouveau cycle.
+               </div>
+<br>
+
+
+
+
+</p></ol></a>
+                       <!--Image hyperlien : renvoie en haut de la page-->
+     <CENTER><a href="nordique.html" title="Haut de la page">  <img alt="haut de la page" class="haut_de_page" src="../Image/fleche haut.jpg" width="100" height="100" /></a>
+
+            <!--Signature-->
+         <p class="log"> <img id="logo" src="../Image/logo ABT.jpg" width="40" height="40"></p>
+		<p class="diff">A website by Aubert</p>
+     </CENTER>
+</body>
+</html>

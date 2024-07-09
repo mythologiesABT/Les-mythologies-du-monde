@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>	Mythologie egyptienne</title>   <!--Nom de la page (apparait sur l'onglet)-->
+
+    <!-- Pages CSS -->
+		<link rel="stylesheet"  href="../Styles/style egyptien.css">  <!-- Style principal-->
+		<link rel="stylesheet"  href="../Styles/style barre recherche.css"> <!--Style de la barre de recherche-->
+    	<link rel="stylesheet"  href="../Styles/bouton barre de recherche.css">  <!--Style bouton de la barre de recherche-->
+  		<link rel="stylesheet" href="../Styles/menu deroulant.css" /> <!--Style du menu déroulant-->
+        <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+        <link rel="stylesheet" href="../Styles/cherche mot.css" />  <!--Surligne mot quand écrit dans la barre recherche -->
+        <link rel="stylesheet"  href="../Styles/theme dark.css"> <!--Style dark-->
+		<link rel="stylesheet"  href="../Styles/theme page egypte.css">  <!--Style sombre-->
+        <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+              integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+    <!-- Pages JavaScript -->
+	    <script src="../Script/page egyptienne.js"></script> <!--Lien interne : grâce à barre recherche-->
+        <script src="../Script/cherche mot.js"></script>  <!--Parcours page pour trouver mot écrit dans la barre recherche-->
+		<script src="../Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+        <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+		<script src="../Script/bouton barre de recherche.js"></script> <!-- Bouton de la barre de recherche-->
+
+
+    <!-- Logo de la page (apparait sur l'onglet)-->
+        <link rel="icon" href="../Image/egyptienne/temple egyptien.jpg">
+
+</head>
+
+<body>
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class=""></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="https://www.instagram.com/mythologies.abt?igsh=MWdpb2N2YXhyZGhvdw=="> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+	    <li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+		</label></li>      <!--Menu déroulant-->
+        <li> <a href="../../page 1.html" > <i class="fa-solid fa-house"></i> Accueil</a> </li> <!--Onglet 1 : lien vers accueil-->
+        <li> <a href="" ><i class="fa-solid fa-list"></i> Sommaire</a> <!--Onglet 2 : lien interne vers les histoires-->
+            <ul class="sub-menu">
+                            <!--Lien interne vers les histoires-->
+            <li> <a href="egyptienne.html#creation_monde"> La création du monde </a> </li>
+            <li> <a href="egyptienne.html#seth_vs_horus ">  Le combat entre Seth et Horus pour le trône d'Osiris </a> </li>
+            <li> <a href="egyptienne.html#seth_vs_yam"> Le combat de Seth contre Yam l'envahisseur </a> </li>
+            </ul>
+        </li>
+        <li> <a href=""><i class="fa-solid fa-scroll"></i> Pages</a> <!--Onglet 3 : lien vers les autres pages-->
+            <ul class="sub-menu">
+                          <!--Lien vers les autres pages-->
+            <li> <a href="grec.html"> Grecque </a> </li>
+            <li> <a href="nordique.html"> Nordique </a> </li>
+            <li> <a href="romaine.html"> Romaine </a> </li>
+            </ul>
+        </li>
+         <li> <a href="../donations/dons egyptienne.html" > <i class="fa-solid fa-dollar-sign"></i> Donations</a> </li>   <!--Onglet 4 : lien vers don-->
+        <li> <a href="../formulaires/formulaire satisfaction egyptienne.html" ><i class="fa-regular fa-face-smile-beam"></i> Formulaire de satisfaction</a> </li><!--Onglet 5 : lien vers formulaire-->
+        <li>
+<h5 class="wrapper">                   <!--Barre de recherche-->
+    <input type="search" id="searchbar" value="" placeholder=" Recherche un dieu ou une créature ..." onchange="cherche_dieu()" size="40" maxlength="35">
+    <input type="button" id="button" onclick="cherche_dieu()" value="Chercher">
+</h5>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+
+	<header>
+<ul>
+		<h1>EGYPTIENNE</h1>  <!--Titre de la page-->
+
+                           <!--Images-->
+      <CENTER>  <img src="../Image/egyptienne/carte egypte.jpg" width="300" height="300">
+                <img src="../Image/egyptienne/temple egyptien.jpg" width="300" height="300">
+                <img src="../Image/egyptienne/phrise chronologique egypte.gif" width="500" height="300"/>
+      </CENTER>
+
+</ul>		<hr/>
+	</header>
+
+
+
+	 <br>
+
+    <table>                                       <!--Tableau 1-->
+			<tr>          <!--Noms des colonnes-->
+				                <th>Dieux</th>
+				                <th>Traduction</th>
+                                <th>Ligné</th>
+                                <th>Rôle</th>
+                                <th>Symboles</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+			</tr>
+			<tr>  <!--Lignes -->
+                                <td id="amon"> AMON</td> 
+                                <td><img src="../Image/egyptienne/amon nom.jpg" width="100" height="100"/></td>
+                                <td></td> 
+				                <td>Dieu du vent</td>
+                                <td>Oie et serpent</td> 
+                                <td><img src="../Image/egyptienne/amon.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr>
+			<tr>
+                                <td id="anubis"> <a href="https://www.youtube.com/watch?v=avFJaNmsL00">ANUBIS</a></td> 
+                                <td><img src="../Image/egyptienne/anubis nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Osiris et Isis .
+                                    <li id="content">Frère d' Horus et Oupouaout .
+                                    <li id="content">Père de Qébéhout .</td>
+				                <td>Dieu des morts</td>
+                                <td>Noir et canidé</td> 
+                                <td><img  src="../Image/egyptienne/anubis.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                         </tr>
+			<tr>
+                                <td id="bastet"> <a href="https://www.youtube.com/watch?v=HtuqOViCYIQ">BASTET</a></td> 
+                                <td><img  src="../Image/egyptienne/bastet nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fille de Rê .</td>
+				                <td>Déesse des naissances</td>
+                                <td>Chat, couteau, panier et sistre</td> 
+                                <td><img  src="../Image/egyptienne/bastet.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                         </tr> 
+			<tr>
+                                <td id="bes"> BES</td> 
+                                <td><img  src="../Image/egyptienne/bes nom.png" width="100" height="100"/> </td>
+                                <td></td> 
+				                <td>Dieu protecteur de la fertilité</td>
+                                <td></td> 
+                                <td><img  src="../Image/egyptienne/bes.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                         </tr>  
+			<tr>
+                                <td id="geb"> GEB</td> 
+                                <td><img  src="../Image/egyptienne/geb nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Shou et Tefnout .
+                                    <li id="content">Frère et époux de Nout .
+                                    <li id="content">Père de Seth , Nephtys , Isis et Osiris .</td>
+				                <td>Dieu der la terre, des plantes et des minéraux</td>
+                                <td>Oie, terre, minéraux, plante et vert</td> 
+                                <td><img  src="../Image/egyptienne/geb.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a>
+                                    <li><a href="egyptienne.html#seth_vs_yam "> Le combat de Seth contre Yam l'envahisseur </a> </div> </td>    
+                         </tr>  
+			<tr>
+                                <td id="hator"> HATHOR</td> 
+                                <td><img  src="../Image/egyptienne/hathor nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fille de Rê .</td>
+				                <td>Déesse de l'amour, de la musique et de la beauté</td>
+                                <td>Vache, ménat, disque solaire et turquoise</td> 
+                                <td><img  src="../Image/egyptienne/hathor.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a> </div> </td>
+                         </tr> 
+			<tr>
+                                <td id="horus"> HORUS</td> 
+                                <td><img src="../Image/egyptienne/horus nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Osiris et Isis .
+                                    <li id="content">Frère d' Anubis et Oupouaout .
+                                    <li id="content">Père de Harsomtous .</td>
+				                <td>Dieu du ciel et protécteur des pharaons</td>
+                                <td>Oeil oudjat</td> 
+                                <td><img  src="../Image/egyptienne/horus.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>
+                         </tr> 
+			<tr>
+                                <td id="isis"> ISIS</td> 
+                                <td><img  src="../Image/egyptienne/isis nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fille de Geb et Nout .
+                                    <li id="content">Soeur de Nephthys et d' Osiris .
+                                    <li id="content">Femme d' Osiris .
+                                    <li id="content">Mère d' Anubis , Oupouaout et Horus .</td>
+				                <td>Déesse de la vie</td>
+                                <td>Vache, chien, trône et sistre</td> 
+                                <td><img  src="../Image/egyptienne/isis.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>    
+                         </tr> 
+			<tr>
+                                <td id="maat"> MAAT</td> 
+                                <td><img  src="../Image/egyptienne/maat nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fille et femme de Rê .</td>
+				                <td>Déesse de la justice, de l'ordre, de la paix et de la vérité</td>
+                                <td>Plume d'autruche et blanc</td> 
+                                <td><img src="../Image/egyptienne/maat.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                         </tr> 
+			<tr>
+                                <td id="neith"> NEITH</td> 
+                                <td><img src="../Image/egyptienne/neith nom.jpg" width="100" height="100"/> </td>
+                                <td></td> 
+				                <td>Déesse de la guerre</td>
+                                <td>Flêche sur bouclier</td> 
+                                <td><img src="../Image/egyptienne/neith.jpg" width="100" height="100"/> </td>
+                                <td> </td>    
+                         </tr>
+			<tr>
+                                <td id="nephtys"> NEPHTHYS</td> 
+                                <td><img  src="../Image/egyptienne/nephthys nom.png" width="100" height="100"/> </td>
+                                <td><li id="content">Fille de Seb et Nout .
+                                    <li id="content">Soeur de Osiris , Isis et Seth .
+                                    <li id="content">Femme de Seth .</td>
+				                <td>Déesse protectrice des morts</td>
+                                <td>Faucon</td> 
+                                <td><img src="../Image/egyptienne/nephthys.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+	 			                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a> </div> </td>
+                         </tr>
+			<tr>
+                                <td id="nout"> NOUT</td> 
+                                <td><img  src="../Image/egyptienne/nout nom.png" width="100" height="100"/> </td>
+                                <td><li id="content">Fille de Tefnout et Shou .
+                                    <li id="content">Soeur de Geb .
+                                    <li id="content">Femme de Seb .
+                                    <li id="content">Mère de Osiris , Isis , Seth et Nephthys .</td>
+				                <td>Déesse du ciel</td>
+                                <td>Bleu</td> 
+                                <td><img  src="../Image/egyptienne/nout.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_yam "> Le combat de Seth contre Yam l'envahisseur </a> </div> </td>    
+                         </tr>
+			<tr>
+                                <td id="osiris"> <a href="https://www.youtube.com/watch?v=RqTmmtpYY00">OSIRIS</a></td> 
+                                <td><img  src="../Image/egyptienne/osiris nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Geb et Nout .
+                                    <li id="content">Frère d' Isis , Seth et Nephthys .
+                                    <li id="content">Père d' Annubis .</td>
+				                <td>Dieu de l'agriculture et de l'au delà</td>
+                                <td>Sceptre, couronne, vert et noir</td> 
+                                <td><img  src="../Image/egyptienne/osiris.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>    
+                         </tr> 
+			<tr>
+                                <td id="ptah"> PTAH</td> 
+                                <td><img  src="../Image/egyptienne/ptah nom.png" width="100" height="100"/> </td>
+                                <td></td> 
+				                <td>Dieu des artisans, artistes et architectes</td>
+                                <td></td> 
+                                <td><img  src="../Image/egyptienne/ptah.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+			<tr>
+                                <td id="re"> <a href="https://www.youtube.com/watch?v=uBUOH5AuNO4">RE</a></td> 
+                                <td><img  src="../Image/egyptienne/re nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Noun et Hathor .
+                                    <li id="content">Père de Shou et Tefnout .</td>
+				                <td>Dieu du soleil</td>
+                                <td>Faucon, cobra, soleil et jaune</td> 
+                                <td><img  src="../Image/egyptienne/re.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>    
+                         </tr> 			
+                       <tr>
+                                <td id="seth"> SETH</td> 
+                                <td><img  src="../Image/egyptienne/seth nom.jpg" width="100" height="100"/> </td>
+                                <td><li id="content">Fils de Geb et Nout .
+                                    <li id="content">Frère d' Isis , Nephthys et Osiris .</td>
+				                <td>Dieu du désert, du chaos et de la foudre</td>
+                                <td></td> 
+                                <td><img  src="../Image/egyptienne/seth.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a>
+                                    <li><a href="egyptienne.html#seth_vs_yam "> Le combat de Seth contre Yam l'envahisseur </a> </div> </td>    
+                         </tr> 
+                       <tr>
+                                <td id="sobek"> <a href="https://www.youtube.com/watch?v=zaqPGJwguSQ">SOBEK</a></td> 
+                                <td><img src="../Image/egyptienne/sobek nom.png" width="100" height="100"/> </td>
+                                <td></td> 
+				                <td>Dieu du nil</td>
+                                <td>Crocodile, langue coupée et vert</td> 
+                                <td><img src="../Image/egyptienne/sobek.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="tefnout"> TEFNOUT</td> 
+                                <td><img src="../Image/egyptienne/tefnout nom.png" width="100" height="100"/> </td>
+                                <td><li id="content">Soeur jumelle et épouse de Shou .
+                                    <li id="content">Mère de Geb et Nout .</td>
+				                <td>Déesse de la fertilité et de l'humidité</td>
+                                <td>Vert et jaune</td> 
+                                <td><img  src="../Image/egyptienne/tefnout.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a> </div> </td>
+                         </tr> 
+                       <tr>
+                                <td id="thot"> <a href="https://www.youtube.com/watch?v=18sBIV1766I">THOT</a></td> 
+                                <td><img  src="../Image/egyptienne/thot nom.png" width="100" height="100"/> </td>
+                                <td></td> 
+				                <td>Dieu de la lune, de la sagesse et de l'écriture</td>
+                                <td>Rouge et vert</td> 
+                                <td><img src="../Image/egyptienne/thot.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+			                        <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>
+                         </tr> 
+ 
+                        
+		</table>
+
+ <br/>
+		<table>                              <!--Tableau 2-->
+			<tr>             <!--Noms des colonnes-->
+				                <th>Créatures</th>
+                                <th>Nom</th>
+                                <th>Description</th>
+                                <th>Représentation</th>
+				                <th>Mythes</th>
+
+                         </tr>
+                       <tr> <!--Lignes-->
+                                <td id="ammout" ><a href="https://www.youtube.com/watch?v=-FkSjx8Wrn4">AMMOUT</a></td> 
+                                <td><img  src="../Image/egyptienne/ammout nom.png" width="100" height="100"/> </td>
+                                <td>Créature à corps d'hippopotame, pattes avant de lion et tête de crocodile </td> 
+                                <td><img  src="../Image/egyptienne/ammout.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="apophis" ><a href="https://www.youtube.com/watch?v=AAKbJS-4Qm0">APOPHIS</a></td> 
+                                <td><img  src="../Image/egyptienne/apophis nom.png" width="100" height="100"/> </td>
+                                <td>Serpent géant du chaos </td> 
+                                <td><img  src="../Image/egyptienne/apophis.jpg" width="100" height="100"/> </td>
+                                <td><div style="text-align: left;">
+				                    <li><a href="egyptienne.html#creation_monde"> La création du monde </a>
+                                    <li><a href="egyptienne.html#seth_vs_horus "> Le combat entre Seth et Horus pour le trône d'Osiris </a> </div> </td>    
+                         </tr> 
+                       <tr>
+                                <td id="babai" >BABAI</td> 
+                                <td></td> 
+                                <td>Créature à pattes arrière d'hippopotame et avant d'hyène, tête de crocodile et crinière de lion</td>
+                                <td><img  src="../Image/egyptienne/babai.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 			
+                       <tr>
+                                <td id="benu" ><a href="https://www.youtube.com/watch?v=DWehHZA9yqQ">BENU</a></td> 
+                                <td><img  src="../Image/egyptienne/benu nom.png" width="100" height="100"/> </td>
+                                <td>Oiseau représentant l'âme</td> 
+                                <td><img src="../Image/egyptienne/benu.jpg" width="100" height="100"/> </td>
+                                <td></td>
+                         </tr> 	
+                       <tr>
+                                <td id="criosphinx" >CRIOSPHINX</td> 
+                                <td></td> 
+                                <td>Créature à corps de lion et tête de bélier </td> 
+                                <td><img  src="../Image/egyptienne/criosphinx.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="hieracosphinx" >HIERACOSPHINX</td> 
+                                <td></td> 
+                                <td>Créature à corps de lion et tête de faucon </td> 
+                                <td><img src="../Image/egyptienne/hieracosphinx.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="serpopard" >SERPOPARD</td> 
+                                <td></td> 
+                                <td>Léopard à tête de serpent</td> 
+                                <td><img  src="../Image/egyptienne/serpopard.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="sphinx" >SPHINX</td> 
+                                <td></td> 
+                                <td>Créature à corps de lion et tête d'humain</td> 
+                                <td><img  src="../Image/egyptienne/sphinx.jpg" width="100" height="100"/> </td>
+                                <td></td>    
+                         </tr> 
+                       <tr>
+                                <td id="teka-her" >TEKA-HER</td> 
+                                <td></td> 
+                                <td>Serpent gardien du monde sous-terrain</td> 
+                                <td></td> 
+                                <td></td>    
+                         </tr> 
+
+                   
+   </table>
+ <a> <ol class="niveau1">
+
+<br>
+<br>                                  <!--Intro-->
+
+    <h3>Introduction:</a> </h3>
+&nbsp;&#160;La mythologie égyptienne rassembla les croyances pratiquées par les Égyptiens d'environ 3100 à 30 avant J.C.
+Elle mettait en scène les dieux et les créatures dans des mythes et légendes, répertoriés sur ce site de manière
+non chronologique. Dans la mythologie égyptienne, il était fréquent que des dieux fusionnassent afin de n'en
+former qu'un lorsque leur rôle était similaire ou s'opposait. Par exemple, le dieu Amon - Rê naquit de la fusion
+du dieu Amon , dieu du vent, et du dieu Rê , dieu du soleil, ou encore le dieu Horus – Seth , issu de la fusion
+d' Horus , dieu des vivants, et de Seth , dieu des morts.
+
+<br>
+<br>                                      <!--Histoires-->
+<br>
+
+
+   <h2 id="creation_monde"><a href="https://www.youtube.com/watch?v=sAjrwXh8LlA"> La création du monde </a></h2><p>
+<div id ="content">&#160;Au commencement, il n'y avait que Noun , le grand océan du chaos. Cependant, de ses eaux
+surgit une pyramide, couronnée d'une fleur de lotus qui émanait d'une puissante lumière issue de Rê . C'est de
+cette lumière que naquirent Shou et Tefnout . Ils explorèrent l'univers, mais un jour, Rê , inquiet de ne pas les
+voir revenir, envoya Hathor à leur recherche. Lorsque Shou et Tefnout revinrent, Rê pleura de joie en les
+retrouvant. De ces larmes naquirent les humains. Geb et Nout furent accueillis par les enfants du dieu soleil,
+créant ainsi les cieux et la terre. Rê régnait sur l'univers, offrant à l'Égypte un bœuf et un lion sacré, ainsi
+que le Nil. Cependant, avec le temps, les hommes commencèrent à adorer Apophis , ce qui poussa Rê à ordonner à
+Tefnout de punir les hommes en les massacrant. Le jour, Rê traversait le ciel dans son vaisseau solaire, tandis que
+la nuit, il se rendait dans le royaume souterrain où il se reposait, mais il devait vaincre Apophis pour survivre.
+Nout et Geb engendrèrent Isis , Nephthys , Seth et Osiris . Osiris prit le trône de Rê , et ainsi, la civilisation
+se développa, bien que le trône fût convoité par Seth .
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <h2 id="seth_vs_horus"><a href="https://www.youtube.com/watch?v=YJfiVOV0z1A"> Le combat entre Seth et Horus pour le trône d'Osiris </a></h2><p>
+<div id ="content">&#160;Horus , malgré sa légitimité pour le trône, se le fit usurper par son oncle Seth , celui
+qui avait tué Osiris . Horus se rendit alors devant le tribunal des dieux, présidé par Geb et Rê , afin de
+récupérer ce qui lui était dû. D'après Shou et Thot , Horus devait être le souverain de l'Égypte, mais Rê n'était
+pas du même avis. Des jours plus tard, Rê réunit Seth et Horus dans le but de décider qui était digne du trône. Seth
+protesta qu'il était le plus puissant et tous les dieux étaient d'accord jusqu'à ce qu' Isis les fasse changer
+d'avis. Isis se transforma en belle jeune femme, se faisant passer pour la veuve d'un berger afin d'obtenir des
+aveux de Seth . Après qu' Isis lui eut dit que son fils s'était fait voler son troupeau, Seth lui répondit qu'un
+fils ne pouvait être dépossédé de son héritage. Par ces mots, Seth se condamna à abandonner le trône du défunt
+Osiris , et Isis reprit sa forme originale d'oiseau et s'envola.
+<br>
+Seth défia Horus , ce défi consistait à se transformer en hippopotame et à rester trois mois sous l'eau du Nil.
+Horus accepta et le défi commença, mais Isis , craignant la défaite de son fils, fabriqua un harpon en cuivre et
+le jeta dans l'eau. Malheureusement, elle harponna d'abord Horus , puis Seth . Alors, Horus trancha la tête de sa
+mère pour avoir interrompu le défi entre son oncle et lui. Horus , avec la tête de sa mère encore vivante, partit
+dans le désert, et Thot lui offrit une tête de vache. Rê ordonna aux dieux de punir Horus pour le crime qu'il avait
+commis contre sa propre mère, et ainsi il perdit un œil. Mais Horus eut de la chance, car Thot lui en fabriqua un
+nouveau, appelé l'œil d'Oudjat. Les dieux envoyèrent un message à Osiris qui leur demanda pourquoi son fils n'avait
+pas reçu son héritage. Osiris menaça les dieux d'envoyer tous les êtres du monde des morts sur le royaume des
+vivants si son fils ne lui succédait pas. Rê accepta donc qu' Horus soit couronné. Ensuite, Rê appela Seth dans les
+cieux afin qu'il l'aide à combattre Apophis chaque soir, et ainsi Seth devint aussi le dieu de la foudre.
+</div>
+<br>
+<br>
+<br>
+
+
+   <h2 id="seth_vs_yam"><a href="https://www.youtube.com/watch?v=D5yn9w7B_Xc"> Le combat de Seth contre Yam l'envahisseur</a></h2><p>
+<div id ="content">&#160;Après la guerre pour le trône d' Osiris , la paix régnait jusqu'à ce que Yam apparaisse
+et trouble cette paix en causant des ravages sur terre et surtout en mer. Yam provoquait les dieux en pillant leurs
+temples situés près du Nil et en kidnappant les jeunes filles qui se baignaient. Les combattants partirent afin
+de calmer la fureur du dieu des mers, mais aucun ne revint. Les dieux offrirent à Yam du blé, de l'orge, de l'or,
+de l'argent et des pierres précieuses pour l'apaiser. Le pharaon en personne fut chargé d'apporter les offrandes
+au dieu étranger. Yam demanda un temple qui fut construit, mais il demanda encore plus de cadeaux. Un jour, Yam
+demanda en mariage la jeune Astarté afin d'être uni à l'Égypte. Les dieux acceptèrent et offrirent en dot de la
+jeune mariée de l'or, des pierres précieuses et des artefacts, tels que l'anneau de Geb , le collier de perles de
+Nout , le panier de Rénénoutêt , et bien d'autres. Le couple partit, mais des années plus tard, ils revinrent, et
+Yam envoya sa femme afin de réclamer à nouveau un lourd tribut. Les dieux égyptiens acceptèrent, car ils ne
+voulaient pas que Yam envahisse à nouveau leur terre. Mais un jour, les dieux décidèrent que cela suffisait,
+alors les grands dieux se réunirent et appelèrent Seth afin qu'il devienne leur champion. Seth partit affronter
+Yam , et après un grand combat, Seth sortit vainqueur, mais le champ de bataille était devenu stérile, car durant
+le combat, il fut couvert de sel et de cendres. Seth reçut Astarté en mariage, et elle devint une déesse pour
+avoir sauvé l'Égypte et ses dieux.
+</div>
+
+
+
+</p></ol></a>
+                       <!--Image hyperlien : renvoie en haut de la page-->
+        <CENTER><a href="egyptienne.html" title="Haut de la page">  <img alt="haut de la page" class="haut_de_page" src="../Image/fleche haut.jpg" width="100" height="100"/></a>
+
+            <!--Signature-->
+    <p class="log"> <img id="logo" src="../Image/logo ABT.jpg" width="40" height="40"></p>
+	<p class="diff">A website by Aubert</p>
+
+</CENTER>
+</body>
+</html>

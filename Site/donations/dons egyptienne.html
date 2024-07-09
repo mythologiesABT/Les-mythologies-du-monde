@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donnations</title>
+
+      		<link rel="stylesheet" href="../Styles/dons.css" />
+            <link rel="icon" href="../Image/logo PP.png"/>
+            <link rel="stylesheet"  href="../Styles/menu deroulant.css">
+            <link rel="stylesheet"  href="../Styles/texte deroulant.css">
+            <link rel="stylesheet"  href="../Styles/theme dark.css">  <!--Style dark-->
+            <link rel="stylesheet"  href="../Styles/theme pages dons.css">  <!--Style sombre-->
+            <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+            <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    			    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    			    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+                    <link rel="stylesheet"  href="../Styles/bouton don.css"> <!--Style du bouton de don-->
+            <link rel="stylesheet"  href="../Styles/bouton don.css"> <!--Style du bouton de don-->
+
+
+            <script src="../Script/bouton themes dons.js"></script> <!--Bouton de changement de thème-->
+            <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+
+</head>
+<body>
+
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2" title="Copier le lien"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class="fa-thin fa-notdef"></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4" title="Partager par WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="#"> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+		<li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+
+			</label></li>      <!--Menu déroulant-->
+      <li> <a href="../Html/egyptienne.html" ><i class="fa-solid fa-arrow-left"></i> Page précédente</a> </li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Soutenir ce site web</h1>
+
+<div class="banner">
+  <div class="line">
+    <span> <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_donations">
+  <input type="hidden" name="business" value="mythologie.abt@gmail.com">
+  <h4><label for="amount"><div class="marquee-container">
+    <div class="marquee">
+       - Montant :  - Montant :  - Montant :  - Montant :  - Montant :
+    </div>
+</div> </label></h4> </span>
+  </div>
+  <div class="line">
+    <span><h6><input type="number" name="amount" min="1" max="" step="0.01" required>
+        <input type="hidden" name="currency_code" value="USD"></h6></span>
+  </div>
+  <div class="line">
+    <span><h6><input type="hidden" name="item_name" value="Donation">
+  <button class="donate-btn">Valider le don</button></h6></span>
+  </div>
+</div></form>
+
+
+</br>
+        <img id="logo" src="../Image/logo PP.png" width="800" height="600">
+
+
+
+</body>
+</html>

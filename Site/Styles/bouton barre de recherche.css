@@ -1,0 +1,41 @@
+/* Design du bouton de la barre de recherche */
+
+.c-btn {
+            color: #fff;
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 130px;
+            position: relative;
+            right : 130px;
+            top : -20px;
+        }
+        .btn {
+            border: none;
+            line-height: 32px;
+            background: none;
+        }
+        .btn span {
+            background: linear-gradient(#00acee, #027efb);
+            position: absolute;
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .btn span:nth-child(1) {
+            transform: rotateX(90deg);
+            transform-origin: 50% 50% -20px;
+        }
+        .btn span:nth-child(2) {
+            transform: rotateX(0deg);
+            transform-origin: 50% 50% -20px;
+        }
+        .btn:hover span:nth-child(1) {
+            transform: rotateX(0deg);
+        }
+        .btn:hover span:nth-child(2) {
+            color: transparent;
+            transform: rotateX(-90deg);
+        }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de satisfaction</title>
+
+        		<link rel="stylesheet"  href="../Styles/formulaire satisfaction.css">
+                <link rel="stylesheet"  href="../Styles/menu deroulant.css">
+                <link rel="stylesheet"  href="../Styles/design bouton tournant.css">
+                <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+                <link rel="stylesheet"  href="../Styles/theme dark.css"> <!--Style dark-->
+		        <link rel="stylesheet"  href="../Styles/theme pages formulaires.css">  <!--Style sombre-->
+                <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    			        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    			        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+
+                <script src="../Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+			    <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+
+</head>
+<body>
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2" title="Copier le lien"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class="fa-thin fa-notdef"></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4" title="Partager par WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="#"> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+		<li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+
+			</label></li>      <!--Menu déroulant-->
+      <li> <a href="../../page 1.html" ><i class="fa-solid fa-arrow-left"></i> Précédant</a> </li>
+        <li> <a href="../donations/dons 1.html" ><i class="fa-solid fa-dollar-sign"></i> Donnations</a> </li>
+    </ul>
+  </nav>
+</header>
+
+
+<h1>Formulaire de satisfaction</h1>
+
+<h2> Comment m'améliorer ? </h2>
+
+<br>
+<ul>
+<form action="mailto:mythologie.abt@gmail.com" method="POST">
+
+           <li><h3> <label for="idNom"> Quel est votre nom ? </label></h3></li>
+    <input type="text" name="nom" id="idNom" size="30" maxlength="30"  required />
+</br>
+</br>
+       <li><h3> <label for="idPrenom"> Quel est votre prénom ? </label></h3></li>
+    <input type="text" name="prenom" id="idPrenom" size="30" maxlength="30"  required />
+</br>
+</br>
+        <li><h3><label for="idDecouverte"> Comment avez-vous découvert ce site ? </label></h3></li>
+    <input type="checkbox" name="Decouverte" id="idDecouverte" value="Par une connaissance" /> connaissance
+    <input type="checkbox" name="Decouverte" id="idDecouverte" value="En me baladant sur GitHub" /> GitHub
+    <input type="checkbox" name="Decouverte" id="idDecouverte" value="Via les réseaux" /> réseaux
+</br>
+</br>
+        <li><h3><label for="idDate"> A quelle date avez-vous consulté ce site pour la dernière fois ? </label></h3></li>
+    <input type="date" name="date" id="idDate" size="4" maxlength="4"  required />
+</br>
+</br>
+                <li><h3><label for="idConnect"> Avez-vous consulté ce site plusieurs fois ? </label></h3></li>
+    <input type="radio" name="Connect" id="idConnect" value="oui" /> Oui
+    <label for="idConnect"> </label>
+    <input type="radio" name="Connect" id="idConnect" value="non" /> Non
+</br>
+</br>
+            <li><h3><label for="idNb_connect"> Combien de fois êtes-vous venu consulter ce site ? </label></h3></li>
+    <input type="number" name="Nb_connect" id="idNb_connect" size="4" maxlength="3" min="1" required />
+</br>
+</br>
+
+        <li><h3><label for="idPages_visit"> Quelles pages avez-vous visité ? </label></h3></li>
+    <input type="checkbox" name="Pages_visit" id="idPages_visit" value="egyptienne" /> Egyptienne
+    <input type="checkbox" name="Pages_visit" id="idPages_visit" value="grecque" /> Grecque
+    <input type="checkbox" name="Pages_visit" id="idPages_visit" value="nordique" /> Nordique
+    <input type="checkbox" name="Pages_visit" id="idPages_visit" value="romaine" /> Romaine
+</br>
+</br>
+
+         <li><h3><label for="idPage_pref"> Quelle page avez-vous préféré ? </label></h3></li>
+    <select name="Page_pref">
+        <option value="egyptienne" selected > Egyptienne </option>
+        <option value="grecque"> Grecque </option>
+        <option value="nordique"> Nordique </option>
+        <option value="romaine"> Romaine </option>
+    </select>
+</br>
+</br>
+        <li><h3><label for="idBeaute"> Sur une échelle allant de 0 à 10, combien noteriez-vous la beauté de ce site ? </label></h3></li>
+    <input type="number" name="Beaute" id="idBeaute" size="4" maxlength="2" min="0" max="10" required />
+</br>
+</br>
+            <li><h3><label for="idPracticite"> Sur une échelle allant de 0 à 10, combien noteriez-vous la practicité de ce site ? </label></h3></li>
+    <input type="number" name="Practicite" id="idPracticite" size="4" maxlength="2" min="0" max="10" required />
+</br>
+</br>
+            <li><h3><label for="idNav"> La navigation est-elle facile ? </label></h3></li>
+    <input type="radio" name="Nav" id="idNav" value="oui" /> Oui
+    <label for="idNav"> </label>
+    <input type="radio" name="Nav" id="idNav" value="non" /> Non
+</br>
+</br>
+        <li><h3><label for="idUtilite"> Les infos sur ce site ont-elles été utiles ? </label></h3></li>
+    <input type="radio" name="Utilite" id="idUtilite" value="oui" /> Oui
+    <label for="idUtilite"> </label>
+    <input type="radio" name="Utilite" id="idUtilite" value="non" /> Non
+</br>
+</br>
+            <li><h3><label for="idInteressant"> Les infos sur ce site ont-elles été intéressantes ? </label></h3></li>
+    <input type="radio" name="Interessant" id="idInteressant" value="oui" /> Oui
+    <label for="idInteressant"> </label>
+    <input type="radio" name="Interessant" id="idInteressant" value="non" /> Non
+</br>
+</br>
+                <li><h3><label for="idRecommandation"> Recommanderiez-vous ce site à des amis ? </label></h3></li>
+    <input type="radio" name="Recommandation" id="idRecommandation" value="oui" /> Oui
+    <label for="idRecommandation"> </label>
+    <input type="radio" name="Recommandation" id="idRecommandation" value="non" /> Non
+</br>
+</br>
+
+                <li><h3><label for="idPb"> Avez-vous rencontré des problèmes quelconques ou n'importe quel bug ? </label></h3></li>
+    <input type="radio" name="Pb" id="idPb" value="oui" /> Oui
+    <label for="idPb"> </label>
+    <input type="radio" name="Pb" id="idPb" value="non" /> Non
+</br>
+</br>
+            <li><h3> <label for="idBug"> Quels bugs avez-vous rencontré ? </label></h3></li>
+    <textarea name="Bug" id="idBug" rows="1" cols="40">
+
+    </textarea>
+</br>
+</br>
+        <li><h3> <label for="idAmelioration"> Comment puis-je améliorer ce site ? </label></h3></li>
+    <textarea name="Amelioration" id="idAmelioration" rows="1" cols="40">
+
+    </textarea>
+</br>
+</br>
+            <li><h3> <label for="idInfo+"> Quelles informations aimeriez-vous rajouter sur ce site ? </label></h3></li>
+    <textarea name="Info+" id="idInfo+" rows="1" cols="40">
+
+    </textarea>
+
+
+</br>
+</br>
+</br>
+</br>
+
+<div id="workarea">
+  <div class="position">
+    <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape" height="40" width="150" />
+        <foreignObject x="10" y="10" width="130" height="30">
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <input id="BtA" type="reset" value="Annuler" name="BtA" /><a>Annuler</a>
+          </body>
+        </foreignObject>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div id="workarea1">
+  <div class="position">
+    <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape" height="40" width="150" />
+        <foreignObject x="10" y="10" width="130" height="30">
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <input id="BtE" type="submit" value="Envoyer" name="BtE" /><a>Envoyer</a>
+          </body>
+        </foreignObject>
+      </svg>
+    </div>
+  </div>
+</div>
+
+
+
+    </ul>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>	Mythologie romaine</title>   <!--Nom de la page (apparait sur l'onglet)-->
+
+    <!-- Pages CSS -->
+		<link rel="stylesheet"  href="../Styles/style romain.css">  <!-- Style principal-->
+        <link rel="stylesheet"  href="../Styles/style barre recherche.css">  <!--Style de la barre de recherche-->
+    	<link rel="stylesheet"  href="../Styles/bouton barre de recherche.css">  <!--Style bouton de la barre de recherche-->
+        <link rel="stylesheet" href="../Styles/cherche mot.css" />  <!--Surligne mot quand écrit dans la barre recherche -->
+        <link rel="stylesheet"  href="../Styles/theme dark.css"> <!--Style dark-->
+		<link rel="stylesheet"  href="../Styles/theme page rome.css">  <!--Style sombre-->
+  		<link rel="stylesheet" href="../Styles/menu deroulant.css" /> <!--Style du menu déroulant-->
+        <link rel="stylesheet"  href="../Styles/barre parametre.css">  <!--Style menu de paramètres-->
+        <link rel="stylesheet"  href="../Styles/roue partage.css">  <!--Style roue de partage-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+              integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+    <!-- Pages JavaScript -->
+        <script src="../Script/page romaine.js"></script> <!--Lien interne : grâce à barre recherche-->
+        <script src="../Script/cherche mot.js"></script>  <!--Parcours page pour trouver mot écrit dans la barre recherche-->
+		<script src="../Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+        <script src="../Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+		<script src="../Script/bouton barre de recherche.js"></script> <!-- Bouton de la barre de recherche-->
+
+
+    <!-- Logo de la page (apparait sur l'onglet)-->
+        <link rel="icon" href="../Image/romaine/colisee romain.jpg">
+	
+</head>
+
+<body>
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="../Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class=""></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="https://www.instagram.com/mythologies.abt?igsh=MWdpb2N2YXhyZGhvdw=="> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+	    <li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+		</label></li>      <!--Menu déroulant-->
+      <li> <a href="../../page 1.html" > <i class="fa-solid fa-house"></i> Accueil</a> </li><!--Onglet 1 : lien vers accueil-->
+      <li> <a href="" ><i class="fa-solid fa-list"></i> Sommaire</a> <!--Onglet 2 : lien interne vers les histoires-->
+        <ul class="sub-menu">
+                            <!--Lien interne vers les histoires-->
+          <li> <a href="romaine.html#la_creation_de_rome"> La création de Rome </a> </li>
+        </ul>
+      </li>
+      <li> <a href="" ><i class="fa-solid fa-scroll"></i> Pages</a> <!--Onglet 3 : lien vers les autres pages-->
+        <ul class="sub-menu">
+                        <!--Lien vers les autres pages-->
+          <li> <a href="egyptienne.html"> Egyptienne </a> </li>
+          <li> <a href="grec.html"> Grecque </a> </li>
+          <li> <a href="nordique.html"> Nordique </a> </li>
+        </ul>
+      </li>
+                <li> <a href="../donations/dons romaine.html" ><i class="fa-solid fa-dollar-sign"></i> Donations</a></li>  <!--Onglet 4 : lien vers don-->
+        <li> <a href="../formulaires/formulaire satisfaction romaine.html" ><i class="fa-regular fa-face-smile-beam"></i> Formulaire de satisfaction</a></li><!--Onglet 5 : lien vers formulaire-->
+        <li>
+<h5 class="wrapper">                   <!--Barre de recherche-->
+    <input type="search" id="searchbar" value="" placeholder=" Recherche un dieu ou une créature ..." onchange="cherche_dieu()" size="40" maxlength="35">
+    <input type="button" id="button" onclick="cherche_dieu()" value="Chercher">
+</h5>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+	<header>
+<ul>
+		<h1>ROMAINE</h1>  <!--Titre de la page-->
+
+                           <!--Images-->
+      <CENTER>  <img src="../Image/romaine/carte empire romain.png" width="300" height="300">
+                <img src="../Image/romaine/colisee romain.jpg" width="300" height="300">
+                <img src="../Image/romaine/phrise chronologique rome.jpg" width="500" height="300"/>
+
+
+</ul>		<hr />
+	</header>
+
+		
+
+	 <br/>
+		<center><table>             <!--Tableau 1-->
+         		<tr>          <!--Noms des colonnes-->
+				                <th>Dieux</th>
+                                <th>Statut</th>
+                                <th>Rôle</th>
+                                <th>Représentation</th>
+			</tr>
+			<tr>  <!--Lignes -->
+                                <td id="abundantia" >ABUNDANTIA</td> 
+                                <td>Secondaire</td>
+				                <td>Déesse de l’abondance et de la prospérité</td>
+                                <td><img src="../Image/romaine/abundantia.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>  
+                        	<td id="aesculape">AESCULAPE</td> 
+                                <td>Secondaire</td>
+				                <td>Dieu de la santé et de la médecine</td>
+                                <td><img  src="../Image/romaine/aesculape.jpg" width="100" height="100"/> </td>
+                         </tr>
+                       <tr>  
+                        	<td id="apollo">APOLLO</td> 
+                                <td>Primaire</td>
+				                <td>Dieu du Soleil, de la poésie, de la musique et des oracles</td>
+                                <td><img src="../Image/romaine/apollo.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>
+                                <td id="aurora">AURORA</td> 
+                                <td>Secondaire</td>
+				                <td>Déesse de l’aube</td>
+                                <td><img src="../Image/romaine/aurora.jpg" width="100" height="100"/> </td>
+			</tr>
+			<tr>     
+                                <td id="bacchus">BACCHUS</td> 
+				                <td>Primaire</td>
+                                <td>Dieu du vin</td>  
+                                <td><img src="../Image/romaine/bacchus.jpg" width="100" height="100"/> </td>
+			  
+                         </tr>
+			<tr>     
+                                <td id="bubona">BUBONA</td>
+                                <td>Secondaire</td>
+				                <td>Déesse du bétail</td>
+                                <td></td>
+ 
+                        </tr>
+			<tr>  
+                                <td id="candelifera">CANDELIFERA</td> 
+                                <td>Secondaire</td>
+                                <td>Déesse de l’accouchement</td>
+                                <td></td>    
+                         </tr>
+			<tr>
+                                <td id="carmenta">CARMENTA</td> 
+                                <td>Secondaire</td>
+				                <td>Déesse de l’accouchement et de la prophétie </td>
+                                <td></td>   
+                         </tr>
+			<tr>      
+                                <td id="ceres">CERES</td>
+                                <td>Primaire</td>
+				                <td>Déesse de l’agriculture</td>
+                                <td><img src="../Image/romaine/ceres.jpg" width="100" height="100"/> </td>
+			</tr>
+			<tr>  
+                                <td id="clementia">CLEMENTIA</td> 
+                                <td>Secondaire</td>
+				                <td>Déesse du pardon et de la miséricorde</td>
+                                <td></td>   
+                         </tr>
+			<tr>     
+                                <td id="cloacina">CLOACINA</td>
+                                <td>Secondaire</td>
+				                <td>Déesse qui présidait aux égouts de Rome</td>
+                                <td><img src="../Image/romaine/cloacina.jpg" width="100" height="100"/> </td>
+			</tr>
+			<tr>       
+                                <td id="concordia">CONCORDIA</td> 
+                                <td>Secondaire</td>
+				                <td>Déesse de l’accord</td>
+                                <td><img src="../Image/romaine/concordia.jpg" width="100" height="100"/> </td>
+                         </tr>
+			<tr>        
+                                <td id="cupidon">CUPIDON</td> 
+                                <td>Primaire</td>
+				                <td>Dieu de l’amour</td>
+                                <td><img src="../Image/romaine/cupidon.jpg" width="100" height="100"/> </td>
+                        
+                         </tr>
+			<tr>
+                                <td id="devera">DEVERA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse des sages-femmes et des femmes en travail</td>
+                                <td></td>
+			</tr>
+		      <tr>
+				                <td id="diana">DIANA</td>
+                                <td>Primaire</td>
+				                <td>Déesse de la chasse</td>
+                                <td><img src="../Image/romaine/diana.jpg" width="100" height="100"/> </td>
+                         </tr>
+                        <tr>
+                               
+                                
+                                <td id="discordia">DISCORDIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la discorde</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="edesia">EDESIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la nourriture qui présidait aux banquets</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="epona">EPONA</td>
+                                <td>Secondaire</td>
+                                <td>Dieu des chevaux</td>
+                                <td><img src="../Image/romaine/epona.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="fabulinus">FABULINUS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu des enfants</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="fama">FAMA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la célébrité et de la rumeur</td>
+                                <td><img src="../Image/romaine/fama.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="faune">FAUNE</td>
+                                <td>Primaire</td>
+                                <td>Déesse des Animaux</td>
+                                <td><img src="../Image/romaine/Faune.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="felicitas">FELICITAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la chance et du succès</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="fides">FIDES</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la loyauté</td>
+                                <td></td>
+			</tr>
+                       <tr>
+                               
+                                
+                                <td id="flore"><a href="https://www.youtube.com/watch?v=NFuCraCIq0E">FLORE</a></td>
+                                <td>Primaire</td>
+                                <td>Déesse des Fleurs et du Printemps</td>
+                                <td><img src="../Image/romaine/flora.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="fortuna">FORTUNA</td>
+                                <td>Primaire</td>
+                                <td>Déesse de la Fortune</td>
+                                <td><img src="../Image/romaine/fortuna.jpg" width="100" height="100"/> </td>
+			</tr>
+                       <tr>
+                               
+                                
+                                <td id="hespera">HESPERA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse du crépuscule</td>
+                                <td></td>
+			</tr>
+                       <tr>
+                               
+                                
+                                <td id="hippona">HIPPONA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse des chevaux</td>
+                                <td></td>
+			</tr>
+                       <tr>
+                               
+                                
+                                <td id="honos">HONOS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu des honneurs militaires et de la chevalerie</td>
+                                <td></td>
+			</tr>
+                     <tr>
+                               
+                                
+                                <td id="invidia">INVIDIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de l’envie ou de la jalousie</td>
+                                <td><img src="../Image/romaine/invidia.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="iris">IRIS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de l’arc-en-ciel</td>
+                                <td><img src="../Image/romaine/iris.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="janus">JANUS</td>
+                                <td>Primaire</td>
+                                <td>Dieu des portes, des débuts et des fins</td>
+                                <td><img src="../Image/romaine/janus.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="jupiter">JUPITER</td>
+                                <td>Primaire</td>
+                                <td>Le roi des dieux et le dieu du ciel et de la pluie</td>
+                                <td><img src="../Image/romaine/jupiter.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="justitia">JUSTITIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la justice</td>
+                                <td><img src="../Image/romaine/justitia.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="juventas">JUVENTAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la jeunesse</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="libertas">LIBERTAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la liberté</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="libitina">LIBITINA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la mort, des cadavres et des funérailles</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="luna">LUNA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la lune</td>
+                                <td><img src="../Image/romaine/luna.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="mars">MARS</td>
+                                <td>Primaire</td>
+                                <td>Dieu de la guerre</td>
+                                <td><img src="../Image/romaine/mars.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="mercure"><a href="https://www.youtube.com/watch?v=UP3B7OM5yc8">MERCURE</a></td>
+                                <td>Primaire</td>
+                                <td>Messager des Dieux et dieu du commerce et des finances</td>
+                                <td><img src="../Image/romaine/mercure.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="minerva">MINERVA</td>
+                                <td>Primaire</td>
+                                <td>Déesse de la Sagesse, de la ville, de l’éducation, de la science et de la guerre</td>
+                                <td><img src="../Image/romaine/minerva.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="mithras">MITHRAS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu des soldats romains</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="muta">MUTA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse du silence </td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="necessita">NECESSITA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse du destin</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="nemesis">NEMESIS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la vengeance et de la justice</td>
+                                <td><img src="../Image/romaine/nemesis.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="neptune">NEPTUNE</td>
+                                <td>Primaire</td>
+                                <td>Dieu de la mer</td>
+                                <td><img src="../Image/romaine/neptune.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="opis">OPIS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la fertilité</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="pax">PAX</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la paix</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="pietas">PIETAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse du devoir</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="pluton">PLUTON</td>
+                                <td>Primaire</td>
+                                <td>Dieu du monde souterrain</td>
+                                <td><img src="../Image/romaine/pluton.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="pomona">POMONA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse des arbres fruitiers</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="portunes">PORTUNES</td>
+                                <td>Secondaire</td>
+                                <td>Dieu des clés</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="prosperina">PROSPERINA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse des céréales et reine des morts</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="sancus">SANCUS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu de la loyauté, de l’honnêteté et des serments</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="saturne">SATURNE</td>
+                                <td>Primaire</td>
+                                <td>Dieu des moissons et de l’agriculture</td>
+                                <td><img src="../Image/romaine/saturne.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="solinvictus">SOL INVICTUS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu du soleil</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="somnus">SOMNUS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu du sommeil</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="sors">SORS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu de la chance</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="spes">SPES</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de l’espoir</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="tempestes">TEMPESTES</td>
+                                <td>Secondaire</td>
+                                <td>Déesse des tempêtes</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="tranquillitas">TRANQUILLITAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la paix et de la tranquillité</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="trivia">TRIVIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la magie</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="venus">VENUS</td>
+                                <td>Primaire</td>
+                                <td>Déesse de l’amour et de la beauté</td>
+                                <td><img src="../Image/romaine/venus.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="veritas">VERITAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la vertu et de la vérité</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="vesta">VESTA</td>
+                                <td>Primaire</td>
+                                <td>Déesse du foyer</td>
+                                <td><img src="../Image/romaine/vesta.jpg" width="100" height="100"/> </td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="victoria">VICTORIA</td>
+                                <td>Secondaire</td>
+                                <td>Déesse de la victoire</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="volturnus">VOLTURNUS</td>
+                                <td>Secondaire</td>
+                                <td>Dieu de l’eau</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="voluptas">VOLUPTAS</td>
+                                <td>Secondaire</td>
+                                <td>Déesse du plaisir</td>
+                                <td></td>
+			</tr>
+                      <tr>
+                               
+                                
+                                <td id="vulcan">VULCAN</td>
+                                <td>Primaire</td>
+                                <td>Dieu du feu, de la forge et des forgerons</td>
+                                <td><img src="../Image/romaine/vulcan.jpg" width="100" height="100"/> </td>
+			</tr>
+			 
+                        
+		</table>
+
+ <br/>
+		<table>                              <!--Tableau 2-->
+			<tr>             <!--Noms des colonnes-->
+				                <th>Créatures</th>
+                                <th>Description</th>
+                                <th>Représentation</th>
+                         </tr>
+		       <tr>  <!--Lignes-->
+                               
+                                
+                                <td id="achlis">ACHLIS</td>
+                                <td>Animale ressemblent à un élan, dont la lèvre supérieure tombe et ne possédant pas d'articulation aux pattes arrières </td>
+                                <td><img src="../Image/romaine/achlis.jpg" width="100" height="100"/></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="anphisbene">ANPHISBENE</td>
+                                <td>Serpent possédant une tête à chaque extrémité et pouvant se reconstituer en cas de coupure </td>
+                                <td><img src="../Image/romaine/anphisbene.jpg" width="100" height="100"/></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="caladrius">CALADRIUS</td>
+                                <td>Oiseau blanc captant les maladies et en débarrasse son porteur</td>
+                                <td><img src="../Image/romaine/caladrius.jpg" width="100" height="100"/></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="demon">DEMON</td>
+                                <td>Etre spirituel bienveillant</td>
+                                <td></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="larve">LARVE</td>
+                                <td>Génie malfaisant venant sur terre pour tourmenter les vivants sous la forme de spectre </td>
+                                <td><img src="../Image/romaine/larve.jpg" width="100" height="100"/></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="lemure">LEMURE</td>
+                                <td>Ame de défunt hantant les maisons</td>
+                                <td><img src="../Image/romaine/lemure.jpg" width="100" height="100"/></td>
+                        </tr>
+		       <tr>
+                               
+                                
+                                <td id="stryge">STRYGE</td>
+                                <td>Démon ailé, mi-femme, mi-oiseau enlevant les nouveaux nés et empoisonnant les enfants </td>
+                                <td><img src="../Image/romaine/stryge.jpg" width="100" height="100"/></td>
+                        </tr>
+                   
+   </table>  </center>
+ <a> <ol class="niveau1">
+
+<br>
+<br>                                  <!--Intro-->
+
+    <h3>Introduction: </a> </h3>
+&nbsp;&#160;La mythologie romaine rassembla les croyances pratiquées dans l'entièreté de l'empire romain. Le panthéon
+romain incluait tous les dieux des mythologies pratiquées dans les territoires conquis, certains dieux changeaient
+de nom en fonction de la mythologie, tandis que d'autres conservaient celui donné par le peuple auquel appartenait
+la mythologie. Sur leur drapeau était inscrit SPQR, qui était l'acronyme de "Senatus PopulusQue Romanus",
+signifiant le Sénat et le peuple romain.
+<br>
+<br>                                      <!--Histoires-->
+<br>
+
+   <h2 id="la_creation_de_rome"><a href="https://www.youtube.com/watch?v=Z688lRoDMhU">La création de Rome</a></h2><p> 
+<div id ="content">&#160;Romulus et Remus étaient deux frères jumeaux, fils de Mars et de la prêtresse, fille du
+roi d'Albe la Longue. Quand le roi d'Albe la Longue entendit que la prêtresse avait eu des enfants alors qu'elle
+devait rester chaste, il dit qu'il fallait les jeter dans le Tibre, craignant que les enfants grandissent et
+réclament leur place sur le trône. Mais la servante envoyée par le roi, au lieu de les noyer, les mit dans un
+panier et les abandonna sur le fleuve en flottant. Ils survécurent grâce aux dieux, car ils étaient les enfants de
+Mars , qui les empêcha de se renverser et un jour, le panier se prit dans les racines d'un figuier sacré où une
+louve les adopta. Ils burent son lait pour survivre, mais un jour, Romulus et Remus furent découverts dans la
+tanière de la louve par un berger qui passait. Il ramena les enfants chez lui et, avec sa femme, les éleva comme
+les siens. Les frères grandirent, mais se distinguaient par leur habileté à combattre et à diriger. Un jour, ils
+firent la rencontre de leur grand-père Numitor, qui reconnut les enfants de sa fille, et ensemble retournèrent à
+Albe la Longue pour tuer Amulius et remettre Numitor au pouvoir. Par la suite, les jumeaux voulaient fonder leur
+propre ville à l'endroit où ils avaient été abandonnés, mais n'étaient pas d'accord sur l'endroit exact. Pour se
+départager, ils décidèrent de se fier au présage et se mirent chacun sur une colline pour observer le ciel. Remus
+fut le premier à voir six vautours, mais Romulus en vit douze. Le destin avait donc choisi Romulus , ce qui déplut
+à Remus . Romulus se mit à tracer les fondations de la ville, mais Remus , jaloux, se moqua de l'enceinte de son
+frère et voulant prouver qu'elle n'était pas sécurisée, la traversa d'un seul bond. Furieux, Romulus sortit son
+glaive et tua son frère, puis nomma sa ville Rome, devenant ainsi le premier roi de Rome.
+
+</div>
+
+</p></ol></a>
+                       <!--Image hyperlien : renvoie en haut de la page-->
+     <CENTER><a href="romaine.html" title="Haut de la page">  <img alt="haut de la page" class="haut_de_page" src="../Image/fleche haut.jpg" width="100" height="100" /></a>
+
+            <!--Signature-->
+        <p class="log"> <img id="logo" src="../Image/logo ABT.jpg" width="40" height="40"></p>
+		<p class="diff">A website by Aubert</p>
+     </CENTER>
+</body>
+</html>

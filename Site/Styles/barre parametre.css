@@ -1,0 +1,97 @@
+ /* barre de menu déroulant à gauche de l'écran */
+
+
+
+	@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+	html,
+	body {
+		overflow-x: hidden;
+		height : 100%;
+		box-sizing : border-box;
+	}
+	.main {
+		margin : 0 auto;
+		display : block;
+		height : 100%;
+		margin-top : 60px;
+	}
+	.mainInner{
+		display : table;
+		height : 100%;
+		width : 100%;
+		text-align : center;
+	}
+	.mainInner div {
+		display : table-cell;
+		vertical-align : middle;
+		font-size : 3em;
+		font-weight : bold;
+		letter-spacing : 1.25 px;
+	}
+	#sidebarMenu {
+		position : absolute;
+		left : 0;
+		width : 250px;
+		height : 100%;
+		margin-top : 79px;
+		transform : translateX(-250px);
+		transition : transform 250ms ease-in-out;
+		background : Linear-gradient(180deg,#5f1a7c 0% ,#3F5EFB 100%);
+	}
+	.sidebarMenuInner{
+		margin : 0;
+		padding : 0;
+		border-top : 1px solid rgba(255, 255, 255, 0.10);
+	}
+	.sidebarMenuInner li {
+		list-style :none;
+		color : #fff;
+		text-transform : uppercase;
+		font-weight : bold;
+		padding : 20px;
+		cursor : pointer;
+		border-bottom : 1px solid rgba(255, 255, 255, 0.10);
+	}
+	.sidebarMenuInner li span {
+		display : block;
+		font-size : 14px;
+		color : rgba(255, 255, 255, 0.50);
+	}
+	.sidebarMenuInner li a {
+		color : #fff;
+		text-transform : uppercase;
+		font-weight :  bold;
+		cursor : pointer;
+		text-decoration : none;
+	}
+	input[type="checkbox"]#openSidebarMenu:checked~#sidebarMenu {
+		transform : translateX(0);
+	}
+	input[type="checkbox"]#openSidebarMenu {
+		transition : all 0.3 s ;
+		box-sizing : border-box;
+		display : none;
+	}
+
+	.sidebarIconToggle {
+		transition : all 0.3s;
+		box-sizing : border-box;
+		cursor : pointer;
+		position : absolute;
+		z-index : 99;
+		height : 100%;
+		width : 100%;
+		top : 8px;
+		left : -20px;
+		height : 22px;
+		width : 22px;
+	}
+	.spinner {
+		transition : all 0.3s;
+		box-sizing : border-box;
+		position : relative;
+		height : 3px;
+		width : 100%;
+		background-color : #000000;
+		margin : 4px 0;
+	}

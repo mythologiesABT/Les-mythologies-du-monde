@@ -1,0 +1,7 @@
+/* Exécuté par searchWord (cherche mot.js)*/
+/* Style appliqué au mot écrit dans la barre de recherche */
+
+.highlight {
+background-color: yellow;
+}
+

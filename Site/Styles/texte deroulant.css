@@ -1,0 +1,30 @@
+ /* texte déroulant sur la page de donation */
+
+.marquee-container {
+display : flex;
+align-items : center;
+overflow : hidden;
+}
+
+.marquee {
+font-size : 50px;
+line-height : 0.7;
+font-family : sans-serif;
+padding : 24px 0;
+color : grey;
+white-space : nowrap;
+animation : marquee 10s infinite linear;
+}
+
+.marquee:after {
+content : - Montant :  - Montant :  - Montant :  - Montant :  - Montant : ;
+}
+
+@keyframes marquee{
+    0% {
+    transform : translateX(0);
+    }
+    100% {
+    transform : translateX(-50%);
+    }
+}

@@ -1,0 +1,49 @@
+ /* Style appliqué aux boutons des pages de don pour valider la donation */
+
+  .donate-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width :280px;
+  }
+
+  .donate-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .donate-btn::before {
+    content: '$';
+    position: absolute;
+    top: 50%;
+    left: 30px; /* Ajuster la position à gauche */
+    font-size: 24px;
+    transform: translateY(-50%);
+    transition: left 0.5s ease; /* Transition de la position */
+  }
+
+  .donate-btn:hover::before {
+    left: calc(100% - 45px); /* Positionnement à la fin du texte */
+  }
+
+  .donate-btn::after {
+    content: '$';
+    position: absolute;
+    top: 50%;
+    right: 30px; /* Ajuster la position à droite */
+    font-size: 24px;
+    transform: translateY(-50%);
+    transition: right 0.5s ease; /* Transition de la position */
+  }
+
+  .donate-btn:hover::after {
+    right: calc(100% - 45px); /* Positionnement à la fin du texte */
+  }

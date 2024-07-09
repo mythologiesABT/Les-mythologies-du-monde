@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>	Les Mythologies du monde</title>  <!--Nom de la page (apparait sur l'onglet)-->
+
+	<!-- Pages CSS -->
+			<link rel="stylesheet"  href="Site/Styles/style page 1.css">   <!--Style principal-->
+    		<link rel="stylesheet"  href="Site/Styles/style barre recherche 1.css"> <!--Style de la barre de recherche-->
+			<link rel="stylesheet"  href="Site/Styles/bouton barre de recherche.css">  <!--Style bouton de la barre de recherche-->
+	  		<link rel="stylesheet" href="Site/Styles/menu deroulant.css" /> <!--Style du menu déroulant-->
+			<link rel="stylesheet"  href="Site/Styles/barre parametre.css">  <!--Style menu de paramètres-->
+			<link rel="stylesheet"  href="Site/Styles/theme dark.css">  <!--Style dark-->
+			<link rel="stylesheet"  href="Site/Styles/theme page 1.css">  <!--Style sombre-->
+			<link rel="stylesheet"  href="Site/Styles/roue partage.css">  <!--Style roue de partage-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    			crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Importation bibliothèque logos-->
+
+	<!-- Pages JavaScript -->
+			<script src="Site/Script/page 1.js"></script>  <!--Ouvre page de mythologie, grâce à la barre de recherche--> <!--Dit la provenance des dieux, grâce à la barre de recherche-->
+			<script src="Site/Script/taille image.js"></script> <!--Agrandit l'image lorsque survolé-->
+			<script src="Site/Script/bouton themes.js"></script> <!--Bouton de changement de thème-->
+			<script src="Site/Script/copie lien.js"></script> <!-- Bouton de copie du lien du site-->
+			<script src="Site/Script/bouton barre de recherche.js"></script> <!-- Bouton de la barre de recherche-->
+
+
+	<!-- Logo du site web (apparait sur l'onglet)-->
+			<link rel="icon" href="Site/Image/logo.ico">
+
+</head>
+
+
+<body>
+
+<!-- Menu de paramètres-->
+
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+<div id="sidebarMenu">
+	<ul class="sidebarMenuInner">
+		<li><img src="Site/Image/logo ABT.jpg" width="30" height="30"> Aubert <span> <!-- Affiche mon logo + nom-->
+		Web Developper </span></li>
+		<li> Partager
+			<div class="container">
+    			<input type="checkbox" id="checkbox1">
+    			<div class="links">
+      				<a href="https://mail.google.com/mail/?view=cm&to=DESTINATAIRE&su=SUJET&body=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:1" title="Partager par Mail"><i class="fa-regular fa-envelope"></i></a>
+      				<a href="#" id="copyLinkButton" style="--i:2" title="Copier le lien"><i class="fa-solid fa-link"></i></a>
+      				<a href="#" style="--i:3"><i class="fa-thin fa-notdef"></i></a>
+      				<a href="whatsapp://send?text=Par tous les dieux, vient donc découvrir ce site : URL DE MON CITE" style="--i:4" title="Partager par WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    			</div>
+  			</div>
+		</li>
+		<li> <ul> Nos réseaux </ul>  <a href="https://www.instagram.com/mythologies.abt?igsh=MWdpb2N2YXhyZGhvdw=="> Instagram </a>  <br>  <a href="https://pin.it/2oxXKFP"> Pinterest </a> </li> <!-- Liens vers Instagram et Pinterest -->
+		<li> Thème dark <i class="fa-regular fa-sun" id="soleil1"></i><i class="fa-regular fa-moon" id="lune1"></i><div class="toggle"><p id="theme1" > Clique Ici</p></div></li> <!-- Bouton de thème dark-->
+		<li> Thème sombre <i class="fa-regular fa-sun" id="soleil2"></i><i class="fa-regular fa-moon" id="lune2"></i><div class="toggle2"><p id="theme2" > Clique Ici</p></div></li> <!-- Bouton de thème sombre-->
+	</ul>
+</div>
+
+
+
+<header>
+  <nav class="wrapper">
+    <ul>                       <!-- Dessin du logo du menu de paramètres-->
+		<li><label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+
+			</label></li>      <!--Menu déroulant-->
+		<li> <a href="Site/donations/dons 1.html" > <i class="fa-solid fa-dollar-sign"></i> Donations</a> </li> <!-- Onglet 1 : lien vers donation-->
+        <li> <a href="Site/formulaires/formulaire satisfaction 1.html" ><i class="fa-regular fa-face-smile-beam"></i> Formulaire de satisfaction</a> </li> <!-- Onglet 2 : lien vers formulaire-->
+        <li>
+
+<h5 class="wrapper">       <!--Barre de recherche-->
+    <input type="search" id="searchbar" value="" placeholder=" Recherche une mythologie ...*" onchange="cherche_mythologie()" size="40%" maxlength="35">
+    <input type="button" id="button" onclick="cherche_mythologie()" value="Chercher">
+</h5>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+		<header class="header">
+			<center> <h1> MYTHOLOGIES </h1> <!-- Titre de la page-->
+			<img src="Site/Image/carte monde.jpg" width="600" height="300"/> </center> <!--Image-->
+			<hr />
+		</header>
+
+
+		<nav>                       <!--Images hyperlien : renvoient vers les autres pages-->
+			<ul>
+               <CENTER>
+				   <a href="Site/Html/egyptienne.html" title="Clique pour accéder">
+	             <img alt="texte alternatif pour le lien image" src="Site/Image/egyptienne/temple egyptien.bmp" width="250" height="250" onmouseover="agrandit(this)" onmouseout="retrecit(this)"/></a>
+
+				   <a href="Site/Html/grec.html" title="Clique pour accéder">
+	             <img alt="texte alternatif pour le lien image" src="Site/Image/grec/temple grec.bmp" width="250" height="250" onmouseover="agrandit(this)" onmouseout="retrecit(this)"/></a>
+
+				   <!--<a href="japonnaise.html" title="Ceci est un lien image ">
+	             <img alt="texte alternatif pour le lien image" src="Image/japonnaise/temple japonnais.jpg" width="250" height="250" /></a>-->     <!-- en travaux -->
+
+				   <a href="Site/Html/nordique.html" title="Clique pour accéder">
+	             <img alt="texte alternatif pour le lien image" src="Site/Image/nordique/temple nordic.bmp" width="250" height="250" onmouseover="agrandit(this)" onmouseout="retrecit(this)"/></a>
+
+				   <a href="Site/Html/romaine.html" title="Clique pour accéder">
+	             <img alt="texte alternatif pour le lien image" src="Site/Image/romaine/colisee romain.bmp" width="250" height="250" onmouseover="agrandit(this)" onmouseout="retrecit(this)"/></a>
+</ul> </center>
+                       
+		</section>
+		<hr/>
+
+
+			* Ou écris un dieu ou une créature si tu ne connais pas la mythologie correspondante
+
+		<footer>   <!--Signature-->
+			<p class="log"> <img id="logo" src="Site/Image/logo ABT.jpg" width="40" height="40"></p>
+		<p class="diff"> A website by Aubert</p>
+
+
+
+                                                      
+		</footer>
+	</body>
+</html>
+	
+    
+    
