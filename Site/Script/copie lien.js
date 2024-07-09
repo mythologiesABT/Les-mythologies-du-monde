@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const copyLinkButton = document.getElementById('copyLinkButton');
 
     copyLinkButton.addEventListener('click', () => {
-        const siteLink = 'https://votresite.com'; // Remplacez par le lien de votre site
+        const siteLink = 'https://mythologiesabt.github.io/Les-mythologies-du-monde/'; 
 
         navigator.clipboard.writeText(siteLink)
             .then(() => {
